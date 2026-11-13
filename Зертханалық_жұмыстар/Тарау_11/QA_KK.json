@@ -1,0 +1,37 @@
+{
+  "chapter": 11,
+  "kernel_verified": true,
+  "kernel_stopped": true,
+  "transport": "loopback TCP with CurveZMQ",
+  "code_cells": 8,
+  "all_numeric_json_values_equal_source_and_script": true,
+  "numeric_value_count": 1476,
+  "csv_byte_equal_script": true,
+  "png_equal_localized_script": true,
+  "png_sha256": [
+    "3dd7ef31d612f703f42177f33fe85797fdf5f273f61adfa841407208c78a2421",
+    "7ed8d8a892caa32fdc4bda70612923c73754850edfc024f2eb2cfe7f415fe817"
+  ],
+  "browser_ui_verified": false,
+  "executed_notebook": "labs/lab11.ipynb",
+  "notebook_sha256": "414abf55cf0ddcda961fb3db1eacdf0219f4705aa6fda7c4c28ae0c6c30e7335",
+  "runtime": {
+    "Python": "3.12.14",
+    "device": "CPU",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "threadpoolctl": "3.7.0"
+    },
+    "threadpoolctl_limit": 1,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  }
+}

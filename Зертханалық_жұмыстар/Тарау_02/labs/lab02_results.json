@@ -1,0 +1,152 @@
+{
+  "micro": {
+    "numeric_medians": [
+      30.0,
+      4.0
+    ],
+    "numeric_means": [
+      30.0,
+      4.5
+    ],
+    "numeric_scales": [
+      7.0710678118654755,
+      2.179449471770337
+    ],
+    "feature_names": [
+      "num__temperature_C",
+      "num__hours",
+      "cat__mode_eco",
+      "cat__mode_standard"
+    ],
+    "train_transformed": [
+      [
+        -1.414213562373095,
+        -1.1470786693528088,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.22941573387056174,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        -0.22941573387056174,
+        1.0,
+        0.0
+      ],
+      [
+        1.414213562373095,
+        1.6059101370939322,
+        1.0,
+        0.0
+      ]
+    ],
+    "new_transformed": [
+      [
+        2.82842712474619,
+        -0.22941573387056174,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.6882472016116852,
+        1.0,
+        0.0
+      ]
+    ],
+    "statistics_unchanged_after_transform": true
+  },
+  "equipment": {
+    "synthetic": true,
+    "seed": 2026,
+    "rows": 500,
+    "train_size": 400,
+    "test_size": 100,
+    "missing_counts": {
+      "temperature_C": 49,
+      "hours": 59,
+      "mode": 34,
+      "shift": 20
+    },
+    "train_missing_counts": {
+      "temperature_C": 38,
+      "hours": 47,
+      "mode": 26,
+      "shift": 18
+    },
+    "metrics": [
+      {
+        "approach": "Dummy",
+        "MAE": 16.761518585947147,
+        "RMSE": 21.26512371533239,
+        "R2": -0.030851542480675898
+      },
+      {
+        "approach": "Standard",
+        "MAE": 6.113983233486442,
+        "RMSE": 8.325965070689444,
+        "R2": 0.8419736653584804
+      },
+      {
+        "approach": "MinMax",
+        "MAE": 6.180378485103311,
+        "RMSE": 8.210417328785454,
+        "R2": 0.8463294085566722
+      }
+    ],
+    "fitted_parameters": {
+      "Standard": {
+        "feature_names": [
+          "num__temperature_C",
+          "num__hours",
+          "cat__mode_boost",
+          "cat__mode_eco",
+          "cat__mode_standard",
+          "cat__shift_day",
+          "cat__shift_night"
+        ],
+        "numeric_medians": [
+          25.461118588823197,
+          7.5097601506465885
+        ],
+        "train_shape": [
+          400,
+          7
+        ],
+        "test_shape": [
+          100,
+          7
+        ],
+        "finite": true
+      },
+      "MinMax": {
+        "feature_names": [
+          "num__temperature_C",
+          "num__hours",
+          "cat__mode_boost",
+          "cat__mode_eco",
+          "cat__mode_standard",
+          "cat__shift_day",
+          "cat__shift_night"
+        ],
+        "numeric_medians": [
+          25.461118588823197,
+          7.5097601506465885
+        ],
+        "train_shape": [
+          400,
+          7
+        ],
+        "test_shape": [
+          100,
+          7
+        ],
+        "finite": true
+      }
+    }
+  }
+}

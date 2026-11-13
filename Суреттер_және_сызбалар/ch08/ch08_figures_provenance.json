@@ -1,0 +1,104 @@
+{
+  "created_utc": "2026-11-07T10:42:53.607996+00:00",
+  "generator": "_work/tools/make_ch08_figures_kk.py",
+  "generator_sha256": "6bd9e0f58744552922c938c1313e7c870d414a11fa9532b31858f4a8eedc3639",
+  "calculations": "Суреттер_және_сызбалар/ch08/ch08_figure_calculations.json",
+  "calculations_sha256": "b0ee4ca46194b752964cdfb6a200e1fadc978a2a088c205aed5a116b05bcf2c2",
+  "origin": "Original figures on explicitly given synthetic data.",
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "backend": "Agg",
+    "font": "DejaVu Sans"
+  },
+  "primary_references": [
+    {
+      "title": "SciPy linkage, Ward recurrence",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html",
+      "online_version": "1.18.0",
+      "checked": "2026-11-05"
+    },
+    {
+      "title": "scikit-learn DBSCAN, min_samples and core_sample_indices_",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html",
+      "online_version": "1.9.1",
+      "checked": "2026-11-05"
+    },
+    {
+      "title": "scikit-learn PCA, sample variance convention",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html",
+      "online_version": "1.9.1",
+      "checked": "2026-11-05"
+    }
+  ],
+  "files": [
+    {
+      "path": "Суреттер_және_сызбалар/ch08/ch08_01_kmeans.png",
+      "filename": "ch08_01_kmeans.png",
+      "sha256": "9c43888827246d3baa71273066fe5188f578b8678ea4ca1f6630f7c468312008",
+      "pixel_dimensions": [
+        2300,
+        1420
+      ],
+      "dpi": 200,
+      "caption": "8.1-сурет. k-means әдісінің бір қадамы және inertia азаюы",
+      "source_caption": "Дереккөз: төрт жасанды нүкте бойынша авторлық есеп. Үзік сызық топ орталығына дейінгі қашықтықты көрсетеді.",
+      "canvas_text_bounds": "passed"
+    },
+    {
+      "path": "Суреттер_және_сызбалар/ch08/ch08_02_dbscan.png",
+      "filename": "ch08_02_dbscan.png",
+      "sha256": "f9757d488efc4ab797f0e5a1d93876aaea86fc6aefbb904e302a92714a9e558a",
+      "pixel_dimensions": [
+        2300,
+        1440
+      ],
+      "dpi": 200,
+      "caption": "8.2-сурет. DBSCAN-дегі ядролық, шекаралық және шу нүктелері",
+      "source_caption": "Дереккөз: авторлық есеп. Индекстеу нөлден басталады. Үлкейтілген бөлік екі ядролық нүктенің ε-маңайларын көрсетеді.",
+      "canvas_text_bounds": "passed"
+    },
+    {
+      "path": "Суреттер_және_сызбалар/ch08/ch08_03_ward.png",
+      "filename": "ch08_03_ward.png",
+      "sha256": "5910f817fcdb456dd0ed3913503e0494940932c03f6e862d61827f5b35cdd12f",
+      "pixel_dimensions": [
+        2180,
+        1400
+      ],
+      "dpi": 200,
+      "caption": "8.3-сурет. Уорд дендрограммасы және үш бірігудің биіктіктері",
+      "source_caption": "Дереккөз: SSE өсімін авторлық есептеу және scipy.cluster.hierarchy.linkage арқылы салыстыру. 2, 2 және 16 биіктіктері √(2Δ)-ға тең.",
+      "canvas_text_bounds": "passed"
+    },
+    {
+      "path": "Суреттер_және_сызбалар/ch08/ch08_04_gmm_em.png",
+      "filename": "ch08_04_gmm_em.png",
+      "sha256": "13a36d3207d802047f9227ebed3a831ad23c9abd74e79a8943679cbdb2a14167",
+      "pixel_dimensions": [
+        2340,
+        1400
+      ],
+      "dpi": 200,
+      "caption": "8.4-сурет. EM-нің бір итерациясына дейінгі және кейінгі Гаусс қоспасының тығыздығы",
+      "source_caption": "Дереккөз: жасанды деректер бойынша авторлық есеп. Жіңішке қисықтар қоспаның салмақталған компоненттерін көрсетеді.",
+      "canvas_text_bounds": "passed"
+    },
+    {
+      "path": "Суреттер_және_сызбалар/ch08/ch08_05_pca.png",
+      "filename": "ch08_05_pca.png",
+      "sha256": "322d6d644f3c713b8c7284bdf9325234f1c36c4fefcd1604195bda7bed2b801d",
+      "pixel_dimensions": [
+        2160,
+        1440
+      ],
+      "dpi": 200,
+      "caption": "8.5-сурет. Төрт нүктені бірінші басты компонентке проекциялау және қалпына келтіру",
+      "source_caption": "Дереккөз: жасанды деректер бойынша авторлық есеп. Бірінші компонент жиынтық дисперсияның 80%-ын түсіндіреді.",
+      "canvas_text_bounds": "passed"
+    }
+  ],
+  "visual_review": "Recorded separately after opening the final PNG files in original resolution."
+}

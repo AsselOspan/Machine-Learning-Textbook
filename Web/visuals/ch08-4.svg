@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">DBSCAN маңайының кластерлерге әсері</title><desc id="desc">ε=0,09 болғанда әр нүкте маңайында тек өзі қалады. Ядро табылмайды, сондықтан жеті нүктенің бәрі шу деп белгіленеді.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><text x="74" y="44" text-anchor="start" fill="#123656" font-size="23" font-weight="700">ε = 0,09</text>
+<text x="650" y="44" text-anchor="end" fill="#52667d" font-size="19">min_samples = 3</text>
+<line x1="630.63" y1="128" x2="665.37" y2="128" stroke="#52667d" stroke-width="4"/>
+<line x1="630.63" y1="121" x2="630.63" y2="135" stroke="#52667d" stroke-width="2"/>
+<line x1="665.37" y1="121" x2="665.37" y2="135" stroke="#52667d" stroke-width="2"/>
+<text x="519" y="107" text-anchor="middle" fill="#52667d" font-size="20">Тек бір нүкте</text>
+<line x1="47" y1="176" x2="673" y2="176" stroke="#52667d" stroke-width="2"/>
+<line x1="64" y1="171" x2="74" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="74" y1="171" x2="64" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="69" y1="186" x2="69" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="69" y="216" text-anchor="middle" fill="#123656" font-size="18">0</text>
+<line x1="83.3" y1="171" x2="93.3" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="93.3" y1="171" x2="83.3" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="88.3" y1="186" x2="88.3" y2="220" stroke="#d8e2ee" stroke-width="1"/>
+<text x="88.3" y="240" text-anchor="middle" fill="#123656" font-size="18">0,1</text>
+<line x1="102.6" y1="171" x2="112.6" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="112.6" y1="171" x2="102.6" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="107.6" y1="186" x2="107.6" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="107.6" y="216" text-anchor="middle" fill="#123656" font-size="18">0,2</text>
+<line x1="257" y1="171" x2="267" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="267" y1="171" x2="257" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="262" y1="186" x2="262" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="262" y="216" text-anchor="middle" fill="#123656" font-size="18">1</text>
+<line x1="276.3" y1="171" x2="286.3" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="286.3" y1="171" x2="276.3" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="281.3" y1="186" x2="281.3" y2="220" stroke="#d8e2ee" stroke-width="1"/>
+<text x="281.3" y="240" text-anchor="middle" fill="#123656" font-size="18">1,1</text>
+<line x1="295.6" y1="171" x2="305.6" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="305.6" y1="171" x2="295.6" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="300.6" y1="186" x2="300.6" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="300.6" y="216" text-anchor="middle" fill="#123656" font-size="18">1,2</text>
+<line x1="643" y1="171" x2="653" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="653" y1="171" x2="643" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="648" y1="186" x2="648" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="648" y="216" text-anchor="middle" fill="#123656" font-size="18">3</text>
+<text x="650" y="271" text-anchor="end" fill="#52667d" font-size="18">x</text>
+<circle cx="90" cy="299" r="8" fill="#087f8c" stroke="#ffffff" stroke-width="2"/>
+<circle cx="90" cy="299" r="2" fill="#ffffff"/>
+<text x="105" y="306" text-anchor="start" fill="#123656" font-size="18">Ядролық</text>
+<circle cx="269" cy="299" r="5" fill="#ffffff" stroke="#087f8c" stroke-width="2"/>
+<text x="284" y="306" text-anchor="start" fill="#123656" font-size="18">Шекаралық</text>
+<line x1="483" y1="294" x2="493" y2="304" stroke="#a7442a" stroke-width="3"/>
+<line x1="493" y1="294" x2="483" y2="304" stroke="#a7442a" stroke-width="3"/>
+<text x="503" y="306" text-anchor="start" fill="#123656" font-size="18">Шу</text></g></svg>

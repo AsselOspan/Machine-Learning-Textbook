@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Бір шығарылым және жаңартылатын болжам</title><desc id="desc">4-сәтте y₄ = 15 белгілі болғанда 5-сәтке 17 болжанады. 5-сәтте y₅ = 16 түскенде 6-сәтке 18 болжанады. Модель параметрлері өзгермейді.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><text x="650" y="52" text-anchor="end" fill="#52667d" font-size="17">Уақыт</text>
+<line x1="147" y1="78" x2="650" y2="78" stroke="#52667d" stroke-width="2"/>
+<line x1="643" y1="74" x2="650" y2="78" stroke="#52667d" stroke-width="2"/>
+<line x1="643" y1="82" x2="650" y2="78" stroke="#52667d" stroke-width="2"/>
+<line x1="180" y1="73" x2="180" y2="83" stroke="#52667d" stroke-width="2"/>
+<text x="180" y="108" text-anchor="middle" fill="#52667d" font-size="17">3-сәт</text>
+<line x1="180" y1="118" x2="180" y2="311" stroke="#d8e2ee" stroke-width="1" stroke-dasharray="3 5"/>
+<line x1="320" y1="73" x2="320" y2="83" stroke="#52667d" stroke-width="2"/>
+<text x="320" y="108" text-anchor="middle" fill="#52667d" font-size="17">4-сәт</text>
+<line x1="320" y1="118" x2="320" y2="311" stroke="#d8e2ee" stroke-width="1" stroke-dasharray="3 5"/>
+<line x1="460" y1="73" x2="460" y2="83" stroke="#52667d" stroke-width="2"/>
+<text x="460" y="108" text-anchor="middle" fill="#52667d" font-size="17">5-сәт</text>
+<line x1="460" y1="118" x2="460" y2="311" stroke="#d8e2ee" stroke-width="1" stroke-dasharray="3 5"/>
+<line x1="600" y1="73" x2="600" y2="83" stroke="#52667d" stroke-width="2"/>
+<text x="600" y="108" text-anchor="middle" fill="#52667d" font-size="17">6-сәт</text>
+<line x1="600" y1="118" x2="600" y2="311" stroke="#d8e2ee" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="42" y="154" text-anchor="start" fill="#52667d" font-size="16" font-weight="700">Бақылау</text>
+<text x="42" y="220" text-anchor="start" fill="#52667d" font-size="16" font-weight="700">Бір шығарылым</text>
+<text x="42" y="286" text-anchor="start" fill="#52667d" font-size="16" font-weight="700">Жаңартылатын</text>
+<rect x="150" y="130" width="60" height="38" rx="8" fill="#ffffff" stroke="#52667d" stroke-width="2"/>
+<text x="180" y="155" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">10</text>
+<rect x="290" y="130" width="60" height="38" rx="8" fill="#ffffff" stroke="#52667d" stroke-width="2"/>
+<text x="320" y="155" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">15</text>
+<rect x="430" y="130" width="60" height="38" rx="8" fill="#ffffff" stroke="#52667d" stroke-width="2"/>
+<text x="460" y="155" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">16</text>
+<rect x="290" y="196" width="60" height="38" rx="8" fill="#ffffff" stroke="#087f8c" stroke-width="2"/>
+<text x="320" y="221" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">12</text>
+<rect x="290" y="262" width="60" height="38" rx="8" fill="#ffffff" stroke="#3569a2" stroke-width="2"/>
+<text x="320" y="287" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">12</text>
+<rect x="430" y="196" width="60" height="38" rx="8" fill="#ffffff" stroke="#087f8c" stroke-width="2"/>
+<text x="460" y="221" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">14</text>
+<rect x="570" y="196" width="60" height="38" rx="8" fill="#ffffff" stroke="#087f8c" stroke-width="2"/>
+<text x="600" y="221" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">16</text>
+<line x1="354" y1="215" x2="426" y2="215" stroke="#087f8c" stroke-width="2"/>
+<line x1="419" y1="211" x2="426" y2="215" stroke="#087f8c" stroke-width="2"/>
+<line x1="419" y1="219" x2="426" y2="215" stroke="#087f8c" stroke-width="2"/>
+<text x="390" y="204" text-anchor="middle" fill="#52667d" font-size="16">+2</text>
+<line x1="494" y1="215" x2="566" y2="215" stroke="#087f8c" stroke-width="2"/>
+<line x1="559" y1="211" x2="566" y2="215" stroke="#087f8c" stroke-width="2"/>
+<line x1="559" y1="219" x2="566" y2="215" stroke="#087f8c" stroke-width="2"/>
+<text x="530" y="204" text-anchor="middle" fill="#52667d" font-size="16">+2</text>
+<rect x="430" y="262" width="60" height="38" rx="8" fill="#ffffff" stroke="#3569a2" stroke-width="2"/>
+<text x="460" y="287" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">17</text>
+<rect x="570" y="262" width="60" height="38" rx="8" fill="#ffffff" stroke="#3569a2" stroke-width="2"/>
+<text x="600" y="287" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">18</text>
+<text x="460" y="253" text-anchor="middle" fill="#52667d" font-size="16">15 + 2</text>
+<text x="600" y="253" text-anchor="middle" fill="#52667d" font-size="16">16 + 2</text>
+<text x="360" y="327" text-anchor="middle" fill="#52667d" font-size="17">Болжам = алдыңғы мән + 2</text></g></svg>

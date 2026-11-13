@@ -1,0 +1,10 @@
+Wolberg, W., Mangasarian, O., Street, N., & Street, W. (1993).
+Breast Cancer Wisconsin (Diagnostic). UCI Machine Learning Repository.
+DOI: https://doi.org/10.24432/C5DW2B
+Дереккөз: https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
+Лицензия: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Кіріктірілген scikit-learn load_breast_cancer көшірмесінен экспортталған.
+Белгі атауларындағы бос орындар астыңғы сызықтарға ауыстырылған.
+Мақсат sklearn 0 белгісі үшін malignant=1, sklearn 1 белгісі үшін malignant=0
+ретінде қайта кодталған. row_id және split — осы сабаққа қосылған қызметтік
+өрістер. Метадеректер 2026-11-05 күні тексерілген.

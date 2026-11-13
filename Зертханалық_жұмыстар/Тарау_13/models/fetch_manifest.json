@@ -1,0 +1,12 @@
+{
+  "file": "squeezenet1_1-b8a52dc0.pth",
+  "bytes": 4958839,
+  "sha256": "b8a52dc049b60e4b6ab68ad0df457362afab8b6304b2febdc1650a5dab4d7e7b",
+  "url": "https://download.pytorch.org/models/squeezenet1_1-b8a52dc0.pth",
+  "torchvision_variant": "SqueezeNet1_1_Weights.IMAGENET1K_V1",
+  "source_task": "ImageNet-1K",
+  "weights_bundled": false,
+  "existing_verified_local_file_used": true,
+  "download_performed_for_localization": false,
+  "attribution_and_terms": "SqueezeNet_Weights.txt"
+}

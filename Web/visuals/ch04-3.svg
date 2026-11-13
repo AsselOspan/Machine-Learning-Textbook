@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Шешім ағашы шекті қалай бағалайды?</title><desc id="desc">Сол жақта 1 A және 3 B бар, Gini = 3/8. Оң жақта 4 A бар, Gini = 0.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><rect x="228" y="29" width="264" height="73" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="360.0" y="60.5" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">Түбір</text>
+<text x="360.0" y="90.5" text-anchor="middle" fill="#087f8c" font-size="20">5 A · 3 B</text>
+<path d="M 360 103 V 137 H 190 V 184 M 360 137 H 530 V 184" stroke="#52667d" stroke-width="2" fill="none"/>
+<text x="175" y="165" text-anchor="end" fill="#087f8c" font-size="19" font-weight="700">≤ 5 сағ</text>
+<text x="545" y="165" text-anchor="start" fill="#3569a2" font-size="19" font-weight="700">&gt; 5 сағ</text>
+<rect x="60" y="188" width="260" height="82" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="190.0" y="224.0" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">1 A · 3 B</text>
+<text x="190.0" y="254.0" text-anchor="middle" fill="#087f8c" font-size="20">Gini = 3/8</text>
+<rect x="400" y="188" width="260" height="82" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="530.0" y="224.0" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">4 A · 0 B</text>
+<text x="530.0" y="254.0" text-anchor="middle" fill="#087f8c" font-size="20">Gini = 0</text></g></svg>

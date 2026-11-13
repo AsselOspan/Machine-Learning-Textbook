@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Шешім шегі қателерді қалай өзгертеді?</title><desc id="desc">TN = 3, FP = 1, FN = 1, TP = 3. Төрт оң нысанның үшеуі дұрыс табылды.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><text x="384" y="34" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">Болжанған класс</text>
+<text x="285" y="67" text-anchor="middle" fill="#123656" font-size="18">0</text>
+<text x="483" y="67" text-anchor="middle" fill="#123656" font-size="18">1</text>
+<text x="112" y="159" text-anchor="middle" fill="#52667d" font-size="17">Нақты</text>
+<text x="112" y="182" text-anchor="middle" fill="#52667d" font-size="17">класс</text>
+<text x="174" y="124" text-anchor="middle" fill="#123656" font-size="19">0</text>
+<text x="174" y="222" text-anchor="middle" fill="#123656" font-size="19">1</text>
+<rect x="192" y="79" width="186" height="86" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="285" y="113" text-anchor="middle" fill="#52667d" font-size="17">TN</text>
+<text x="285" y="146" text-anchor="middle" fill="#087f8c" font-size="29" font-weight="700">3</text>
+<rect x="390" y="79" width="186" height="86" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="483" y="113" text-anchor="middle" fill="#52667d" font-size="17">FP</text>
+<text x="483" y="146" text-anchor="middle" fill="#a7442a" font-size="29" font-weight="700">1</text>
+<rect x="192" y="177" width="186" height="86" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="285" y="211" text-anchor="middle" fill="#52667d" font-size="17">FN</text>
+<text x="285" y="244" text-anchor="middle" fill="#a7442a" font-size="29" font-weight="700">1</text>
+<rect x="390" y="177" width="186" height="86" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="483" y="211" text-anchor="middle" fill="#52667d" font-size="17">TP</text>
+<text x="483" y="244" text-anchor="middle" fill="#087f8c" font-size="29" font-weight="700">3</text>
+<text x="384" y="300" text-anchor="middle" fill="#087f8c" font-size="24" font-weight="700">Шек t = 0,5</text></g></svg>

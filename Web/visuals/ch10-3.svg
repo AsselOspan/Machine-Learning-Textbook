@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Шепли мәндерінде үлесті екі ретпен есептеу</title><desc id="desc">x₂ ашылғанда шығыс 0-ден 2-ге өседі. Одан кейін x₁ ашылғанда 2-ден 6-ға өседі. Осы реттегі үлестер 2 және 4.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><line x1="76" y1="272" x2="660" y2="272" stroke="#d8e2ee" stroke-width="1"/>
+<text x="63" y="278" text-anchor="end" fill="#52667d" font-size="17">0</text>
+<line x1="76" y1="214" x2="660" y2="214" stroke="#d8e2ee" stroke-width="1"/>
+<text x="63" y="220" text-anchor="end" fill="#52667d" font-size="17">2</text>
+<line x1="76" y1="156" x2="660" y2="156" stroke="#d8e2ee" stroke-width="1"/>
+<text x="63" y="162" text-anchor="end" fill="#52667d" font-size="17">4</text>
+<line x1="76" y1="98" x2="660" y2="98" stroke="#d8e2ee" stroke-width="1"/>
+<text x="63" y="104" text-anchor="end" fill="#52667d" font-size="17">6</text>
+<text x="78" y="44" text-anchor="start" fill="#123656" font-size="20">Модель шығысы</text>
+<rect x="108" y="270" width="76" height="4" rx="2" fill="#52667d"/>
+<text x="146" y="261" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">0</text>
+<text x="146" y="308" text-anchor="middle" fill="#123656" font-size="19">База</text>
+<line x1="184" y1="272" x2="265" y2="272" stroke="#52667d" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="265" y="214" width="76" height="58" rx="4" fill="#3569a2"/>
+<text x="303" y="203" text-anchor="middle" fill="#123656" font-size="22" font-weight="700">+2</text>
+<text x="303" y="308" text-anchor="middle" fill="#123656" font-size="19">x₂ үлесі</text>
+<line x1="341" y1="214" x2="418" y2="214" stroke="#52667d" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="418" y="98" width="76" height="116" rx="4" fill="#087f8c"/>
+<text x="456" y="87" text-anchor="middle" fill="#123656" font-size="22" font-weight="700">+4</text>
+<text x="456" y="308" text-anchor="middle" fill="#123656" font-size="19">x₁ үлесі</text>
+<line x1="494" y1="98" x2="569" y2="98" stroke="#52667d" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="569" y="98" width="76" height="174" rx="4" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="607" y="87" text-anchor="middle" fill="#123656" font-size="22" font-weight="700">6</text>
+<text x="607" y="308" text-anchor="middle" fill="#123656" font-size="19">Шығыс</text></g></svg>

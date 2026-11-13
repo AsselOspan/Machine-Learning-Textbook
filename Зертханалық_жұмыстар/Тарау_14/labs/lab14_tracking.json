@@ -1,0 +1,56 @@
+{
+  "backend": "local MLflow FileStore",
+  "tracking_uri": "script_run_final/mlruns",
+  "artifact_root_uri": "script_run_final/mlflow_artifacts",
+  "experiment_id": "871260935188576720",
+  "version": "3.5.1",
+  "verified_runs": [
+    {
+      "name": "DummyPrior",
+      "run_id": "23b2044d9c474621bb5dfdbe5fa37872",
+      "params": {
+        "model": "DummyPrior",
+        "strategy": "prior",
+        "threshold": "0.5",
+        "train_seed": "2026",
+        "train_size": "800"
+      },
+      "metrics": {
+        "reference_accuracy": 0.7133333333333334,
+        "reference_f1_positive": 0.0,
+        "reference_roc_auc": 0.5
+      },
+      "status": "FINISHED",
+      "artifacts": [],
+      "artifact_sha256": {},
+      "artifact_uri": "script_run_final/mlflow_artifacts/23b2044d9c474621bb5dfdbe5fa37872/artifacts"
+    },
+    {
+      "name": "Logistic",
+      "run_id": "4b4aa879762f40908e34ad9e8c4dccf2",
+      "params": {
+        "C": "1",
+        "max_iter": "1000",
+        "model": "Logistic",
+        "threshold": "0.5",
+        "train_seed": "2026",
+        "train_size": "800"
+      },
+      "metrics": {
+        "reference_accuracy": 0.7433333333333333,
+        "reference_f1_positive": 0.35294117647058826,
+        "reference_roc_auc": 0.7655944359921756
+      },
+      "status": "FINISHED",
+      "artifacts": [
+        "bundle/manifest.json",
+        "bundle/model.joblib"
+      ],
+      "artifact_sha256": {
+        "model.joblib": "891cd52e0969d1a9823ab9d91aeab52ec50446c18964019582e18b6a711296a1",
+        "manifest.json": "965b78c9a70f6922c86fd458c1dd04a35317d10b38372fa5c9191196889e27fb"
+      },
+      "artifact_uri": "script_run_final/mlflow_artifacts/4b4aa879762f40908e34ad9e8c4dccf2/artifacts"
+    }
+  ]
+}

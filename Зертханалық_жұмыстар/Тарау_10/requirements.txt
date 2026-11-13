@@ -1,0 +1,5 @@
+-r requirements-core.txt
+shap==0.54.1
+slicer==0.0.8
+tqdm==4.70.1
+threadpoolctl==3.7.0

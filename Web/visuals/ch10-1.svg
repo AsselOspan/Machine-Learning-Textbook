@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Шепли мәндерінде үлесті екі ретпен есептеу</title><desc id="desc">Модель f(x₁,x₂)=x₁+2x₂+3x₁x₂. Түсіндірілетін нысан (1, 1), ал ашылмаған белгілердің мәндері (0, 0) фондық жолынан алынады. База — 0.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><line x1="76" y1="272" x2="660" y2="272" stroke="#d8e2ee" stroke-width="1"/>
+<text x="63" y="278" text-anchor="end" fill="#52667d" font-size="17">0</text>
+<line x1="76" y1="214" x2="660" y2="214" stroke="#d8e2ee" stroke-width="1"/>
+<text x="63" y="220" text-anchor="end" fill="#52667d" font-size="17">2</text>
+<line x1="76" y1="156" x2="660" y2="156" stroke="#d8e2ee" stroke-width="1"/>
+<text x="63" y="162" text-anchor="end" fill="#52667d" font-size="17">4</text>
+<line x1="76" y1="98" x2="660" y2="98" stroke="#d8e2ee" stroke-width="1"/>
+<text x="63" y="104" text-anchor="end" fill="#52667d" font-size="17">6</text>
+<text x="78" y="44" text-anchor="start" fill="#123656" font-size="20">Модель шығысы</text>
+<rect x="108" y="270" width="76" height="4" rx="2" fill="#52667d"/>
+<text x="146" y="261" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">0</text>
+<text x="146" y="308" text-anchor="middle" fill="#123656" font-size="19">База</text></g></svg>

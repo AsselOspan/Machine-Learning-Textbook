@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Токендер мен биграммалар</title><desc id="desc">«Қызмет жақсы» жұбы екі пікірде де кездеседі. «Жақсы емес» жұбы тек екінші пікірде бар. Бұл белгі көршілес сөздердің ретін сақтайды.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><text x="54" y="134" text-anchor="start" fill="#52667d" font-size="17" font-weight="700">1-пікір</text>
+<text x="54" y="232" text-anchor="start" fill="#52667d" font-size="17" font-weight="700">2-пікір</text>
+<text x="274" y="65" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">қызмет жақсы</text>
+<text x="527" y="65" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">жақсы емес</text>
+<rect x="244" y="108" width="60" height="38" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="274" y="133" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">1</text>
+<rect x="244" y="206" width="60" height="38" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="274" y="231" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">1</text>
+<rect x="497" y="108" width="60" height="38" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="527" y="133" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">0</text>
+<rect x="497" y="206" width="60" height="38" rx="8" fill="#ffffff" stroke="#3569a2" stroke-width="2"/>
+<text x="527" y="231" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">1</text>
+<text x="360" y="309" text-anchor="middle" fill="#52667d" font-size="18">Биграмма көршілес екі токенді біріктіреді.</text></g></svg>

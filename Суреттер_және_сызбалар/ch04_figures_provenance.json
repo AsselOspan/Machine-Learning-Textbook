@@ -1,0 +1,40 @@
+{
+  "created_on": "2026-11-04",
+  "original": true,
+  "creator": "AI-assisted scientific diagrams for author review",
+  "script": "_work/tools/make_ch04_figures.py",
+  "backend": "Agg",
+  "font": "DejaVu Sans",
+  "dpi": 200,
+  "background": "white",
+  "accent": "#164B6E",
+  "matplotlib_version": "3.11.2",
+  "source_photos_or_external_images_used": false,
+  "data_origin": "Synthetic mathematical examples specified in the task; coordinates and probabilities independently recalculated",
+  "numeric_record": "_work/qa/ch04_figures_numeric.json",
+  "files": [
+    {
+      "file": "ch04_01_neighbors.png",
+      "topic": "Nearest-neighbour selection, radius2 and uniform/distance scores",
+      "sha256": "bad01dcbfd432c5904e20d5a459fc00fcc45f8d44bfc057d3faeb86b76b6c84b"
+    },
+    {
+      "file": "source_illustration.png",
+      "topic": "Kazakh reconstruction: authored lecture 4, slide7; preparation<=5 hours; left1A+3B/right4A",
+      "sha256": "d76e095144c2ca69d0d7c8ec2fa1bfb6a9dd4713b615596597624fd628ed451e"
+    },
+    {
+      "file": "ch04_03_svm.png",
+      "topic": "Separate hard-margin geometry and soft-margin hinge example",
+      "sha256": "1b9962f67c2b5f6650fdf5b591473d6e46fc8a6ea07a1b7f4197f7ef413b4864"
+    },
+    {
+      "file": "ch04_04_forest.png",
+      "topic": "Probability averaging versus hard-label majority",
+      "sha256": "d1e5754eed95570d16e30a259477893f964bd583b3e1718a4eeac39b505131c1"
+    }
+  ],
+  "visual_review": "See _work/qa/ch04_assets_visual.json for final visual review",
+  "layout_check": "Visible text bounding boxes within the fixed canvas; no tight-crop export",
+  "author_review_required": true
+}

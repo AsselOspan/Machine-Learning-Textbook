@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Қабаттарды кезеңмен бейімдеу</title><desc id="desc">b және c градиенттері бір күйде есептеледі. Олар 0,96 және 1,2. Оқу жылдамдықтары 0,05 және 0,1 болғанда b = 0,952, c = 0,68.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><rect x="37" y="91" width="122" height="112" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="98" y="124" text-anchor="middle" fill="#123656" font-size="16" font-weight="700">Кіріс x</text>
+<text x="98" y="168" text-anchor="middle" fill="#123656" font-size="23" font-weight="700">2</text>
+<line x1="159" y1="148" x2="167" y2="148" stroke="#52667d" stroke-width="2"/>
+<line x1="160" y1="144" x2="167" y2="148" stroke="#52667d" stroke-width="2"/>
+<line x1="160" y1="152" x2="167" y2="148" stroke="#52667d" stroke-width="2"/>
+<rect x="168" y="91" width="122" height="112" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="229" y="124" text-anchor="middle" fill="#123656" font-size="16" font-weight="700">Төменгі a</text>
+<text x="229" y="168" text-anchor="middle" fill="#123656" font-size="23" font-weight="700">1</text>
+<line x1="290" y1="148" x2="298" y2="148" stroke="#52667d" stroke-width="2"/>
+<line x1="291" y1="144" x2="298" y2="148" stroke="#52667d" stroke-width="2"/>
+<line x1="291" y1="152" x2="298" y2="148" stroke="#52667d" stroke-width="2"/>
+<rect x="299" y="91" width="122" height="112" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="360" y="124" text-anchor="middle" fill="#123656" font-size="16" font-weight="700">Жоғарғы b</text>
+<text x="360" y="168" text-anchor="middle" fill="#123656" font-size="23" font-weight="700">0,952</text>
+<line x1="421" y1="148" x2="429" y2="148" stroke="#52667d" stroke-width="2"/>
+<line x1="422" y1="144" x2="429" y2="148" stroke="#52667d" stroke-width="2"/>
+<line x1="422" y1="152" x2="429" y2="148" stroke="#52667d" stroke-width="2"/>
+<rect x="430" y="91" width="122" height="112" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="491" y="124" text-anchor="middle" fill="#123656" font-size="16" font-weight="700">Бас модуль c</text>
+<text x="491" y="168" text-anchor="middle" fill="#123656" font-size="23" font-weight="700">0,68</text>
+<line x1="552" y1="148" x2="560" y2="148" stroke="#52667d" stroke-width="2"/>
+<line x1="553" y1="144" x2="560" y2="148" stroke="#52667d" stroke-width="2"/>
+<line x1="553" y1="152" x2="560" y2="148" stroke="#52667d" stroke-width="2"/>
+<rect x="561" y="91" width="122" height="112" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="622" y="124" text-anchor="middle" fill="#123656" font-size="16" font-weight="700">Болжам</text>
+<text x="622" y="168" text-anchor="middle" fill="#123656" font-size="23" font-weight="700">1,29472</text>
+<text x="360" y="256" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">b мен c оқытылады, a қатырылған</text>
+<text x="360" y="294" text-anchor="middle" fill="#52667d" font-size="18">Градиенттер 0,96 және 1,2-ге тең</text></g></svg>

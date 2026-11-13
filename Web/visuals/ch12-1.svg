@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Токендер мен биграммалар</title><desc id="desc">«Қызмет жақсы» және «Қызмет жақсы емес» пікірлерін салыстырамыз. Регистрді біріздендіру үшін әріптерді кіші регистрге ауыстырамыз.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><text x="54" y="134" text-anchor="start" fill="#52667d" font-size="17" font-weight="700">1-пікір</text>
+<text x="54" y="232" text-anchor="start" fill="#52667d" font-size="17" font-weight="700">2-пікір</text>
+<text x="160" y="60" text-anchor="start" fill="#123656" font-size="20" font-weight="700">Кіші регистрге келтірілген мәтін</text>
+<rect x="150" y="99" width="508" height="56" rx="8" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="170" y="134" text-anchor="start" fill="#123656" font-size="24">қызмет жақсы</text>
+<rect x="150" y="197" width="508" height="56" rx="8" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="170" y="232" text-anchor="start" fill="#123656" font-size="24">қызмет жақсы емес</text></g></svg>

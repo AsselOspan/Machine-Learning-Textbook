@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Шешім шегі қателерді қалай өзгертеді?</title><desc id="desc">Оң класс үшін ықтималдық бағасын p деп аламыз. p ≥ t болса, модель 1 класын береді.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><rect x="190" y="45" width="340" height="72" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="360.0" y="76.0" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">Оң класс ықтималдығы</text>
+<text x="360.0" y="106.0" text-anchor="middle" fill="#087f8c" font-size="20">p</text>
+<line x1="360" y1="118" x2="360" y2="149" stroke="#52667d" stroke-width="3"/>
+<path d="M 354 141 L 360 149 L 366 141" stroke="#52667d" stroke-width="3" fill="none"/>
+<rect x="190" y="151" width="340" height="74" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="360.0" y="183.0" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">Шекпен салыстыру</text>
+<text x="360.0" y="213.0" text-anchor="middle" fill="#087f8c" font-size="20">p ≥ t</text>
+<text x="360" y="282" text-anchor="middle" fill="#087f8c" font-size="24" font-weight="700">Шарт орындалса → болжам 1</text></g></svg>

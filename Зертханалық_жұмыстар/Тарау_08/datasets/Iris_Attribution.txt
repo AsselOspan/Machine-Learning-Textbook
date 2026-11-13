@@ -1,0 +1,9 @@
+Iris. Fisher, R. (1936). UCI Machine Learning Repository.
+DOI: https://doi.org/10.24432/C56C76
+Дереккөз: https://archive.ics.uci.edu/dataset/53/iris
+Лицензия: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Экспортталған өлшемдер sklearn.datasets.load_iris көшірмесінен алынған.
+scikit-learn 0.20 нұсқасынан бастап екі бақылау Фишер мақаласы бойынша түзетілген.
+Бұл — түзетілген sklearn нұсқасы. Түр белгілері 0, 1, 2 ретінде кодталған.
+Экспорт row_id, target, species және pca_split қызметтік бағандарын қосады.
+Жасанды бақылаулар қосылмаған. Метадеректер 2026-11-05 күні тексерілген.

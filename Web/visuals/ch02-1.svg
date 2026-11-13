@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Түрлендіру параметрлері қалай сақталады?</title><desc id="desc">Төрт жолда температура, жұмыс уақыты және режим бар. NaN мәні өлшемнің белгісіз екенін білдіреді.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><rect x="190" y="28" width="340" height="66" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="360.0" y="56.0" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">Оқыту деректері</text>
+<text x="360.0" y="86.0" text-anchor="middle" fill="#087f8c" font-size="20">температура · уақыт · режим</text>
+<path d="M 360 94 V 113 H 192 V 137 M 360 113 H 528 V 137" stroke="#52667d" stroke-width="2" fill="none"/>
+<rect x="38" y="140" width="308" height="73" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="192.0" y="171.5" text-anchor="middle" fill="#52667d" font-size="19" font-weight="700">Сандық бағандар</text>
+<text x="192.0" y="201.5" text-anchor="middle" fill="#52667d" font-size="20">NaN</text>
+<rect x="374" y="140" width="308" height="73" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="528.0" y="171.5" text-anchor="middle" fill="#52667d" font-size="19" font-weight="700">Санаттық баған</text>
+<text x="528.0" y="201.5" text-anchor="middle" fill="#52667d" font-size="20">NaN</text>
+<path d="M 192 214 V 234 H 360 V 257 M 528 214 V 234 H 360" stroke="#52667d" stroke-width="2" fill="none"/>
+<rect x="148" y="258" width="424" height="72" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="360.0" y="289.0" text-anchor="middle" fill="#52667d" font-size="19" font-weight="700">Жаңа жолды түрлендіру</text>
+<text x="360.0" y="319.0" text-anchor="middle" fill="#52667d" font-size="20">Оқыту параметрлері</text></g></svg>

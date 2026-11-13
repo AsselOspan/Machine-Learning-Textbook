@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Iris деректерінен модельді бағалауға дейін</title><desc id="desc">Iris жиынтығында үш түрдің әрқайсысынан 50 гүл бар. Әр гүл төрт сандық белгімен сипатталады.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><rect x="230" y="31" width="260" height="70" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="360.0" y="61.0" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">Iris жиынтығы</text>
+<text x="360.0" y="91.0" text-anchor="middle" fill="#087f8c" font-size="20">150 гүл · 3 класс</text>
+<rect x="88" y="156" width="155" height="111" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<circle cx="112" cy="182" r="6" fill="#087f8c"/>
+<circle cx="136" cy="182" r="6" fill="#087f8c"/>
+<circle cx="160" cy="182" r="6" fill="#087f8c"/>
+<circle cx="184" cy="182" r="6" fill="#087f8c"/>
+<circle cx="208" cy="182" r="6" fill="#087f8c"/>
+<circle cx="112" cy="204" r="6" fill="#087f8c"/>
+<circle cx="136" cy="204" r="6" fill="#087f8c"/>
+<circle cx="160" cy="204" r="6" fill="#087f8c"/>
+<circle cx="184" cy="204" r="6" fill="#087f8c"/>
+<circle cx="208" cy="204" r="6" fill="#087f8c"/>
+<text x="165" y="239" text-anchor="middle" fill="#123656" font-size="17">Setosa</text>
+<text x="165" y="260" text-anchor="middle" fill="#52667d" font-size="16">50 гүл</text>
+<rect x="283" y="156" width="155" height="111" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<circle cx="307" cy="182" r="6" fill="#3569a2"/>
+<circle cx="331" cy="182" r="6" fill="#3569a2"/>
+<circle cx="355" cy="182" r="6" fill="#3569a2"/>
+<circle cx="379" cy="182" r="6" fill="#3569a2"/>
+<circle cx="403" cy="182" r="6" fill="#3569a2"/>
+<circle cx="307" cy="204" r="6" fill="#3569a2"/>
+<circle cx="331" cy="204" r="6" fill="#3569a2"/>
+<circle cx="355" cy="204" r="6" fill="#3569a2"/>
+<circle cx="379" cy="204" r="6" fill="#3569a2"/>
+<circle cx="403" cy="204" r="6" fill="#3569a2"/>
+<text x="360" y="239" text-anchor="middle" fill="#123656" font-size="17">Versicolor</text>
+<text x="360" y="260" text-anchor="middle" fill="#52667d" font-size="16">50 гүл</text>
+<rect x="478" y="156" width="155" height="111" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<circle cx="502" cy="182" r="6" fill="#a7442a"/>
+<circle cx="526" cy="182" r="6" fill="#a7442a"/>
+<circle cx="550" cy="182" r="6" fill="#a7442a"/>
+<circle cx="574" cy="182" r="6" fill="#a7442a"/>
+<circle cx="598" cy="182" r="6" fill="#a7442a"/>
+<circle cx="502" cy="204" r="6" fill="#a7442a"/>
+<circle cx="526" cy="204" r="6" fill="#a7442a"/>
+<circle cx="550" cy="204" r="6" fill="#a7442a"/>
+<circle cx="574" cy="204" r="6" fill="#a7442a"/>
+<circle cx="598" cy="204" r="6" fill="#a7442a"/>
+<text x="555" y="239" text-anchor="middle" fill="#123656" font-size="17">Virginica</text>
+<text x="555" y="260" text-anchor="middle" fill="#52667d" font-size="16">50 гүл</text></g></svg>

@@ -1,0 +1,46 @@
+{
+  "created_on": "2026-11-04",
+  "original": true,
+  "creator": "AI-assisted original plotting for author scientific revision",
+  "script": "_work/tools/make_ch02_figures.py",
+  "backend": "Agg",
+  "font": "DejaVu Sans",
+  "dpi": 200,
+  "background": "white",
+  "accent": "#164B6E",
+  "matplotlib_version": "3.11.2",
+  "source_images_reused": false,
+  "external_media_downloaded": false,
+  "files": [
+    {
+      "file": "ch02_01_schema.png",
+      "topic": "semantic schema, fixed checks and learned rules",
+      "author_material": "S02, PDF pages 6–8, 15–16 and 20–24; ch02_foundations.md section 2.2",
+      "sha256": "b0d1fbd2c04b3d85bee931f43e6b4dd237e03ccff37178ee34d3b2f4c5837995"
+    },
+    {
+      "file": "ch02_02_missing.png",
+      "topic": "synthetic records and explicit missingness mask",
+      "author_material": "S02, PDF pages 9–10; ch02_missing.md sections 2.3–2.4",
+      "data_origin": "four synthetic records created specifically for this illustration",
+      "sha256": "e57f1b59153848736384bc5a321774c33eb985c92cea1754397fa398018f9795"
+    },
+    {
+      "file": "ch02_03_scaling.png",
+      "topic": "unit-dependent numerical Euclidean distances",
+      "author_material": "original numerical example from ch02_scaling.md section 2.6",
+      "data_origin": "specified synthetic coordinates; exact squared distances independently computed",
+      "sha256": "d0c57217a1ee2b82ef016d7f28384281a134db9555fc5203485aa508909da722"
+    },
+    {
+      "file": "ch02_04_pipeline.png",
+      "topic": "split, parallel learned branches, merge/model and frozen test path",
+      "author_material": "S02, PDF pages 15–16 and 20–24; S08, PDF pages 2–5; ch02_scaling.md section 2.8",
+      "sha256": "ee8ba5c9ec5dc87eff0eaf3c526861e70362fcc25e8e5bedc26d894923db881f"
+    }
+  ],
+  "numerical_evidence": "_work/qa/ch02_figures_numeric.json",
+  "automated_layout_check": "all visible text bounding boxes must stay within the full canvas; fixed canvas saved without tight cropping",
+  "visual_review": "pending at generation; final review recorded separately",
+  "author_review_required": true
+}

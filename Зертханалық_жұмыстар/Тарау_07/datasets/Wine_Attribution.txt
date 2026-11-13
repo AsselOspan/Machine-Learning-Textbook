@@ -1,0 +1,6 @@
+Wine. Aeberhard, S. & Forina, M. (1992). UCI Machine Learning Repository.
+DOI: https://doi.org/10.24432/C5PC7J
+Дереккөз: https://archive.ics.uci.edu/dataset/109/wine
+Лицензия: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Көшірме sklearn.datasets.load_wine-нан экспортталған; 1-3 белгілері 0-2 ретінде берілген; баған атаулары scikit-learn-ге сәйкес.
+Жасанды бақылаулар қосылмаған; қолжетімділік/метадеректер тексерілген күн: 2026-11-04.

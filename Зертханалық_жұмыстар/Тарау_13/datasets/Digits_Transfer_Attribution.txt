@@ -1,0 +1,20 @@
+13-ЗЕРТХАНАЛЫҚ ЖҰМЫСТЫҢ ДЕРЕКТЕРІ
+
+Alpaydin, E. & Kaynak, C. (1998). Optical Recognition of Handwritten Digits
+[Dataset]. UCI Machine Learning Repository. DOI 10.24432/C50P49.
+Дереккөз: https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits
+Лицензия: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Интерфейс: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html
+Салыстырып тексеру күні 06.11.2026.
+
+Бастапқы UCI тест бөлігіне сәйкес келетін scikit-learn 1.9.1 құрамындағы
+1797 жолдық кіріктірілген көшірме пайдаланылған. Әр жол қарқындылығы
+0–16 болатын 8×8 бейнені және 0–9 бүтін таңбасын береді.
+Зертханалық жұмыс 600/200/250 жаңа стратификацияланған бөлінімін
+пайдаланып, 747 жолды тәжірибеден тыс қалдырады. Бұл — бекітілген ID
+мәндеріндегі оқу тәжірибесі. Бөлінім бастапқы UCI хаттамасын қайталамайды.
+load_digits интерфейсі авторлар ID мәндерін бермейді. 64×64 өлшемі
+бисызықтық интерполяциямен алынған. SqueezeNet бөліп алғышы үшін сұр арна
+үш рет қайталанып, кейін бекітілген ImageNet статистикалары бойынша
+нормалау қолданылады. Таңбалар өзгермейді.
+

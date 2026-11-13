@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Әдебиеттер тізімі · Машиналық оқыту</title><link rel="stylesheet" href="Web/reader.css">
+<link rel="stylesheet" href="Web/visuals.css">
+</head><body data-chapter="" data-root="">
+<a class="skip" href="#main">Негізгі мазмұнға өту</a>
+<header class="topbar"><a class="brand" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 7h12l3 4 3-4h12v25H23l-3 3-3-3H5Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 12v22M10 15h5m-5 6h5m10-6h5m-5 6h5" stroke="currentColor" stroke-width="2"/></svg><span>Машиналық оқыту</span></a>
+<nav class="top-actions" aria-label="Жылдам әрекеттер"><a href="glossary.html">Терминдер</a>
+<button type="button" data-open-search>Іздеу</button><button type="button" data-theme-toggle aria-pressed="false">Қараңғы тақырып</button>
+<button class="menu-toggle" type="button" data-menu-toggle aria-controls="reader-menu" aria-expanded="false">Мәзір</button></nav></header>
+<div class="layout"><aside class="sidebar" id="reader-menu"><h2>Оқулық мазмұны</h2><h2>I модуль</h2><ol><li><a href="Оқулық/Тарау_01/index.html"><span class="number">01</span>Машиналық оқытуға кіріспе. Негізгі міндеттер, әдістер және ML жүйесін құру кезеңдері</a></li><li><a href="Оқулық/Тарау_02/index.html"><span class="number">02</span>Машиналық оқыту үшін деректерді дайындау және алдын ала өңдеу</a></li><li><a href="Оқулық/Тарау_03/index.html"><span class="number">03</span>Сызықтық модельдер. Сызықтық, полиномдық және логистикалық регрессия</a></li><li><a href="Оқулық/Тарау_04/index.html"><span class="number">04</span>Жіктеу әдістері. k-NN, шешім ағаштары, SVM және Random Forest</a></li><li><a href="Оқулық/Тарау_05/index.html"><span class="number">05</span>Машиналық оқыту модельдерінің сапасын бағалау және валидация</a></li></ol><h2>II модуль</h2><ol><li><a href="Оқулық/Тарау_06/index.html"><span class="number">06</span>Шамадан тыс үйрену, регуляризация және теңгерімсіз деректер</a></li><li><a href="Оқулық/Тарау_07/index.html"><span class="number">07</span>Модельдерді оңтайландыру және гиперпараметрлерді баптау</a></li><li><a href="Оқулық/Тарау_08/index.html"><span class="number">08</span>Мұғалімсіз оқыту. Кластерлеу және өлшемділікті азайту</a></li><li><a href="Оқулық/Тарау_09/index.html"><span class="number">09</span>Ансамбльдік әдістер және градиенттік бустинг</a></li><li><a href="Оқулық/Тарау_10/index.html"><span class="number">10</span>Машиналық оқыту модельдерін түсіндіру</a></li></ol><h2>III модуль</h2><ol><li><a href="Оқулық/Тарау_11/index.html"><span class="number">11</span>Уақыт қатарларын машиналық оқыту және болжау</a></li><li><a href="Оқулық/Тарау_12/index.html"><span class="number">12</span>Мәтіндік деректерді машиналық оқыту және векторлық ұсыну</a></li><li><a href="Оқулық/Тарау_13/index.html"><span class="number">13</span>Алдын ала оқытылған модельдер, эмбеддингтер және білімді тасымалдау</a></li><li><a href="Оқулық/Тарау_14/index.html"><span class="number">14</span>Модельдің өмірлік циклі. Сақтау, өрістету және мониторинг</a></li><li><a href="Оқулық/Тарау_15/index.html"><span class="number">15</span>Заманауи бағыттар. Іргелі модельдер, генеративті модельдер және жауапты ЖИ</a></li></ol><h2>Анықтамалық материалдар</h2><ul><li><a href="visuals.html">Сызбалар мен анимациялар</a></li><li><a href="introduction.html">Алғысөз және оқу нұсқаулығы</a></li><li><a href="syllabus.html">Силлабус картасы</a></li><li><a href="projects.html">Біріктіруші жобалар</a></li><li><a href="glossary.html">Үштілді терминдер сөздігі</a></li><li><a href="datasets.html">Деректер картасы</a></li><li><a href="appendices.html">Қорытынды, қосымшалар және көрсеткіштер</a></li><li><a href="references.html">Әдебиеттер тізімі</a></li><li><a href="guide.html">Электрондық оқулықты пайдалану</a></li></ul></aside><main id="main" class="workspace">
+<nav class="breadcrumbs" aria-label="Орналасу жолы"><a href="index.html">Оқулық</a><span>/</span><span>Әдебиеттер тізімі</span></nav>
+<article class="chapter-content"><h1 id="section-1">Әдебиеттер мен дереккөздер тізімі</h1>
+<p>Кітаптар пәнді бірізді баяндайды. Қосымша әдебиеттерге тараулар сүйенетін зерттеулер мен әдістемелік жарияланымдар кіреді. Деректер мен бағдарламалық құралдар үшін жеке сипаттамалар берілген.</p>
+<h2 id="section-2">Негізгі әдебиеттер</h2>
+<ol>
+<li>
+<p>Жерон, О. Прикладное машинное обучение с помощью Scikit-Learn и TensorFlow : концепции, инструменты и техники для создания интеллектуальных систем / О. Жерон ; перевод с английского и редакция Ю. Н. Артеменко. — Санкт-Петербург : ООО «Альфа-книга», 2018. — 688 с. : ил. — Парал. тит. л. англ. — ISBN 978-5-9500296-2-2.</p>
+</li>
+<li>
+<p>Serrano, L. G. Grokking Machine Learning / L. G. Serrano. — Shelter Island : Manning Publications, 2021. — 512 p. — ISBN 978-1-61729-591-1.</p>
+</li>
+</ol>
+<h2 id="section-3">Қосымша әдебиеттер</h2>
+<ol start="3">
+<li>
+<p>A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise [Электрондық ресурс] / M. Ester, H.-P. Kriegel, J. Sander, X. Xu // Proceedings of the Second International Conference on Knowledge Discovery and Data Mining. — AAAI Press, 1996. — P. 226–231. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://cdn.aaai.org/KDD/1996/KDD96-037.pdf">https://cdn.aaai.org/KDD/1996/KDD96-037.pdf</a>.</p>
+</li>
+<li>
+<p>A review and comparison of strategies for multi-step ahead time series forecasting based on the NN5 forecasting competition [Электрондық ресурс] / S. Ben Taieb, G. Bontempi, A. Atiya, A. Sorjamaa // arXiv. — 2011. — No. 1108.3259. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://arxiv.org/abs/1108.3259">https://arxiv.org/abs/1108.3259</a>. — DOI: 10.48550/arXiv.1108.3259.</p>
+</li>
+<li>
+<p>Aas, K. Explaining individual predictions when features are dependent [Электрондық ресурс] : More accurate approximations to Shapley values / K. Aas, M. Jullum, A. Løland // Artificial Intelligence. — 2021. — Vol. 298. — Art. 103502. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://doi.org/10.1016/j.artint.2021.103502">https://doi.org/10.1016/j.artint.2021.103502</a>. — DOI: 10.1016/j.artint.2021.103502.</p>
+</li>
+<li>
+<p>Artificial Intelligence Risk Management Framework [Электрондық ресурс] : Generative Artificial Intelligence Profile / C. Autio, R. Schwartz, J. Dunietz [et al.]. — Gaithersburg : National Institute of Standards and Technology, 2024. — NIST AI 600-1. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://doi.org/10.6028/NIST.AI.600-1">https://doi.org/10.6028/NIST.AI.600-1</a>. — DOI: 10.6028/NIST.AI.600-1.</p>
+</li>
+<li>
+<p>Attention Is All You Need [Электрондық ресурс] / A. Vaswani, N. Shazeer, N. Parmar [et al.] // Advances in Neural Information Processing Systems. — 2017. — Vol. 30. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html">https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Ben Taieb, S. Boosting multi-step autoregressive forecasts [Электрондық ресурс] / S. Ben Taieb, R. J. Hyndman // Proceedings of the 31st International Conference on Machine Learning. — 2014. — Vol. 32, no. 1. — P. 109–117. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.mlr.press/v32/taieb14.html">https://proceedings.mlr.press/v32/taieb14.html</a>.</p>
+</li>
+<li>
+<p>Ben Taieb, S. Multiple-output modeling for multi-step-ahead time series forecasting [Электрондық ресурс] / S. Ben Taieb, A. Sorjamaa, G. Bontempi // Neurocomputing. — 2010. — Vol. 73, no. 10–12. — P. 1950–1957. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://orbi.umons.ac.be/handle/20.500.12907/46163">https://orbi.umons.ac.be/handle/20.500.12907/46163</a>. — DOI: 10.1016/j.neucom.2009.11.030.</p>
+</li>
+<li>
+<p>Bergstra, J. Random Search for Hyper-Parameter Optimization [Электрондық ресурс] / J. Bergstra, Y. Bengio // Journal of Machine Learning Research. — 2012. — Vol. 13, no. 10. — P. 281–305. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://www.jmlr.org/papers/v13/bergstra12a.html">https://www.jmlr.org/papers/v13/bergstra12a.html</a>.</p>
+</li>
+<li>
+<p>BERT [Электрондық ресурс] : Pre-training of Deep Bidirectional Transformers for Language Understanding / J. Devlin, M.-W. Chang, K. Lee, K. Toutanova // Proceedings of NAACL-HLT. — 2019. — Vol. 1. — P. 4171–4186. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://aclanthology.org/N19-1423/">https://aclanthology.org/N19-1423/</a>. — DOI: 10.18653/v1/N19-1423.</p>
+</li>
+<li>
+<p>Bias in random forest variable importance measures [Электрондық ресурс] : illustrations, sources and a solution / C. Strobl, A.-L. Boulesteix, A. Zeileis, T. Hothorn // BMC Bioinformatics. — 2007. — Vol. 8. — Art. 25. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://link.springer.com/article/10.1186/1471-2105-8-25">https://link.springer.com/article/10.1186/1471-2105-8-25</a>. — DOI: 10.1186/1471-2105-8-25.</p>
+</li>
+<li>
+<p>Breiman, L. Bagging Predictors [Электрондық ресурс] / L. Breiman // Machine Learning. — 1996. — Vol. 24, no. 2. — P. 123–140. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://doi.org/10.1007/BF00058655">https://doi.org/10.1007/BF00058655</a>. — DOI: 10.1007/BF00058655.</p>
+</li>
+<li>
+<p>Breiman, L. Random Forests [Электрондық ресурс] / L. Breiman // Machine Learning. — 2001. — Vol. 45. — P. 5–32. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://doi.org/10.1023/A:1010933404324">https://doi.org/10.1023/A:1010933404324</a>. — DOI: 10.1023/A:1010933404324.</p>
+</li>
+<li>
+<p>CatBoost [Электрондық ресурс] : Unbiased Boosting with Categorical Features / L. Prokhorenkova, G. Gusev, A. Vorobev [et al.] // Advances in Neural Information Processing Systems. — 2018. — Vol. 31. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper_files/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html">https://proceedings.neurips.cc/paper_files/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Chen, T. XGBoost [Электрондық ресурс] : A Scalable Tree Boosting System / T. Chen, C. Guestrin // Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. — ACM, 2016. — P. 785–794. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://doi.org/10.1145/2939672.2939785">https://doi.org/10.1145/2939672.2939785</a>. — DOI: 10.1145/2939672.2939785.</p>
+</li>
+<li>
+<p>Conditional variable importance for random forests [Электрондық ресурс] / C. Strobl, A.-L. Boulesteix, T. Kneib [et al.] // BMC Bioinformatics. — 2008. — Vol. 9. — Art. 307. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://doi.org/10.1186/1471-2105-9-307">https://doi.org/10.1186/1471-2105-9-307</a>. — DOI: 10.1186/1471-2105-9-307.</p>
+</li>
+<li>
+<p>Dempster, A. P. Maximum Likelihood from Incomplete Data Via the EM Algorithm [Электрондық ресурс] / A. P. Dempster, N. M. Laird, D. B. Rubin // Journal of the Royal Statistical Society: Series B (Methodological). — 1977. — Vol. 39, no. 1. — P. 1–22. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://academic.oup.com/jrsssb/article/39/1/1/7027539">https://academic.oup.com/jrsssb/article/39/1/1/7027539</a>. — DOI: 10.1111/j.2517-6161.1977.tb01600.x.</p>
+</li>
+<li>
+<p>Distributed Representations of Words and Phrases and their Compositionality [Электрондық ресурс] / T. Mikolov, I. Sutskever, K. Chen [et al.] // Advances in Neural Information Processing Systems. — 2013. — Vol. 26. — P. 3111–3119. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper_files/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html">https://proceedings.neurips.cc/paper_files/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Domain Adaptation under Target and Conditional Shift [Электрондық ресурс] / K. Zhang, B. Schölkopf, K. Muandet, Z. Wang // Proceedings of the 30th International Conference on Machine Learning. — 2013. — Vol. 28, no. 3. — P. 819–827. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.mlr.press/v28/zhang13d.html">https://proceedings.mlr.press/v28/zhang13d.html</a>.</p>
+</li>
+<li>
+<p>Efficient Estimation of Word Representations in Vector Space [Электрондық ресурс] / T. Mikolov, K. Chen, G. Corrado, J. Dean // arXiv. — 2013. — No. 1301.3781. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://arxiv.org/abs/1301.3781">https://arxiv.org/abs/1301.3781</a>. — DOI: 10.48550/arXiv.1301.3781.</p>
+</li>
+<li>
+<p>Enriching Word Vectors with Subword Information [Электрондық ресурс] / P. Bojanowski, E. Grave, A. Joulin, T. Mikolov // Transactions of the Association for Computational Linguistics. — 2017. — Vol. 5. — P. 135–146. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://aclanthology.org/Q17-1010/">https://aclanthology.org/Q17-1010/</a>. — DOI: 10.1162/tacl_a_00051.</p>
+</li>
+<li>
+<p>Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer [Электрондық ресурс] / C. Raffel, N. Shazeer, A. Roberts [et al.] // Journal of Machine Learning Research. — 2020. — Vol. 21, no. 140. — P. 1–67. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://www.jmlr.org/papers/v21/20-074.html">https://www.jmlr.org/papers/v21/20-074.html</a>.</p>
+</li>
+<li>
+<p>Fisher, A. All Models are Wrong, but Many are Useful [Электрондық ресурс] : Learning a Variable’s Importance by Studying an Entire Class of Prediction Models Simultaneously / A. Fisher, C. Rudin, F. Dominici // Journal of Machine Learning Research. — 2019. — Vol. 20, no. 177. — P. 1–81. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://www.jmlr.org/papers/v20/18-760.html">https://www.jmlr.org/papers/v20/18-760.html</a>.</p>
+</li>
+<li>
+<p>Freund, Y. A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting [Электрондық ресурс] / Y. Freund, R. E. Schapire // Journal of Computer and System Sciences. — 1997. — Vol. 55, no. 1. — P. 119–139. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://doi.org/10.1006/jcss.1997.1504">https://doi.org/10.1006/jcss.1997.1504</a>. — DOI: 10.1006/jcss.1997.1504.</p>
+</li>
+<li>
+<p>Friedman, J. H. Greedy Function Approximation [Электрондық ресурс] : A Gradient Boosting Machine / J. H. Friedman // The Annals of Statistics. — 2001. — Vol. 29, no. 5. — P. 1189–1232. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://doi.org/10.1214/aos/1013203451">https://doi.org/10.1214/aos/1013203451</a>. — DOI: 10.1214/aos/1013203451.</p>
+</li>
+<li>
+<p>From Group to Individual Labels using Deep Features [Электрондық ресурс] / D. Kotzias, M. Denil, N. de Freitas, P. Smyth // Proceedings of the 21st ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. — 2015. — P. 597–606. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://doi.org/10.1145/2783258.2783380">https://doi.org/10.1145/2783258.2783380</a>. — DOI: 10.1145/2783258.2783380.</p>
+</li>
+<li>
+<p>From local explanations to global understanding with explainable AI for trees [Электрондық ресурс] / S. M. Lundberg, G. Erion, H. Chen [et al.] // Nature Machine Intelligence. — 2020. — Vol. 2. — P. 56–67. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://doi.org/10.1038/s42256-019-0138-9">https://doi.org/10.1038/s42256-019-0138-9</a>. — DOI: 10.1038/s42256-019-0138-9.</p>
+</li>
+<li>
+<p>Geifman, Y. Selective Classification for Deep Neural Networks [Электрондық ресурс] / Y. Geifman, R. El-Yaniv // Advances in Neural Information Processing Systems. — 2017. — Vol. 30. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html">https://proceedings.neurips.cc/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Generative Adversarial Nets [Электрондық ресурс] / I. Goodfellow, J. Pouget-Abadie, M. Mirza [et al.] // Advances in Neural Information Processing Systems. — 2014. — Vol. 27. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html">https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Hardt, M. Equality of Opportunity in Supervised Learning [Электрондық ресурс] / M. Hardt, E. Price, N. Srebro // Advances in Neural Information Processing Systems. — 2016. — Vol. 29. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://papers.neurips.cc/paper_files/paper/2016/hash/6a9659feb1216f14f7384ba499518b38-Abstract.html">https://papers.neurips.cc/paper_files/paper/2016/hash/6a9659feb1216f14f7384ba499518b38-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Hidden Technical Debt in Machine Learning Systems [Электрондық ресурс] / D. Sculley, G. Holt, D. Golovin [et al.] // Advances in Neural Information Processing Systems. — 2015. — Vol. 28. — P. 2503–2511. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html">https://proceedings.neurips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Ho, J. Denoising Diffusion Probabilistic Models [Электрондық ресурс] / J. Ho, A. N. Jain, P. Abbeel // Advances in Neural Information Processing Systems. — 2020. — Vol. 33. — P. 6840–6851. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html">https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html</a>.</p>
+</li>
+<li>
+<p>How transferable are features in deep neural networks? [Электрондық ресурс] / J. Yosinski, J. Clune, Y. Bengio, H. Lipson // Advances in Neural Information Processing Systems. — 2014. — Vol. 27. — P. 3320–3328. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper_files/paper/2014/hash/532a2f85b6977104bc93f8580abbb330-Abstract.html">https://proceedings.neurips.cc/paper_files/paper/2014/hash/532a2f85b6977104bc93f8580abbb330-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Hyndman, R. J. Another look at measures of forecast accuracy [Электрондық ресурс] / R. J. Hyndman, A. B. Koehler // International Journal of Forecasting. — 2006. — Vol. 22, no. 4. — P. 679–688. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://doi.org/10.1016/j.ijforecast.2006.03.001">https://doi.org/10.1016/j.ijforecast.2006.03.001</a>. — DOI: 10.1016/j.ijforecast.2006.03.001.</p>
+</li>
+<li>
+<p>Hyndman, R. J. Forecasting [Электрондық ресурс] : Principles and Practice / R. J. Hyndman, G. Athanasopoulos. — 3rd ed. — Melbourne : OTexts, 2021. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://otexts.com/fpp3/">https://otexts.com/fpp3/</a>.</p>
+</li>
+<li>
+<p>Janzing, D. Feature relevance quantification in explainable AI [Электрондық ресурс] : A causal problem / D. Janzing, L. Minorics, P. Blöbaum // Proceedings of Machine Learning Research. — 2020. — Vol. 108. — P. 2907–2916. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://proceedings.mlr.press/v108/janzing20a.html">https://proceedings.mlr.press/v108/janzing20a.html</a>.</p>
+</li>
+<li>
+<p>Kingma, D. P. Auto-Encoding Variational Bayes [Электрондық ресурс] / D. P. Kingma, M. Welling // International Conference on Learning Representations. — 2014. — Препринт arXiv № 1312.6114. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://arxiv.org/abs/1312.6114">https://arxiv.org/abs/1312.6114</a>. — DOI: 10.48550/arXiv.1312.6114.</p>
+</li>
+<li>
+<p>Krizhevsky, A. ImageNet Classification with Deep Convolutional Neural Networks [Электрондық ресурс] / A. Krizhevsky, I. Sutskever, G. E. Hinton // Advances in Neural Information Processing Systems. — 2012. — Vol. 25. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html">https://proceedings.neurips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Li, X. Explicit Inductive Bias for Transfer Learning with Convolutional Networks [Электрондық ресурс] / X. Li, Y. Grandvalet, F. Davoine // Proceedings of the 35th International Conference on Machine Learning. — 2018. — Vol. 80. — P. 2825–2834. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.mlr.press/v80/li18a.html">https://proceedings.mlr.press/v80/li18a.html</a>.</p>
+</li>
+<li>
+<p>LightGBM [Электрондық ресурс] : A Highly Efficient Gradient Boosting Decision Tree / G. Ke, Q. Meng, T. Finley [et al.] // Advances in Neural Information Processing Systems. — 2017. — Vol. 30. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper_files/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html">https://proceedings.neurips.cc/paper_files/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html</a>.</p>
+</li>
+<li>
+<p>LoRA [Электрондық ресурс] : Low-Rank Adaptation of Large Language Models / E. J. Hu, Y. Shen, P. Wallis [et al.] // International Conference on Learning Representations. — 2022. — Препринт arXiv № 2106.09685. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://arxiv.org/abs/2106.09685">https://arxiv.org/abs/2106.09685</a>. — DOI: 10.48550/arXiv.2106.09685.</p>
+</li>
+<li>
+<p>Lundberg, S. M. A Unified Approach to Interpreting Model Predictions [Электрондық ресурс] / S. M. Lundberg, S.-I. Lee // Advances in Neural Information Processing Systems. — 2017. — Vol. 30. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html">https://proceedings.neurips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html</a>.</p>
+</li>
+<li>
+<p>Lundberg, S. M. Consistent Individualized Feature Attribution for Tree Ensembles [Электрондық ресурс] / S. M. Lundberg, G. G. Erion, S.-I. Lee // arXiv. — 2018. — No. 1802.03888, revised 2019. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://arxiv.org/abs/1802.03888">https://arxiv.org/abs/1802.03888</a>. — DOI: 10.48550/arXiv.1802.03888.</p>
+</li>
+<li>
+<p>Not What You’ve Signed Up For [Электрондық ресурс] : Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection / K. Greshake, S. Abdelnabi, S. Mishra [et al.] // Proceedings of the 16th ACM Workshop on Artificial Intelligence and Security. — 2023. — P. 79–90. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://arxiv.org/abs/2302.12173">https://arxiv.org/abs/2302.12173</a>. — DOI: 10.1145/3605764.3623985.</p>
+</li>
+<li>
+<p>On the Opportunities and Risks of Foundation Models [Электрондық ресурс] / R. Bommasani, D. A. Hudson, E. Adeli [et al.] // arXiv. — 2021. — No. 2108.07258. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://arxiv.org/abs/2108.07258">https://arxiv.org/abs/2108.07258</a>. — DOI: 10.48550/arXiv.2108.07258.</p>
+</li>
+<li>
+<p>Overcoming catastrophic forgetting in neural networks [Электрондық ресурс] / J. Kirkpatrick, R. Pascanu, N. Rabinowitz [et al.] // Proceedings of the National Academy of Sciences. — 2017. — Vol. 114, no. 13. — P. 3521–3526. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://doi.org/10.1073/pnas.1611835114">https://doi.org/10.1073/pnas.1611835114</a>. — DOI: 10.1073/pnas.1611835114.</p>
+</li>
+<li>
+<p>Pan, S. J. A Survey on Transfer Learning [Электрондық ресурс] / S. J. Pan, Q. Yang // IEEE Transactions on Knowledge and Data Engineering. — 2010. — Vol. 22, no. 10. — P. 1345–1359. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://doi.org/10.1109/TKDE.2009.191">https://doi.org/10.1109/TKDE.2009.191</a>. — DOI: 10.1109/TKDE.2009.191.</p>
+</li>
+<li>
+<p>Parameter-Efficient Transfer Learning for NLP [Электрондық ресурс] / N. Houlsby, A. Giurgiu, S. Jastrzebski [et al.] // Proceedings of the 36th International Conference on Machine Learning. — 2019. — Vol. 97. — P. 2790–2799. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.mlr.press/v97/houlsby19a.html">https://proceedings.mlr.press/v97/houlsby19a.html</a>.</p>
+</li>
+<li>
+<p>Quantifying Language Models’ Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting [Электрондық ресурс] / M. Sclar, Y. Choi, Y. Tsvetkov, A. Suhr // International Conference on Learning Representations. — 2024. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/6c0e99d736da621403018ca7b32b1a4d-Abstract-Conference.html">https://proceedings.iclr.cc/paper_files/paper/2024/hash/6c0e99d736da621403018ca7b32b1a4d-Abstract-Conference.html</a>.</p>
+</li>
+<li>
+<p>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks [Электрондық ресурс] / P. Lewis, E. Perez, A. Piktus [et al.] // Advances in Neural Information Processing Systems. — 2020. — Vol. 33. — P. 9459–9474. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://arxiv.org/abs/2005.11401">https://arxiv.org/abs/2005.11401</a>. — DOI: 10.48550/arXiv.2005.11401.</p>
+</li>
+<li>
+<p>Rosenblatt, F. The Perceptron [Электрондық ресурс] : A Probabilistic Model for Information Storage and Organization in the Brain / F. Rosenblatt // Psychological Review. — 1958. — Vol. 65, no. 6. — P. 386–408. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://web.stanford.edu/class/psych209a/ReadingsByDate/01_30/Rosenblatt58Perceptron.pdf">https://web.stanford.edu/class/psych209a/ReadingsByDate/01_30/Rosenblatt58Perceptron.pdf</a>. — DOI: 10.1037/h0042519.</p>
+</li>
+<li>
+<p>Rumelhart, D. E. Learning Representations by Back-propagating Errors [Электрондық ресурс] / D. E. Rumelhart, G. E. Hinton, R. J. Williams // Nature. — 1986. — Vol. 323. — P. 533–536. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://www.nature.com/articles/323533a0">https://www.nature.com/articles/323533a0</a>. — DOI: 10.1038/323533a0.</p>
+</li>
+<li>
+<p>Salton, G. Term-weighting approaches in automatic text retrieval [Электрондық ресурс] / G. Salton, C. Buckley // Information Processing &amp; Management. — 1988. — Vol. 24, no. 5. — P. 513–523. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://doi.org/10.1016/0306-4573%2888%2990021-0">https://doi.org/10.1016/0306-4573%2888%2990021-0</a>. — DOI: 10.1016/0306-4573(88)90021-0.</p>
+</li>
+<li>
+<p>Scaling Instruction-Finetuned Language Models [Электрондық ресурс] / H. W. Chung, L. Hou, S. Longpre [et al.] // Journal of Machine Learning Research. — 2024. — Vol. 25, no. 70. — P. 1–53. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://jmlr.org/papers/v25/23-0870.html">https://jmlr.org/papers/v25/23-0870.html</a>.</p>
+</li>
+<li>
+<p>Snoek, J. Practical Bayesian Optimization of Machine Learning Algorithms [Электрондық ресурс] / J. Snoek, H. Larochelle, R. P. Adams // Advances in Neural Information Processing Systems. — 2012. — Vol. 25. — P. 2951–2959. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://proceedings.neurips.cc/paper_files/paper/2012/hash/05311655a15b75fab86956663e1819cd-Abstract.html">https://proceedings.neurips.cc/paper_files/paper/2012/hash/05311655a15b75fab86956663e1819cd-Abstract.html</a>.</p>
+</li>
+<li>
+<p>SqueezeNet [Электрондық ресурс] : AlexNet-level accuracy with 50x fewer parameters and &lt;0.5MB model size / F. N. Iandola, S. Han, M. W. Moskewicz [et al.] // arXiv. — 2016. — No. 1602.07360. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://arxiv.org/abs/1602.07360">https://arxiv.org/abs/1602.07360</a>. — DOI: 10.48550/arXiv.1602.07360.</p>
+</li>
+<li>
+<p>Tabassi, E. Artificial Intelligence Risk Management Framework (AI RMF 1.0) [Электрондық ресурс] / E. Tabassi. — Gaithersburg : National Institute of Standards and Technology, 2023. — NIST AI 100-1. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://doi.org/10.6028/NIST.AI.100-1">https://doi.org/10.6028/NIST.AI.100-1</a>. — DOI: 10.6028/NIST.AI.100-1.</p>
+</li>
+<li>
+<p>Tashman, L. J. Out-of-sample tests of forecasting accuracy [Электрондық ресурс] : an analysis and review / L. J. Tashman // International Journal of Forecasting. — 2000. — Vol. 16, no. 4. — P. 437–450. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://doi.org/10.1016/S0169-2070%2800%2900065-0">https://doi.org/10.1016/S0169-2070(00)00065-0</a>. — DOI: 10.1016/S0169-2070(00)00065-0.</p>
+</li>
+<li>
+<p>The Curious Case of Neural Text Degeneration [Электрондық ресурс] / A. Holtzman, J. Buys, L. Du [et al.] // International Conference on Learning Representations. — 2020. — Препринт arXiv № 1904.09751. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://arxiv.org/abs/1904.09751">https://arxiv.org/abs/1904.09751</a>. — DOI: 10.48550/arXiv.1904.09751.</p>
+</li>
+<li>
+<p>The ML Test Score [Электрондық ресурс] : A Rubric for ML Production Readiness and Technical Debt Reduction / E. Breck, S. Cai, E. Nielsen [et al.] // 2017 IEEE International Conference on Big Data. — P. 1123–1132. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/">https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/</a>. — DOI: 10.1109/BigData.2017.8258038.</p>
+</li>
+<li>
+<p>The Selective Labels Problem [Электрондық ресурс] : Evaluating Algorithmic Predictions in the Presence of Unobservables / H. Lakkaraju, J. Kleinberg, J. Leskovec [et al.] // Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. — 2017. — P. 275–284. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://cs.stanford.edu/~jure/pubs/contraction-kdd17.pdf">https://cs.stanford.edu/~jure/pubs/contraction-kdd17.pdf</a>. — DOI: 10.1145/3097983.3098066.</p>
+</li>
+<li>
+<p>Yurdakul, B. Statistical properties of the population stability index [Электрондық ресурс] / B. Yurdakul, J. Naranjo // Journal of Risk Model Validation. — 2020. — Vol. 14, no. 4. — P. 89–100. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://files.wmich.edu/s3fs-public/attachments/u730/2022/PSIfinal.pdf">https://files.wmich.edu/s3fs-public/attachments/u730/2022/PSIfinal.pdf</a>. — DOI: 10.21314/JRMV.2020.227.</p>
+</li>
+</ol>
+<h2 id="section-4">Деректер мен алдын ала оқытылған модельдің дереккөздері</h2>
+<ol start="64">
+<li>
+<p>Aeberhard, S. Wine [Электрондық ресурс] / S. Aeberhard, M. Forina. — UCI Machine Learning Repository, 1992. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://archive.ics.uci.edu/dataset/109/wine">https://archive.ics.uci.edu/dataset/109/wine</a>. — DOI: 10.24432/C5PC7J.</p>
+</li>
+<li>
+<p>Alpaydin, E. Optical Recognition of Handwritten Digits [Электрондық ресурс] / E. Alpaydin, C. Kaynak. — UCI Machine Learning Repository, 1998. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://archive.ics.uci.edu/dataset/80/optical%2Brecognition%2Bof%2Bhandwritten%2Bdigits">https://archive.ics.uci.edu/dataset/80/optical%2Brecognition%2Bof%2Bhandwritten%2Bdigits</a>. — DOI: 10.24432/C50P49.</p>
+</li>
+<li>
+<p>Breast Cancer Wisconsin (Diagnostic) [Электрондық ресурс] / W. Wolberg, O. Mangasarian, N. Street, W. Street. — UCI Machine Learning Repository, 1993. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic</a>. — DOI: 10.24432/C5DW2B.</p>
+</li>
+<li>
+<p>Fisher, R. Iris [Электрондық ресурс] / R. Fisher. — UCI Machine Learning Repository, 1936. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://archive.ics.uci.edu/dataset/53/iris">https://archive.ics.uci.edu/dataset/53/iris</a>. — DOI: 10.24432/C56C76.</p>
+</li>
+<li>
+<p>Kotzias, D. Sentiment Labelled Sentences [Электрондық ресурс] / D. Kotzias. — UCI Machine Learning Repository, 2015. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://archive.ics.uci.edu/dataset/331/sentiment%2Blabelled%2Bsentences">https://archive.ics.uci.edu/dataset/331/sentiment%2Blabelled%2Bsentences</a>. — DOI: 10.24432/C57604.</p>
+</li>
+<li>
+<p>Model Card for FLAN-T5 small [Электрондық ресурс] / Hugging Face team // Hugging Face. — Репозиторий модели Google. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://huggingface.co/google/flan-t5-small">https://huggingface.co/google/flan-t5-small</a>.</p>
+</li>
+</ol>
+<h2 id="section-5">Құжаттама және техникалық анықтамалықтар</h2>
+<ol start="70">
+<li>
+<p>Autograd mechanics [Электрондық ресурс] // PyTorch 2.9 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://docs.pytorch.org/docs/2.9/notes/autograd.html">https://docs.pytorch.org/docs/2.9/notes/autograd.html</a>.</p>
+</li>
+<li>
+<p>Backend Stores [Электрондық ресурс] // MLflow documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://mlflow.org/docs/latest/self-hosting/architecture/backend-store/">https://mlflow.org/docs/latest/self-hosting/architecture/backend-store/</a>.</p>
+</li>
+<li>
+<p>CatBoostClassifier [Электрондық ресурс] // CatBoost documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://catboost.ai/docs/en/concepts/python-reference_catboostclassifier">https://catboost.ai/docs/en/concepts/python-reference_catboostclassifier</a>.</p>
+</li>
+<li>
+<p>Clustering [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/clustering.html">https://scikit-learn.org/stable/modules/clustering.html</a>.</p>
+</li>
+<li>
+<p>Common pitfalls and recommended practices [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/common_pitfalls.html">https://scikit-learn.org/stable/common_pitfalls.html</a>.</p>
+</li>
+<li>
+<p>compute_class_weight [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.class_weight.compute_class_weight.html">https://scikit-learn.org/stable/modules/generated/sklearn.utils.class_weight.compute_class_weight.html</a>.</p>
+</li>
+<li>
+<p>Cross-validation [Электрондық ресурс] : evaluating estimator performance // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/cross_validation.html">https://scikit-learn.org/stable/modules/cross_validation.html</a>.</p>
+</li>
+<li>
+<p>CrossEntropyLoss [Электрондық ресурс] // PyTorch documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://docs.pytorch.org/docs/main/generated/torch.nn.CrossEntropyLoss.html">https://docs.pytorch.org/docs/main/generated/torch.nn.CrossEntropyLoss.html</a>.</p>
+</li>
+<li>
+<p>Decision Trees [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/tree.html">https://scikit-learn.org/stable/modules/tree.html</a>.</p>
+</li>
+<li>
+<p>Early stopping of Stochastic Gradient Descent [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_early_stopping.html">https://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_early_stopping.html</a>.</p>
+</li>
+<li>
+<p>Ensembles [Электрондық ресурс] : gradient boosting, random forests, bagging, voting, stacking // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/ensemble.html">https://scikit-learn.org/stable/modules/ensemble.html</a>.</p>
+</li>
+<li>
+<p>Exogenous variables in forecasting [Электрондық ресурс] // Skforecast 0.26.0 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://skforecast.org/latest/user_guides/exogenous-variables.html">https://skforecast.org/latest/user_guides/exogenous-variables.html</a>.</p>
+</li>
+<li>
+<p>Gaussian mixture models [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/mixture.html">https://scikit-learn.org/stable/modules/mixture.html</a>.</p>
+</li>
+<li>
+<p>Gaussian Processes [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/gaussian_process.html">https://scikit-learn.org/stable/modules/gaussian_process.html</a>.</p>
+</li>
+<li>
+<p>Generation [Электрондық ресурс] // Hugging Face Transformers 4.57.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://huggingface.co/docs/transformers/v4.57.1/en/main_classes/text_generation">https://huggingface.co/docs/transformers/v4.57.1/en/main_classes/text_generation</a>.</p>
+</li>
+<li>
+<p>Getting Started [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/getting_started.html">https://scikit-learn.org/stable/getting_started.html</a>.</p>
+</li>
+<li>
+<p>GridSearchCV [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html">https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html</a>.</p>
+</li>
+<li>
+<p>http.server — HTTP servers [Электрондық ресурс] // Python 3.12 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://docs.python.org/3.12/library/http.server.html">https://docs.python.org/3.12/library/http.server.html</a>.</p>
+</li>
+<li>
+<p>Imputation of missing values [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/impute.html">https://scikit-learn.org/stable/modules/impute.html</a>.</p>
+</li>
+<li>
+<p>ks_2samp [Электрондық ресурс] // SciPy Manual. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html</a>.</p>
+</li>
+<li>
+<p>Lagged features for time series forecasting [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html">https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html</a>.</p>
+</li>
+<li>
+<p>Linear Models [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/linear_model.html">https://scikit-learn.org/stable/modules/linear_model.html</a>.</p>
+</li>
+<li>
+<p>linkage [Электрондық ресурс] // SciPy v1.18.0 Manual. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html</a>.</p>
+</li>
+<li>
+<p>load_digits [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html">https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html</a>.</p>
+</li>
+<li>
+<p>Metrics and scoring [Электрондық ресурс] : quantifying the quality of predictions // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/model_evaluation.html">https://scikit-learn.org/stable/modules/model_evaluation.html</a>.</p>
+</li>
+<li>
+<p>ML Experiment Tracking [Электрондық ресурс] // MLflow documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://mlflow.org/docs/latest/ml/tracking/">https://mlflow.org/docs/latest/ml/tracking/</a>.</p>
+</li>
+<li>
+<p>MLflow 3.5.1 [Электрондық ресурс] // MLflow release notes. — 2025. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://github.com/mlflow/mlflow/releases/tag/v3.5.1">https://github.com/mlflow/mlflow/releases/tag/v3.5.1</a>.</p>
+</li>
+<li>
+<p>MLflow Model Registry [Электрондық ресурс] // MLflow documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://mlflow.org/docs/latest/ml/model-registry/">https://mlflow.org/docs/latest/ml/model-registry/</a>.</p>
+</li>
+<li>
+<p>Model persistence [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/model_persistence.html">https://scikit-learn.org/stable/model_persistence.html</a>.</p>
+</li>
+<li>
+<p>Models and pre-trained weights [Электрондық ресурс] // TorchVision 0.24 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://docs.pytorch.org/vision/0.24/models.html">https://docs.pytorch.org/vision/0.24/models.html</a>.</p>
+</li>
+<li>
+<p>MultiOutputRegressor [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputRegressor.html">https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputRegressor.html</a>.</p>
+</li>
+<li>
+<p>Naive Bayes [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/naive_bayes.html">https://scikit-learn.org/stable/modules/naive_bayes.html</a>.</p>
+</li>
+<li>
+<p>Nearest Neighbors [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/neighbors.html">https://scikit-learn.org/stable/modules/neighbors.html</a>.</p>
+</li>
+<li>
+<p>NMF [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.NMF.html">https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.NMF.html</a>.</p>
+</li>
+<li>
+<p>Over-sampling [Электрондық ресурс] // Imbalanced-learn 0.14.2 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://imbalanced-learn.org/stable/over_sampling.html">https://imbalanced-learn.org/stable/over_sampling.html</a>.</p>
+</li>
+<li>
+<p>pandas.DataFrame.resample [Электрондық ресурс] // Pandas documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.resample.html">https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.resample.html</a>.</p>
+</li>
+<li>
+<p>pandas.Series.shift [Электрондық ресурс] // Pandas documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.shift.html">https://pandas.pydata.org/docs/reference/api/pandas.Series.shift.html</a>.</p>
+</li>
+<li>
+<p>Parameters [Электрондық ресурс] // LightGBM 4.7.0 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://lightgbm.readthedocs.io/en/stable/Parameters.html">https://lightgbm.readthedocs.io/en/stable/Parameters.html</a>.</p>
+</li>
+<li>
+<p>Partial Dependence and Individual Conditional Expectation plots [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/partial_dependence.html">https://scikit-learn.org/stable/modules/partial_dependence.html</a>.</p>
+</li>
+<li>
+<p>PCA [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html">https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html</a>.</p>
+</li>
+<li>
+<p>Permutation feature importance [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/permutation_importance.html">https://scikit-learn.org/stable/modules/permutation_importance.html</a>.</p>
+</li>
+<li>
+<p>Permutation Importance with Multicollinear or Correlated Features [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/auto_examples/inspection/plot_permutation_importance_multicollinear.html">https://scikit-learn.org/stable/auto_examples/inspection/plot_permutation_importance_multicollinear.html</a>.</p>
+</li>
+<li>
+<p>Pipeline [Электрондық ресурс] // Imbalanced-learn 0.14.2 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://imbalanced-learn.org/stable/references/generated/imblearn.pipeline.Pipeline.html">https://imbalanced-learn.org/stable/references/generated/imblearn.pipeline.Pipeline.html</a>.</p>
+</li>
+<li>
+<p>Pipelines and composite estimators [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/compose.html">https://scikit-learn.org/stable/modules/compose.html</a>.</p>
+</li>
+<li>
+<p>Preprocessing data [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/preprocessing.html">https://scikit-learn.org/stable/modules/preprocessing.html</a>.</p>
+</li>
+<li>
+<p>Probability calibration [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/calibration.html">https://scikit-learn.org/stable/modules/calibration.html</a>.</p>
+</li>
+<li>
+<p>RandomForestClassifier [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html</a>.</p>
+</li>
+<li>
+<p>RandomizedSearchCV [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html">https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html</a>.</p>
+</li>
+<li>
+<p>Rolling/Time series forecasting [Электрондық ресурс] // tsfresh documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://tsfresh.readthedocs.io/en/latest/text/forecasting.html">https://tsfresh.readthedocs.io/en/latest/text/forecasting.html</a>.</p>
+</li>
+<li>
+<p>scipy.stats.loguniform [Электрондық ресурс] // SciPy v1.18.0 Manual. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.loguniform.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.loguniform.html</a>.</p>
+</li>
+<li>
+<p>shap.TreeExplainer [Электрондық ресурс] // SHAP documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://shap.readthedocs.io/en/latest/generated/shap.TreeExplainer.html">https://shap.readthedocs.io/en/latest/generated/shap.TreeExplainer.html</a>.</p>
+</li>
+<li>
+<p>squeezenet1_1 [Электрондық ресурс] // TorchVision 0.24 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://docs.pytorch.org/vision/0.24/models/generated/torchvision.models.squeezenet1_1.html">https://docs.pytorch.org/vision/0.24/models/generated/torchvision.models.squeezenet1_1.html</a>.</p>
+</li>
+<li>
+<p>StackingClassifier [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html">https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html</a>.</p>
+</li>
+<li>
+<p>StratifiedGroupKFold [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedGroupKFold.html">https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedGroupKFold.html</a>.</p>
+</li>
+<li>
+<p>Support Vector Machines [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/svm.html">https://scikit-learn.org/stable/modules/svm.html</a>.</p>
+</li>
+<li>
+<p>Text feature extraction [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction">https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction</a>.</p>
+</li>
+<li>
+<p>TfidfTransformer [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html">https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html</a>.</p>
+</li>
+<li>
+<p>Timely Stream Processing [Электрондық ресурс] // Apache Flink documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/">https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/time/</a>.</p>
+</li>
+<li>
+<p>TimeSeriesSplit [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html">https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html</a>.</p>
+</li>
+<li>
+<p>torch.optim [Электрондық ресурс] // PyTorch 2.9 documentation. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://docs.pytorch.org/docs/2.9/optim.html">https://docs.pytorch.org/docs/2.9/optim.html</a>.</p>
+</li>
+<li>
+<p>Transfer Learning for Computer Vision Tutorial [Электрондық ресурс] // PyTorch Tutorials. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html">https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html</a>.</p>
+</li>
+<li>
+<p>Tuning the decision threshold for class prediction [Электрондық ресурс] // Scikit-learn 1.9.1 documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://scikit-learn.org/stable/modules/classification_threshold.html">https://scikit-learn.org/stable/modules/classification_threshold.html</a>.</p>
+</li>
+<li>
+<p>Unicode Normalization Forms [Электрондық ресурс] : Unicode Standard Annex 15. — Unicode Consortium. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://www.unicode.org/reports/tr15/">https://www.unicode.org/reports/tr15/</a>.</p>
+</li>
+<li>
+<p>Unicode Text Segmentation [Электрондық ресурс] : Unicode Standard Annex 29. — Unicode Consortium. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://www.unicode.org/reports/tr29/">https://www.unicode.org/reports/tr29/</a>.</p>
+</li>
+<li>
+<p>Word2Vec [Электрондық ресурс] // Gensim 4.4.0 source code and API docstrings. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://github.com/piskvorky/gensim/blob/4.4.0/gensim/models/word2vec.py">https://github.com/piskvorky/gensim/blob/4.4.0/gensim/models/word2vec.py</a>.</p>
+</li>
+<li>
+<p>XGBoost Parameters [Электрондық ресурс] // XGBoost documentation. — [қаралған күні 2026-11-05]. — Қолжетімділік: <a href="https://xgboost.readthedocs.io/en/stable/parameter.html">https://xgboost.readthedocs.io/en/stable/parameter.html</a>.</p>
+</li>
+<li>
+<p>Zinkevich, M. Rules of Machine Learning [Электрондық ресурс] : Best Practices for ML Engineering / M. Zinkevich // Google for Developers. — [қаралған күні 2026-11-06]. — Қолжетімділік: <a href="https://developers.google.com/machine-learning/guides/rules-of-ml">https://developers.google.com/machine-learning/guides/rules-of-ml</a>.</p>
+</li>
+</ol>
+<h2 id="section-6">Курстың ішкі материалдары</h2>
+<ol start="137">
+<li>
+<p>Силлабус дисциплины «Машинное обучение» на 2026–2027 учебный год [Электрондық ресурс] : курстың орысша және қазақша материалдары. — Әл-Фараби атындағы Қазақ ұлттық университеті. — Курстың ішкі материалдары.</p>
+</li>
+<li>
+<p>Машинное обучение. Лекции 1–6, лабораторные работы 1–6 и задание СРС 1 [Электрондық ресурс] : авторлық оқу-әдістемелік материалдар. — Әл-Фараби атындағы Қазақ ұлттық университеті, 2026–2027 оқу жылы. — Курстың ішкі материалдары.</p>
+</li>
+<li>
+<p>Машинное обучение. Архив лекций, лабораторных и семинарских материалов [Электрондық ресурс] : авторлық оқу-әдістемелік материалдар. — Әл-Фараби атындағы Қазақ ұлттық университеті, 2024–2025 оқу жылы. — Курстың ішкі материалдары.</p>
+</li>
+<li>
+<p>Лабораторные работы и наборы синтетических данных к настоящему учебнику [Электрондық ресурс] : электрондық жинақ файлдары. — Авторлық оқу материалдары.</p>
+</li>
+</ol></article><section class="search-panel" aria-label="Мазмұннан іздеу">
+<label for="search-input">Оқулықтан іздеу</label>
+<div class="search-row"><input id="search-input" type="search" placeholder="Ұғымды немесе бөлім атауын енгізіңіз" autocomplete="off"></div>
+<p class="muted" id="search-status" aria-live="polite">Іздеу үшін кемінде екі таңба енгізіңіз.</p>
+<ul class="search-results" id="search-results"></ul></section><footer class="footer">Әл-Фараби атындағы ҚазҰУ · Оспан Әсел Ғалымжанқызы · 2026
+<p>Қазақша жұмыс басылымы. Оқу материалдары авторлық ғылыми редакцияға арналған.</p></footer></main></div>
+<div class="sr-only" id="action-status" aria-live="polite"></div>
+<script type="application/json" id="course-data">[{"id": "ch01", "questionIds": ["ch01_q01", "ch01_q02", "ch01_q03", "ch01_q04", "ch01_q05", "ch01_q06", "ch01_q07", "ch01_q08", "ch01_q09", "ch01_q10", "ch01_q11", "ch01_q12", "ch01_q13", "ch01_q14", "ch01_q15"]}, {"id": "ch02", "questionIds": ["ch02_q01", "ch02_q02", "ch02_q03", "ch02_q04", "ch02_q05", "ch02_q06", "ch02_q07", "ch02_q08", "ch02_q09", "ch02_q10", "ch02_q11", "ch02_q12", "ch02_q13", "ch02_q14", "ch02_q15"]}, {"id": "ch03", "questionIds": ["ch03_q01", "ch03_q02", "ch03_q03", "ch03_q04", "ch03_q05", "ch03_q06", "ch03_q07", "ch03_q08", "ch03_q09", "ch03_q10", "ch03_q11", "ch03_q12", "ch03_q13", "ch03_q14", "ch03_q15"]}, {"id": "ch04", "questionIds": ["ch04_q01", "ch04_q02", "ch04_q03", "ch04_q04", "ch04_q05", "ch04_q06", "ch04_q07", "ch04_q08", "ch04_q09", "ch04_q10", "ch04_q11", "ch04_q12", "ch04_q13", "ch04_q14", "ch04_q15"]}, {"id": "ch05", "questionIds": ["ch05_q01", "ch05_q02", "ch05_q03", "ch05_q04", "ch05_q05", "ch05_q06", "ch05_q07", "ch05_q08", "ch05_q09", "ch05_q10", "ch05_q11", "ch05_q12", "ch05_q13", "ch05_q14", "ch05_q15"]}, {"id": "ch06", "questionIds": ["ch06_q01", "ch06_q02", "ch06_q03", "ch06_q04", "ch06_q05", "ch06_q06", "ch06_q07", "ch06_q08", "ch06_q09", "ch06_q10", "ch06_q11", "ch06_q12", "ch06_q13", "ch06_q14", "ch06_q15"]}, {"id": "ch07", "questionIds": ["ch07_q01", "ch07_q02", "ch07_q03", "ch07_q04", "ch07_q05", "ch07_q06", "ch07_q07", "ch07_q08", "ch07_q09", "ch07_q10", "ch07_q11", "ch07_q12", "ch07_q13", "ch07_q14", "ch07_q15"]}, {"id": "ch08", "questionIds": ["ch08_q01", "ch08_q02", "ch08_q03", "ch08_q04", "ch08_q05", "ch08_q06", "ch08_q07", "ch08_q08", "ch08_q09", "ch08_q10", "ch08_q11", "ch08_q12", "ch08_q13", "ch08_q14", "ch08_q15"]}, {"id": "ch09", "questionIds": ["ch09_q01", "ch09_q02", "ch09_q03", "ch09_q04", "ch09_q05", "ch09_q06", "ch09_q07", "ch09_q08", "ch09_q09", "ch09_q10", "ch09_q11", "ch09_q12", "ch09_q13", "ch09_q14", "ch09_q15"]}, {"id": "ch10", "questionIds": ["ch10_q01", "ch10_q02", "ch10_q03", "ch10_q04", "ch10_q05", "ch10_q06", "ch10_q07", "ch10_q08", "ch10_q09", "ch10_q10", "ch10_q11", "ch10_q12", "ch10_q13", "ch10_q14", "ch10_q15"]}, {"id": "ch11", "questionIds": ["ch11_q01", "ch11_q02", "ch11_q03", "ch11_q04", "ch11_q05", "ch11_q06", "ch11_q07", "ch11_q08", "ch11_q09", "ch11_q10", "ch11_q11", "ch11_q12", "ch11_q13", "ch11_q14", "ch11_q15"]}, {"id": "ch12", "questionIds": ["ch12_q01", "ch12_q02", "ch12_q03", "ch12_q04", "ch12_q05", "ch12_q06", "ch12_q07", "ch12_q08", "ch12_q09", "ch12_q10", "ch12_q11", "ch12_q12", "ch12_q13", "ch12_q14", "ch12_q15"]}, {"id": "ch13", "questionIds": ["ch13_q01", "ch13_q02", "ch13_q03", "ch13_q04", "ch13_q05", "ch13_q06", "ch13_q07", "ch13_q08", "ch13_q09", "ch13_q10", "ch13_q11", "ch13_q12", "ch13_q13", "ch13_q14", "ch13_q15"]}, {"id": "ch14", "questionIds": ["ch14_q01", "ch14_q02", "ch14_q03", "ch14_q04", "ch14_q05", "ch14_q06", "ch14_q07", "ch14_q08", "ch14_q09", "ch14_q10", "ch14_q11", "ch14_q12", "ch14_q13", "ch14_q14", "ch14_q15"]}, {"id": "ch15", "questionIds": ["ch15_q01", "ch15_q02", "ch15_q03", "ch15_q04", "ch15_q05", "ch15_q06", "ch15_q07", "ch15_q08", "ch15_q09", "ch15_q10", "ch15_q11", "ch15_q12", "ch15_q13", "ch15_q14", "ch15_q15"]}]</script>
+<script src="Web/search-index.js"></script><script src="Web/quiz.js"></script><script src="Web/reader.js"></script><script src="Web/demos.js"></script>
+</body></html>

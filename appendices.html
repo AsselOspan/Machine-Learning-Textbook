@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Қорытынды, қосымшалар және көрсеткіштер · Машиналық оқыту</title><link rel="stylesheet" href="Web/reader.css">
+<link rel="stylesheet" href="Web/visuals.css">
+</head><body data-chapter="" data-root="">
+<a class="skip" href="#main">Негізгі мазмұнға өту</a>
+<header class="topbar"><a class="brand" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 7h12l3 4 3-4h12v25H23l-3 3-3-3H5Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 12v22M10 15h5m-5 6h5m10-6h5m-5 6h5" stroke="currentColor" stroke-width="2"/></svg><span>Машиналық оқыту</span></a>
+<nav class="top-actions" aria-label="Жылдам әрекеттер"><a href="glossary.html">Терминдер</a>
+<button type="button" data-open-search>Іздеу</button><button type="button" data-theme-toggle aria-pressed="false">Қараңғы тақырып</button>
+<button class="menu-toggle" type="button" data-menu-toggle aria-controls="reader-menu" aria-expanded="false">Мәзір</button></nav></header>
+<div class="layout"><aside class="sidebar" id="reader-menu"><h2>Оқулық мазмұны</h2><h2>I модуль</h2><ol><li><a href="Оқулық/Тарау_01/index.html"><span class="number">01</span>Машиналық оқытуға кіріспе. Негізгі міндеттер, әдістер және ML жүйесін құру кезеңдері</a></li><li><a href="Оқулық/Тарау_02/index.html"><span class="number">02</span>Машиналық оқыту үшін деректерді дайындау және алдын ала өңдеу</a></li><li><a href="Оқулық/Тарау_03/index.html"><span class="number">03</span>Сызықтық модельдер. Сызықтық, полиномдық және логистикалық регрессия</a></li><li><a href="Оқулық/Тарау_04/index.html"><span class="number">04</span>Жіктеу әдістері. k-NN, шешім ағаштары, SVM және Random Forest</a></li><li><a href="Оқулық/Тарау_05/index.html"><span class="number">05</span>Машиналық оқыту модельдерінің сапасын бағалау және валидация</a></li></ol><h2>II модуль</h2><ol><li><a href="Оқулық/Тарау_06/index.html"><span class="number">06</span>Шамадан тыс үйрену, регуляризация және теңгерімсіз деректер</a></li><li><a href="Оқулық/Тарау_07/index.html"><span class="number">07</span>Модельдерді оңтайландыру және гиперпараметрлерді баптау</a></li><li><a href="Оқулық/Тарау_08/index.html"><span class="number">08</span>Мұғалімсіз оқыту. Кластерлеу және өлшемділікті азайту</a></li><li><a href="Оқулық/Тарау_09/index.html"><span class="number">09</span>Ансамбльдік әдістер және градиенттік бустинг</a></li><li><a href="Оқулық/Тарау_10/index.html"><span class="number">10</span>Машиналық оқыту модельдерін түсіндіру</a></li></ol><h2>III модуль</h2><ol><li><a href="Оқулық/Тарау_11/index.html"><span class="number">11</span>Уақыт қатарларын машиналық оқыту және болжау</a></li><li><a href="Оқулық/Тарау_12/index.html"><span class="number">12</span>Мәтіндік деректерді машиналық оқыту және векторлық ұсыну</a></li><li><a href="Оқулық/Тарау_13/index.html"><span class="number">13</span>Алдын ала оқытылған модельдер, эмбеддингтер және білімді тасымалдау</a></li><li><a href="Оқулық/Тарау_14/index.html"><span class="number">14</span>Модельдің өмірлік циклі. Сақтау, өрістету және мониторинг</a></li><li><a href="Оқулық/Тарау_15/index.html"><span class="number">15</span>Заманауи бағыттар. Іргелі модельдер, генеративті модельдер және жауапты ЖИ</a></li></ol><h2>Анықтамалық материалдар</h2><ul><li><a href="visuals.html">Сызбалар мен анимациялар</a></li><li><a href="introduction.html">Алғысөз және оқу нұсқаулығы</a></li><li><a href="syllabus.html">Силлабус картасы</a></li><li><a href="projects.html">Біріктіруші жобалар</a></li><li><a href="glossary.html">Үштілді терминдер сөздігі</a></li><li><a href="datasets.html">Деректер картасы</a></li><li><a href="appendices.html">Қорытынды, қосымшалар және көрсеткіштер</a></li><li><a href="references.html">Әдебиеттер тізімі</a></li><li><a href="guide.html">Электрондық оқулықты пайдалану</a></li></ul></aside><main id="main" class="workspace">
+<nav class="breadcrumbs" aria-label="Орналасу жолы"><a href="index.html">Оқулық</a><span>/</span><span>Қорытынды, қосымшалар және көрсеткіштер</span></nav>
+<article class="chapter-content"><h1 id="section-1">Қорытынды</h1>
+<p>Оқулықтың бірінші бөлігінде модель қолданбалы сұраққа тексерілетін жауап ретінде қарастырылды. Ол үшін бақылау нысанын, мақсатты айнымалыны, белгілер алынатын сәтті және қате критерийін анықтау қажет болды. Деректерді бөлу мен базалық модель салыстыруды мазмұнды етті. Сызықтық әдістермен, ағаштармен және тірек векторлар әдісімен жұмыс істегенде бір деректер әртүрлі ұсынулар мен болжау ережелерін берді. Оларды салыстыруға алдын ала анықталған әрекет, мысалы бекітілген шек пен қателердің белгілі салдары жағдайындағы жіктеу көмектесті.</p>
+<p>Екінші бөлікте оқыту үдерісінің өзін өзгерттік. Регуляризация модель күрделілігін шектеді, гиперпараметрлерді таңдау бөлек тексеруді талап етті, ал ансамбльдер шешімдерді біріктіруге мүмкіндік берді. Кластерлеуде бағалау есебі өзгерді: нәтиже геометрияға, масштабқа және ұқсастық критерийіне тәуелді. Белгілер маңыздылығы мен Шепли мәндерін талдағанда түсіндірме нақты нені, қандай деректерде және қандай шкалада өлшейтінін нақтылау қажет болды.</p>
+<p>Үшінші бөлікте кірістерге, шығыстарға және оларды алу уақытына қойылатын талаптар өзгерді. Болжау үшін болжам шығарылатын сәт пен көкжиек маңызды. Мәтін үшін бөлу бірлігі мен сөздікті құру тәсілі маңызды. Білімді тасымалдауда параметрлерді қатыру мен оқытудың салыстыруға келетін режімдері қарастырылады. Өрістетуден кейін нұсқалар, белгілердің қолжетімділігі және кірістердің тұрақтылығы бақыланады. Генеративті жүйеде факт, дереккөз және жауап беру немесе жауаптан бас тарту шешімі тексеріледі.</p>
+<p>Үш жобада бір модельдің қойылымы мен базалық шешімінен бастап бағалауына және нәтижелерді тапсыруына дейінгі жолын бақылауға болады. Осындай жоба есебі деректер құрамын, эксперимент баптауларын, алынған нәтижені және шешім жарамды болатын жағдайларды қалпына келтіруге мүмкіндік беруі тиіс. Жүйенің белгілі бір қасиеті әлі тексерілуі қажет болса, қандай бақылаулар керектігін және тексеру қорытындысы бойынша шешімдер қалай қабылданатынын көрсетіңіз.</p>
+<h1 id="section-2">Жалпы глоссарий</h1>
+<p>Түпнұсқа құрылымын сақтау үшін терминдер бастапқы орысша атауларының әліпбилік ретімен берілген. Ағылшынша балама мақалалар мен құжаттамадан тиісті ұғымды табуға көмектеседі. Анықтама соңындағы нөмір түсіндірмеге немесе есептеу мысалына апарады. Үш тілдегі баламалар «Терминдер сөздігі» кестесінде келтірілген.</p>
+<ul>
+<li><strong>Абляция</strong> (ablation) — жүйе құрамдасының байқалған нәтижеге қосқан үлесін өлшеу үшін оны бақыланатын түрде өзгерту. <a href="Оқулық/Тарау_13/index.html#heading_ch13_06">§ 13.6</a></li>
+<li><strong>Адаптер</strong> (adapter) — мақсатты есепке бейімдеу үшін алдын ала оқытылған негізге қосылатын шағын үйретілетін модуль. <a href="Оқулық/Тарау_13/index.html#heading_ch13_05">§ 13.5</a></li>
+<li><strong>Аддитивті модель</strong> (additive model) — шығысы қосылғыштардың, мысалы бустингтің тізбекті түзетулерінің қосындысы түрінде берілетін модель. <a href="Оқулық/Тарау_09/index.html#heading_ch09_04">§ 9.4</a></li>
+<li><strong>Ансамбль</strong> (ensemble) — бірнеше модель және олардың жауаптарын қорытынды шығысқа түрлендіретін ереже. <a href="Оқулық/Тарау_09/index.html#heading_ch09_02">§ 9.2</a></li>
+<li><strong>Модель артефактісі</strong> (model artifact) — модельді қолдануға немесе тексеруге қажет сақталатын нысан, мысалы оқытылған конвейер немесе белгілер сұлбасы. <a href="Оқулық/Тарау_14/index.html#heading_ch14_03">§ 14.3</a></li>
+<li><strong>Салыстыруға арналған базалық модель</strong> (baseline) — кейінгі күрделендірудің пайдасы бағаланатын қарапайым шешім. <a href="Оқулық/Тарау_01/index.html#heading_ch01_07">§ 1.7</a></li>
+<li><strong>Іргелі модель</strong> (foundation model) — кейінгі әртүрлі есептерге бейімдеу үшін ауқымды деректерде оқытылған модель. <a href="Оқулық/Тарау_15/index.html#heading_ch15_02">§ 15.2</a></li>
+<li><strong>Байестік оңтайландыру</strong> (Bayesian optimization) — жауап моделі мен иемдену функциясының көмегімен кандидаттарды тізбектей таңдау. <a href="Оқулық/Тарау_07/index.html#heading_ch07_04">§ 7.4</a></li>
+<li><strong>Биграмма</strong> (bigram) — тізбектің көршілес екі элементінен, мысалы екі токеннен тұратын жұп. <a href="Оқулық/Тарау_12/index.html#heading_ch12_03">§ 12.3</a></li>
+<li><strong>Үлкен тілдік модель</strong> (large language model, LLM) — тізбектерді модельдеу үшін үлкен ауқымда оқытылған тілдік модель. <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a></li>
+<li><strong>Бустинг</strong> (boosting) — жаңа құрамдасы ағымдағы ансамбльді немесе нысандардың салмақтарын ескере отырып таңдалатын ансамбльді қадамдап құру. <a href="Оқулық/Тарау_09/index.html#heading_ch09_04">§ 9.4</a></li>
+<li><strong>Бутстреп жиыны</strong> (bootstrap sample) — бақылауларды қайтарумен қайта-қайта кездейсоқ таңдау арқылы алынған жиын. <a href="Оқулық/Тарау_09/index.html#heading_ch09_02">§ 9.2</a></li>
+<li><strong>Бэггинг</strong> (bagging) — құрамдастарды жеке бутстреп жиындарында оқытып, кейін олардың жауаптарын біріктіру. <a href="Оқулық/Тарау_09/index.html#heading_ch09_02">§ 9.2</a></li>
+<li><strong>Валидациялық жиын</strong> (validation set) — баптауларды, шешім ережелерін немесе оқытуды тоқтату сәтін таңдауға арналған әзірлеу деректері. <a href="Оқулық/Тарау_05/index.html#heading_ch05_05">§ 5.5</a></li>
+<li><strong>Класс салмақтары</strong> (class weights) — әртүрлі кластардағы нысандар қателерінің оқыту мақсатына қосатын үлесін өзгертетін көбейткіштер. <a href="Оқулық/Тарау_06/index.html#heading_ch06_06">§ 6.6</a></li>
+<li><strong>Кірістірілген айқас тексеру</strong> (nested cross-validation) — ішкі бөліністер баптауға, ал сыртқы бөліністер бүкіл рәсімді бағалауға қызмет ететін сұлба. <a href="Оқулық/Тарау_07/index.html#heading_ch07_05">§ 7.5</a></li>
+<li><strong>Болжаудың сыртқы белгісі</strong> (exogenous feature) — болжам шығарылатын сәтте рұқсат етілген мәні, болжамы немесе сценарийі бар болса, болжауға қолданылатын қосымша шама. <a href="Оқулық/Тарау_11/index.html#heading_ch11_05">§ 11.5</a></li>
+<li><strong>Оқиға уақыты</strong> (event time) — бақылау қатысты болатын уақыт. Жазбаның жүйеге түсу уақыты одан өзгеше болуы мүмкін. <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a></li>
+<li><strong>Таңдамалы тәуекел</strong> (selective risk) — қамту оң болғанда жауап берілген сұраулар арасындағы орташа шығын. <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a></li>
+<li><strong>Гиперпараметр</strong> (hyperparameter) — берілген модельдің параметрлерін сәйкестендіру рәсімінен тыс анықталатын оқыту немесе ұсыну баптауы. <a href="Оқулық/Тарау_07/index.html#heading_ch07_02">§ 7.2</a></li>
+<li><strong>Бас құраушы</strong> (principal component) — орталанған деректердің өзгергіштігі мен ортогоналдық шарттары бойынша анықталатын сызықтық бағыт. <a href="Оқулық/Тарау_08/index.html#heading_ch08_06">§ 8.6</a></li>
+<li><strong>Болжау көкжиегі</strong> (forecast horizon) — болжам шығарылған сәттен мақсатты сәтке дейінгі қадамдар саны. <a href="Оқулық/Тарау_11/index.html#heading_ch11_02">§ 11.2</a></li>
+<li><strong>Градиент</strong> (gradient) — функцияның аргументтері бойынша дербес туындыларының векторы. <a href="Оқулық/Тарау_03/index.html#heading_ch03_04">§ 3.4</a></li>
+<li><strong>Топтық бөлу</strong> (grouped split) — бір топтың нысандары берілген бөліністің әр жағына түспейтіндей етіп деректерді бөлу. <a href="Оқулық/Тарау_05/index.html#heading_ch05_06">§ 5.6</a></li>
+<li><strong>Декодтау</strong> (decoding) — модельдің шартты үлестірімдері бойынша шығыс тізбегін құру ережесі. <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a></li>
+<li><strong>Демографиялық паритет</strong> (demographic parity) — салыстырылатын топтардағы нысандар арасында оң шешімдер үлестерінің теңдігі. <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a></li>
+<li><strong>Шешім ағашы</strong> (decision tree) — белгілер кеңістігін тізбектей бөлетін және соңғы түйінде болжам беретін модель. <a href="Оқулық/Тарау_04/index.html#heading_ch04_03">§ 4.3</a></li>
+<li><strong>Кластардың теңгерімсіздігі</strong> (class imbalance) — деректердегі кластар өкілдігінің елеулі айырмашылығы. <a href="Оқулық/Тарау_06/index.html#heading_ch06_06">§ 6.6</a></li>
+<li><strong>Диффузиялық модель</strong> (diffusion model) — шу қосудың берілген сұлбасына кері үдерісті пайдаланатын генеративті модель. <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a></li>
+<li><strong>Лаг ұзындығы</strong> (lag length) — ағымдағы сәттен өткен бақылауға дейінгі шегініс. <a href="Оқулық/Тарау_11/index.html#heading_ch11_03">§ 11.3</a></li>
+<li><strong>Түсіндірілген дисперсия үлесі</strong> (explained variance ratio) — таңдалған құраушы дисперсиясының белгілердің сол ұсынуындағы толық дисперсияға қатынасы. <a href="Оқулық/Тарау_08/index.html#heading_ch08_06">§ 8.6</a></li>
+<li><strong>Алдын ала оқытылған модельді қосымша оқыту</strong> (fine-tuning) — алдын ала оқытылған модель параметрлерінің бір бөлігін немесе барлығын мақсатты есепке қосымша үйрету. <a href="Оқулық/Тарау_13/index.html#heading_ch13_05">§ 13.5</a></li>
+<li><strong>Ашкөз декодтау</strong> (greedy decoding) — әр қадамда рұқсат етілген токендердің ішінен ықтималдығы ең үлкенін таңдау. <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a></li>
+<li><strong>Параметрлерді қатыру</strong> (parameter freezing) — таңдалған параметрлерді оқыту кезіндегі жаңартулардан алып тастау. Қабаттар режімі мен буферлердің жаңартылуы бөлек бақыланады. <a href="Оқулық/Тарау_13/index.html#heading_ch13_04">§ 13.4</a></li>
+<li><strong>Кешіккен белгі</strong> (delayed label) — тиісті болжам шығарылғаннан кейін алынатын бақыланған нәтиже. <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a></li>
+<li><strong>Жетіспейтін мәндерді толықтыру</strong> (imputation) — болжам жасауға қолданылғанда параметрлері оқыту деректерінде бағаланатын ереже бойынша мәндерді қою. <a href="Оқулық/Тарау_02/index.html#heading_ch02_04">§ 2.4</a></li>
+<li><strong>Шепли мәні</strong> (Shapley value) — таңдалған ойындағы қалған қатысушылардың ішкі жиындары бойынша қатысушының шекті үлестерінің салмақталған орташа мәні. <a href="Оқулық/Тарау_10/index.html#heading_ch10_05">§ 10.5</a></li>
+<li><strong>Іздеумен толықтырылған генерация</strong> (retrieval-augmented generation, RAG) — генерация сыртқы топтамадан іздеу арқылы алынған мәліметтерді пайдаланатын жүйелер тобы. <a href="Оқулық/Тарау_15/index.html#heading_ch15_04">§ 15.4</a></li>
+<li><strong>Жетіспеу индикаторы</strong> (missingness indicator) — бастапқы мәннің бақыланғанын не бақыланбағанын көрсететін екілік белгі. <a href="Оқулық/Тарау_02/index.html#heading_ch02_04">§ 2.4</a></li>
+<li><strong>Модельді түсіндіру</strong> (model interpretation) — айқын берілген контексте модельдің құрылымын, жауабын немесе мінез-құлқын сипаттау. <a href="Оқулық/Тарау_10/index.html#heading_ch10_02">§ 10.2</a></li>
+<li><strong>Ықтималдықтарды калибрлеу</strong> (probability calibration) — берілген хаттама бойынша ықтималдық болжамдарды оқиғалардың бақыланған жиіліктерімен сәйкестендіру. <a href="Оқулық/Тарау_05/index.html#heading_ch05_04">§ 5.4</a></li>
+<li><strong>Кластерлеу</strong> (clustering) — нысандарды берілген ұқсастық, тығыздық критерийі немесе ықтималдық моделі бойынша топтау. <a href="Оқулық/Тарау_08/index.html#heading_ch08">тарау 8</a></li>
+<li><strong>Конвейер</strong> (pipeline) — берілген ретпен оқытылатын және қолданылатын түрлендірулер мен модельдің композициясы. <a href="Оқулық/Тарау_02/index.html#heading_ch02_08">§ 2.8</a></li>
+<li><strong>Контекстік эмбеддинг</strong> (contextual embedding) — айналасындағы тізбек өзгергенде өзгеруі мүмкін токен ұсынуы. <a href="Оқулық/Тарау_12/index.html#heading_ch12_05">§ 12.5</a></li>
+<li><strong>Қызмет көрсету келісімшарты</strong> (serving contract) — рұқсат етілген және рұқсат етілмеген сұраулар үшін сервистің кірісін, шығысын және мінез-құлқын сипаттайтын талаптар. <a href="Оқулық/Тарау_14/index.html#heading_ch14_04">§ 14.4</a></li>
+<li><strong>Нұсқауды жанама енгізу</strong> (indirect prompt injection) — контекске берілген сыртқы материал арқылы модель әрекетіне немесе жауабына ықпал ету әрекеті. <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a></li>
+<li><strong>Косинустық ұқсастық</strong> (cosine similarity) — нөлдік емес екі вектордың скаляр көбейтіндісінің олардың нормаларының көбейтіндісіне қатынасы. <a href="Оқулық/Тарау_12/index.html#heading_ch12_04">§ 12.4</a></li>
+<li><strong>Айқас тексеру</strong> (cross-validation) — нәтижелерді біріктіру ережесі алдын ала анықталған бірнеше бөлініс бойынша қайталама оқыту және тексеру. <a href="Оқулық/Тарау_05/index.html#heading_ch05_05">§ 5.5</a></li>
+<li><strong>Сызықтық сынама</strong> (linear probe) — негізі бекітілген ұсынуларда сызықтық басты оқыту. <a href="Оқулық/Тарау_13/index.html#heading_ch13_03">§ 13.3</a></li>
+<li><strong>Логит</strong> (logit) — екілік ықтималдық моделінде шанс логарифмі; көпкласты модельде бұл термин softmax алдындағы бағалауды да білдіреді. <a href="Оқулық/Тарау_03/index.html#heading_ch03_07">§ 3.7</a>, <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a></li>
+<li><strong>Макроорташалау</strong> (macro averaging) — әр кластың салмағы бірдей болатын кластық метрикалардың орташа мәні. <a href="Оқулық/Тарау_05/index.html#heading_ch05_02">§ 5.2</a></li>
+<li><strong>Масштабтау</strong> (scaling) — белгілердің ауқымын немесе шашырауын реттеу үшін оларды түрлендіру. <a href="Оқулық/Тарау_02/index.html#heading_ch02_06">§ 2.6</a></li>
+<li><strong>Қателер матрицасы</strong> (confusion matrix) — шынайы және болжанған класс жұптары бойынша бақылаулар санының кестесі. <a href="Оқулық/Тарау_05/index.html#heading_ch05_02">§ 5.2</a></li>
+<li><strong>Силуэт коэффициенті</strong> (silhouette coefficient) — таңдалған метрика бойынша нысанның өз кластерімен үйлесімділігін ең жақын басқа кластермен салыстыратын салыстырмалы баға. <a href="Оқулық/Тарау_08/index.html#heading_ch08_07">§ 8.7</a></li>
+<li><strong>Ең кіші квадраттар әдісі</strong> (ordinary least squares, OLS) — қалдықтар квадраттарының қосындысын азайту арқылы коэффициенттерді бағалау. <a href="Оқулық/Тарау_03/index.html#heading_ch03_03">§ 3.3</a></li>
+<li><strong>Мониторинг</strong> (monitoring) — әрекет ету шарттары берілген жұмыс істеп тұрған жүйенің қасиеттерін тұрақты өлшеу. <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a></li>
+<li><strong>Бақылау</strong> (observation) — белгілер және қажет болса мақсатты мән анықталатын нысан немесе жазба. <a href="Оқулық/Тарау_01/index.html#heading_ch01_02">§ 1.2</a></li>
+<li><strong>Жалпылау</strong> (generalization) — оқытылған рәсімнің берілген жағдайларда жаңа бақылауларда пайдалы сапаны сақтау қабілеті. <a href="Оқулық/Тарау_01/index.html#heading_ch01_06">§ 1.6</a></li>
+<li><strong>Мұғалімсіз оқыту</strong> (unsupervised learning) — оқыту есебінде мақсатты белгілерсіз деректер құрылымын немесе ұсынуын құру. <a href="Оқулық/Тарау_08/index.html#heading_ch08">тарау 8</a></li>
+<li><strong>Мұғаліммен оқыту</strong> (supervised learning) — мақсатты мәндері бар мысалдар бойынша оқыту. <a href="Оқулық/Тарау_01/index.html#heading_ch01_04">§ 1.4</a></li>
+<li><strong>Бутстреп жиынынан тыс нысан</strong> (out-of-bag, OOB) — ансамбльдің нақты құрамдасының оқыту жиынында жоқ нысан. <a href="Оқулық/Тарау_09/index.html#heading_ch09_03">§ 9.3</a></li>
+<li><strong>Күтілетін жақсару</strong> (expected improvement) — жауаптың ықтималдық моделіне сәйкес тірек мәннен орташа оң өсім. <a href="Оқулық/Тарау_07/index.html#heading_ch07_04">§ 7.4</a></li>
+<li><strong>Қалдық</strong> (residual) — азайту реті көрсетілген бақыланған және болжанған мәндердің айырмасы. <a href="Оқулық/Тарау_03/index.html#heading_ch03_06">§ 3.6</a></li>
+<li><strong>Қамту</strong> (coverage) — таңдамалы жауап беруде жауап алынған сұраулардың үлесі немесе мониторингте белгілері қолжетімді болжамдардың үлесі. Бөлім есепке тәуелді. <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a>, <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a></li>
+<li><strong>Модель параметрі</strong> (model parameter) — болжам функциясын анықтайтын шама, мысалы сызықтық модель коэффициенті. <a href="Оқулық/Тарау_01/index.html#heading_ch01_03">§ 1.3</a></li>
+<li><strong>Білімді тасымалдау</strong> (transfer learning) — бастапқы есепте немесе деректерде алынған білімді мақсатты есепте пайдалану. <a href="Оқулық/Тарау_13/index.html#heading_ch13_02">§ 13.2</a></li>
+<li><strong>Шамадан тыс үйрену</strong> (overfitting) — жаңа бақылаулардағы сапаны нашарлататын оқыту деректерінің ерекшеліктеріне сәйкестену. <a href="Оқулық/Тарау_06/index.html#heading_ch06_02">§ 6.2</a></li>
+<li><strong>Алмастыру маңыздылығы</strong> (permutation feature importance, PFI) — белгінің немесе белгілер тобының мәндерін кездейсоқ алмастырғаннан кейін бекітілген модель сапасының өзгеруі. <a href="Оқулық/Тарау_10/index.html#heading_ch10_04">§ 10.4</a></li>
+<li><strong>Оң класты анықтау толықтығы</strong> (recall) — шынайы оң нысандар арасындағы дұрыс табылған нысандардың үлесі. <a href="Оқулық/Тарау_05/index.html#heading_ch05_02">§ 5.2</a></li>
+<li><strong>Шешім шегі</strong> (decision threshold) — үздіксіз шығысты әрекетке немесе класқа түрлендіру үшін пайдаланылатын бағалау мәні. <a href="Оқулық/Тарау_05/index.html#heading_ch05_04">§ 5.4</a></li>
+<li><strong>Белгі</strong> (feature) — модель кірісінде қолданылатын өлшенген немесе есептелген шама. <a href="Оқулық/Тарау_01/index.html#heading_ch01_03">§ 1.3</a></li>
+<li><strong>Фолдтан тыс болжам</strong> (out-of-fold prediction, OOF) — тиісті тексеру бөлігісіз оқытылған модельдің нысан үшін жасаған болжамы. <a href="Оқулық/Тарау_05/index.html#heading_ch05_05">§ 5.5</a>, <a href="Оқулық/Тарау_09/index.html#heading_ch09_06">§ 9.6</a></li>
+<li><strong>Проекция</strong> (projection) — векторды таңдалған ішкі кеңістікте немесе оның базис координаталарында ұсыну. <a href="Оқулық/Тарау_08/index.html#heading_ch08_06">§ 8.6</a></li>
+<li><strong>Промпт</strong> (prompt) — нұсқауды, контексті және мысалдарды қамтуы мүмкін кіріс сұрауы. <a href="Оқулық/Тарау_15/index.html#heading_ch15_02">§ 15.2</a></li>
+<li><strong>Мүмкіндіктер теңдігі</strong> (equal opportunity) — салыстырылатын топтардағы шынайы оң нысандар арасында оң шешімдер үлестерінің теңдігі. <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a></li>
+<li><strong>Ерте тоқтату</strong> (early stopping) — әзірлеу деректерінде алдын ала анықталған ереже бойынша оқытуды аяқтау. <a href="Оқулық/Тарау_06/index.html#heading_ch06_05">§ 6.5</a></li>
+<li><strong>Регрессия</strong> (regression) — сандық шаманы болжау есебі. <a href="Оқулық/Тарау_03/index.html#heading_ch03">тарау 3</a></li>
+<li><strong>Регуляризация</strong> (regularization) — күрделілікті шектеу және шешім тұрақтылығын арттыру үшін оқыту мақсатын немесе рәсімін өзгерту. <a href="Оқулық/Тарау_06/index.html#heading_ch06">тарау 6</a></li>
+<li><strong>Рекурсивті болжам</strong> (recursive forecast) — бұрын болжанған мәндер келесі қадамдар үшін модельге берілетін көпқадамды болжам. <a href="Оқулық/Тарау_11/index.html#heading_ch11_05">§ 11.5</a></li>
+<li><strong>Жалпылау тәуекелі</strong> (generalization risk) — рәсімнің көзделген қолданылу үлестіріміндегі күтілетін шығыны. <a href="Оқулық/Тарау_01/index.html#heading_ch01_06">§ 1.6</a></li>
+<li><strong>Өздігінен бақыланатын оқыту</strong> (self-supervised learning) — мақсатты сигнал бастапқы деректердің өзінен алынатын оқыту. <a href="Оқулық/Тарау_15/index.html#heading_ch15_02">§ 15.2</a></li>
+<li><strong>Кіріс деректерінің ығысуы</strong> (covariate shift) — қатаң қойылымда белгілер бойынша мақсаттың шартты үлестірімі сақталып, белгілер үлестірімінің өзгеруі. Кіріс дрейфі сигналының өзі бұл шарттың орындалғанын анықтамайды. <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a></li>
+<li><strong>Тұжырымдаманың ығысуы</strong> (concept drift) — мақсат үлестірімінің белгілерге тәуелділігінің уақыт бойынша өзгеруі. <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a></li>
+<li><strong>Кездейсоқ орман</strong> (random forest) — әртүрлілігі бақылаулар жиындары және кандидат белгілерді кездейсоқ таңдау арқылы сақталатын ағаштар ансамблі. <a href="Оқулық/Тарау_04/index.html#heading_ch04_06">§ 4.6</a>, <a href="Оқулық/Тарау_09/index.html#heading_ch09_03">§ 9.3</a></li>
+<li><strong>Үлестірімдер қоспасы</strong> (mixture model) — құрамдас үлестірімдердің салмақталған қосындысымен берілген үлестірім. <a href="Оқулық/Тарау_08/index.html#heading_ch08_05">§ 8.5</a></li>
+<li><strong>Стандарттау</strong> (standardization) — белгіні орталау және оның масштаб бағасына, мысалы оқыту жиынының стандартты ауытқуына бөлу. <a href="Оқулық/Тарау_02/index.html#heading_ch02_06">§ 2.6</a></li>
+<li><strong>Стекинг</strong> (stacking) — метамодель базалық модельдердің өз оқыту жиындарынан тыс алынған болжамдарын біріктіруді үйренетін ансамбль. <a href="Оқулық/Тарау_09/index.html#heading_ch09_06">§ 9.6</a></li>
+<li><strong>Температура</strong> (temperature) — ықтималдықтарды нормалау алдында логиттер бөлінетін оң сан. <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a></li>
+<li><strong>Тест жиыны</strong> (test set) — модель мен хаттама бекітілгеннен кейінгі қорытынды бағалауға сақталған деректер. <a href="Оқулық/Тарау_05/index.html#heading_ch05_05">§ 5.5</a></li>
+<li><strong>Токен</strong> (token) — тізбек ұсынуының элементі, мысалы сөз, оның бөлігі немесе таңба. <a href="Оқулық/Тарау_12/index.html#heading_ch12_03">§ 12.3</a>, <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a></li>
+<li><strong>Оң болжамның дәлдігі</strong> (precision) — оң болжам берілген нысандар арасындағы шынайы оң нысандардың үлесі. <a href="Оқулық/Тарау_05/index.html#heading_ch05_02">§ 5.2</a></li>
+<li><strong>Деректердің ағып кетуі</strong> (data leakage) — рұқсат етілген болжау немесе тексеру шекараларын бұзатын мәліметтерді оқытуда немесе баптауда пайдалану. <a href="Оқулық/Тарау_01/index.html#heading_ch01_08">§ 1.8</a></li>
+<li><strong>Фолд</strong> (fold) — айқас тексерудің кезекті қадамында модельді тексеруге арналған бөлініс бөлігі. <a href="Оқулық/Тарау_05/index.html#heading_ch05_05">§ 5.5</a></li>
+<li><strong>Шығын функциясы</strong> (loss function) — оқыту мақсатында немесе бағалауда қолданылатын қатенің сандық өлшемі. <a href="Оқулық/Тарау_01/index.html#heading_ch01_05">§ 1.5</a></li>
+<li><strong>Мақсатты айнымалы</strong> (target variable) — болжау немесе оқыту сигналы ретінде пайдалану қажет шама. <a href="Оқулық/Тарау_01/index.html#heading_ch01_02">§ 1.2</a></li>
+<li><strong>Центроид</strong> (centroid) — Евклид кеңістігіндегі топтың орташа орны. <a href="Оқулық/Тарау_08/index.html#heading_ch08_02">§ 8.2</a></li>
+<li><strong>Эмбеддинг</strong> (embedding) — кейінгі есептеулер үшін берілетін немесе үйренілетін нысанның векторлық ұсынуы. <a href="Оқулық/Тарау_12/index.html#heading_ch12_05">§ 12.5</a>, <a href="Оқулық/Тарау_13/index.html#heading_ch13_03">§ 13.3</a></li>
+<li><strong>Класс энтропиясы</strong> (class entropy) — ағаш түйінінің біртексіздік критерийі ретінде қолданылатын класс үлестірімінің белгісіздік өлшемі. <a href="Оқулық/Тарау_04/index.html#heading_ch04_03">§ 4.3</a></li>
+</ul>
+<h1 id="section-3">Қосымшалар</h1>
+<h2 id="section-4">А қосымшасы. Математикалық анықтамалық</h2>
+<h3 id="section-5">Векторлар, шығындар және туындылар</h3>
+<p>X матрицасының жолдары бақылаулар, ал бағандары белгілер болсын. Ұзындықтары бірдей x және z векторларының скаляр көбейтіндісі координаталардың жұптық көбейтінділерін қосады. Евклид нормасы — вектордың өзімен скаляр көбейтіндісінің квадрат түбірі. Қашықтық айырма векторының нормасына тең. Норма квадраты сызықтық регрессияның шығын функциясында, Ridge айыппұлында және k-means критерийінде кездеседі. <a href="Оқулық/Тарау_03/index.html#heading_ch03_02">§ 3.2</a>, <a href="Оқулық/Тарау_06/index.html#heading_ch06_03">§ 6.3</a>, <a href="Оқулық/Тарау_08/index.html#heading_ch08_02">§ 8.2</a></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>&#x027E8;</mi><mi>x</mi><mo>&#x0002C;</mo><mi>z</mi><mi>&#x027E9;</mi><mo>&#x0003D;</mo><munderover><mo>&#x02211;</mo><mrow><mi>j</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>d</mi></mrow></munderover><msub><mi>x</mi><mi>j</mi></msub><msub><mi>z</mi><mi>j</mi></msub><mo>&#x0002C;</mo><mspace width="2em" /><mo fence="false" stretchy="false">&#x02016;</mo><mi>x</mi><msub><mo fence="false" stretchy="false">&#x02016;</mo><mn>2</mn></msub><mo>&#x0003D;</mo><msqrt><mrow><mi>&#x027E8;</mi><mi>x</mi><mo>&#x0002C;</mo><mi>x</mi><mi>&#x027E9;</mi></mrow></msqrt><mo>&#x0002E;</mo></mrow></math></div>
+<p>Xw болжамы үшін мақсатты мәндер векторын y деп белгілейік. Көбейткіші 1/2 болатын орташа квадраттық мақсаттың градиентінде транспонирленген X болады. Басқа нормалау таңдалса, градиент алдындағы көбейткіш өзгереді. Сандарды қоймас бұрын функцияны жазыңыз. <a href="Оқулық/Тарау_03/index.html#heading_ch03_04">§ 3.4</a></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>J</mi><mo stretchy="false">&#x00028;</mo><mi>w</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn><mi>n</mi></mrow></mfrac><mo fence="false" stretchy="false">&#x02016;</mo><mi>X</mi><mi>w</mi><mo>&#x02212;</mo><mi>y</mi><msubsup><mo fence="false" stretchy="false">&#x02016;</mo><mn>2</mn><mn>2</mn></msubsup><mo>&#x0002C;</mo><mspace width="2em" /><msub><mo>&#x02207;</mo><mi>w</mi></msub><mi>J</mi><mo>&#x0003D;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>n</mi></mrow></mfrac><msup><mi>X</mi><mrow><mi>&#x1D5B3;</mi></mrow></msup><mo stretchy="false">&#x00028;</mo><mi>X</mi><mi>w</mi><mo>&#x02212;</mo><mi>y</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002E;</mo></mrow></math></div>
+<p>Градиенттік түсу қадамы оң оқыту жылдамдығына көбейтілген градиентті азайтады. Мақсатқа регуляризатор қосылғанда оның үлесі де ескеріледі. L2 айыппұлы коэффициенттер квадраттарының қосындысына тәуелді. L1 айыппұлы олардың абсолют мәндерінің қосындысына тәуелді. Нөл нүктесінде модульдің кәдімгі туындысы жоқ. <a href="Оқулық/Тарау_06/index.html#heading_ch06_03">§ 6.3</a>, <a href="Оқулық/Тарау_06/index.html#heading_ch06_04">§ 6.4</a></p>
+<h3 id="section-6">Орташа мәндер, ықтималдық және қателер</h3>
+<p>Орталау және ковариация формулаларында бөлімді анықтаңыз. <code>StandardScaler</code> ішінде дисперсия оқыту бақылауларының санына бөлу арқылы есептеледі. 8-тараудағы PCA үшін іріктемелік ковариация матрицасында бақылаулар санынан бір кем сан қолданылады. <a href="Оқулық/Тарау_02/index.html#heading_ch02_06">§ 2.6</a>, <a href="Оқулық/Тарау_08/index.html#heading_ch08_06">§ 8.6</a></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover><mi>x</mi><mo stretchy="true">&#x000AF;</mo></mover><mo>&#x0003D;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>n</mi></mrow></mfrac><munderover><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><msub><mi>x</mi><mi>i</mi></msub><mo>&#x0002C;</mo><mspace width="2em" /><mi>S</mi><mo>&#x0003D;</mo><mfrac><mrow><msubsup><mi>X</mi><mi>c</mi><mrow><mi>&#x1D5B3;</mi></mrow></msubsup><msub><mi>X</mi><mi>c</mi></msub></mrow><mrow><mi>n</mi><mo>&#x02212;</mo><mn>1</mn></mrow></mfrac><mo>&#x0002E;</mo></mrow></math></div>
+<p>Шартты ықтималдық шарттың ықтималдығы оң болғанда анықталады. Екілік логистикалық модельде 1-класс ықтималдығы s логитінен сигмоида арқылы алынады. Көпкласты жағдайда softmax барлық бағалардың экспоненталарын нормалайды. softmax іске асырылғанда сандық тұрақтылық үшін барлық бағадан бір ортақ максимумды азайтуға болады. <a href="Оқулық/Тарау_03/index.html#heading_ch03_07">§ 3.7</a>, <a href="Оқулық/Тарау_03/index.html#heading_ch03_08">§ 3.8</a></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">&#x00028;</mo><mi>A</mi><mo>&#x02223;</mo><mi>B</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mfrac><mrow><mi>P</mi><mo stretchy="false">&#x00028;</mo><mi>A</mi><mo>&#x02229;</mo><mi>B</mi><mo stretchy="false">&#x00029;</mo></mrow><mrow><mi>P</mi><mo stretchy="false">&#x00028;</mo><mi>B</mi><mo stretchy="false">&#x00029;</mo></mrow></mfrac><mo>&#x0002C;</mo><mspace width="2em" /><mi>&#x003C3;</mi><mo stretchy="false">&#x00028;</mo><mi>s</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#x0002B;</mo><mi>exp</mi><mo stretchy="false">&#x00028;</mo><mo>&#x02212;</mo><mi>s</mi><mo stretchy="false">&#x00029;</mo></mrow></mfrac><mo>&#x0002E;</mo></mrow></math></div>
+<p>eᵢ шамасы i-нші нысандағы қалдық болсын. MAE абсолют қателерді орташалайды. RMSE квадраттардың орташа мәнінен түбір шығарады және мақсатты айнымалының өлшем бірлігінде қалады. <a href="Оқулық/Тарау_05/index.html#heading_ch05_02">§ 5.2</a></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>MAE</mo><mo>&#x0003D;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>n</mi></mrow></mfrac><munderover><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mo stretchy="false">&#x0007C;</mo><msub><mi>e</mi><mi>i</mi></msub><mo stretchy="false">&#x0007C;</mo><mo>&#x0002C;</mo><mspace width="2em" /><mo>RMSE</mo><mo>&#x0003D;</mo><msqrt><mrow><mfrac><mrow><mn>1</mn></mrow><mrow><mi>n</mi></mrow></mfrac><msubsup><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></msubsup><msubsup><mi>e</mi><mi>i</mi><mn>2</mn></msubsup></mrow></msqrt><mo>&#x0002E;</mo></mrow></math></div>
+<p>Оң класс үшін precision мен recall әртүрлі бөлімдерді пайдаланады. Бөлім нөлге тең болса, есептеу келісімін бекітіп, оны хабарлаңыз. F1 көрсеткіші санауыштар немесе анықталған екі үлестің гармониялық орташа мәні арқылы өрнектеледі. <a href="Оқулық/Тарау_05/index.html#heading_ch05_02">§ 5.2</a></p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>Precision</mo><mo>&#x0003D;</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>&#x0002B;</mo><mi>F</mi><mi>P</mi></mrow></mfrac><mo>&#x0002C;</mo><mspace width="2em" /><mo>Recall</mo><mo>&#x0003D;</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>&#x0002B;</mo><mi>F</mi><mi>N</mi></mrow></mfrac><mo>&#x0002C;</mo><mspace width="2em" /><msub><mi>F</mi><mn>1</mn></msub><mo>&#x0003D;</mo><mfrac><mrow><mn>2</mn><mi>T</mi><mi>P</mi></mrow><mrow><mn>2</mn><mi>T</mi><mi>P</mi><mo>&#x0002B;</mo><mi>F</mi><mi>P</mi><mo>&#x0002B;</mo><mi>F</mi><mi>N</mi></mrow></mfrac><mo>&#x0002E;</mo></mrow></math></div>
+<h2 id="section-7">Б қосымшасы. Python және scikit-learn анықтамалығы</h2>
+<p>Қажетті зертханалық жұмыстың талаптар файлындағы тәуелділіктерді орнатыңыз. Блокнотта <code>sys.executable</code> жолын тексеріңіз. Ол кітапханалар орнатылған интерпретаторға апаруы тиіс. Скрипт деректерді жинақ каталогынан оқыса, жолды оның түбіріне қатысты анықтаңыз немесе жұмыс нұсқаулығында көрсетілген орта айнымалысын пайдаланыңыз.</p>
+<table>
+<thead>
+<tr>
+<th>Амал</th>
+<th>Құрал</th>
+<th>Не салыстырылады</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Кестені ашу</td>
+<td><code>pandas.read_csv</code>, <code>Path</code></td>
+<td>Кодтау, бөлгіш, баған атаулары, типтер, жолдар саны мен реті</td>
+</tr>
+<tr>
+<td>Жетіспейтін мәндерді тексеру</td>
+<td><code>DataFrame.isna</code>, <code>Series.value_counts</code></td>
+<td>Жетіспеудің жеке белгіленімдері және белгінің рұқсат етілген мәндері</td>
+</tr>
+<tr>
+<td>Сандық массивті дайындау</td>
+<td><code>np.asarray</code>, <code>X.shape</code>, <code>X.dtype</code></td>
+<td>Матрицалық амалдарға дейін бақылаулардың жолдарда орналасуы және сандық тип</td>
+</tr>
+<tr>
+<td>Кездейсоқ тәжірибені қайталау</td>
+<td><code>np.random.default_rng</code>, <code>random_state</code></td>
+<td>Бастапқы күйлер, қадамдар реті және кітапхана нұсқалары</td>
+</tr>
+<tr>
+<td>Деректерді бөлу</td>
+<td><code>train_test_split</code>, <code>GroupKFold</code>, <code>TimeSeriesSplit</code></td>
+<td>Бөлу бірлігі, күндер реті және белгілер мен мақсатты мәндердің қолжетімділігі</td>
+</tr>
+<tr>
+<td>Түрлендірулерді біріктіру</td>
+<td><code>Pipeline</code>, <code>ColumnTransformer</code></td>
+<td>Бағандар құрамы, <code>fit</code> тек train ішінде, жаңа санаттарды өңдеу</td>
+</tr>
+<tr>
+<td>Болжам алу</td>
+<td><code>predict</code>, <code>predict_proba</code>, <code>decision_function</code></td>
+<td><code>classes_</code> ішіндегі кластар, шығыс шкаласы және ықтималдық бағандарының реті</td>
+</tr>
+<tr>
+<td>Нәтижені бағалау</td>
+<td><code>confusion_matrix</code>, <code>f1_score</code>, <code>mean_absolute_error</code></td>
+<td>Белгілердің айқын реті, орташалау режімі және бөлімдер</td>
+</tr>
+<tr>
+<td>Гиперпараметрлерді баптау</td>
+<td><code>GridSearchCV</code>, <code>RandomizedSearchCV</code></td>
+<td>Іздеу кеңістігі, CV ережесі, метрика, <code>refit</code> және оқыту саны</td>
+</tr>
+<tr>
+<td>Алмастыру маңыздылығын тексеру</td>
+<td><code>permutation_importance</code></td>
+<td>Бекітілген модель, тәуелсіз жиын, метрика және қайталаулар</td>
+</tr>
+<tr>
+<td>Іске қосу деректерін сақтау</td>
+<td><code>json.dump</code>, <code>DataFrame.to_csv</code></td>
+<td>Нәтижелер жанындағы сандар, бөліністер, нұсқалар және қызметтік өрістер</td>
+</tr>
+</tbody>
+</table>
+<p>Кестелік есепке арналған ең қысқа реттілік. X және y айнымалылары белгілер кестесі мен мақсат векторын білдіреді. Мысалда тәуелсіз бақылаулары және сандық белгілері бар екілік жіктеу қарастырылады. Топтармен немесе уақыт қатарларымен жұмыс істегенде бөлу сұлбасын есепке сәйкес түрімен ауыстырыңыз.</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">2026</span>
+<span class="p">)</span>
+<span class="n">pipeline</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">LogisticRegression</span><span class="p">())</span>
+<span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+
+<p>Гиперпараметр немесе шек таңдау қажет болса, оны әзірлеу деректерінің ішінде таңдап, қорытынды бағалауға дейін баптауларды бекітіңіз. Аралас бағандар үшін сандық және санаттық түрлендіру тармақтарын пайдаланыңыз. <a href="Оқулық/Тарау_02/index.html#heading_ch02_08">§ 2.8</a>, <a href="Оқулық/Тарау_05/index.html#heading_ch05_05">§ 5.5</a>, <a href="Оқулық/Тарау_07/index.html#heading_ch07_05">§ 7.5</a></p>
+<h2 id="section-8">В қосымшасы. Зертханалық жұмыстарды орындау</h2>
+<ol>
+<li>Қажетті жұмыстың бөлімін ашыңыз. Кодты іске қоспас бұрын қойылымды, деректерге қойылатын талаптарды, жеке нұсқаны және есеп құрамын оқыңыз.</li>
+<li>Бөлек орта құрып, жинақтағы тәуелділіктерді орнатыңыз. Алдын ала оқытылған модельдері бар жұмыстар үшін салмақ файлдарын жинақта көрсетілген дереккөзден алдын ала алып, бақылау қосындыларын сенімді манифестпен салыстырыңыз.</li>
+<li>Бастапқы іске қосуды қайталаңыз. Блокнот үшін ядроны қайта іске қосып, барлық ұяшықты ретімен орындаңыз. Скрипт үшін іске қосу командасын, жұмыс каталогын және шығыс журналын сақтаңыз.</li>
+<li>Бастапқы бөлініс пен базалық шешім нәтижелерін сақтаңыз. Тек өз нұсқаңыздың шарттарын өзгертіңіз немесе бір мезгілде өзгерген барлық факторды атаңыз. Модельді, түрлендірулерді, шекті және тоқтату критерийін әзірлеу бөлігінде таңдаңыз.</li>
+<li>Шешім бекітілгеннен кейін белгіленген хаттама бойынша қорытынды тексеру жүргізіңіз. Кестелерді, графиктерді және мүмкін болса қателері талданатын тексеру мысалдарының идентификаторларын сақтаңыз.</li>
+<li>Есепте міндетті, деректердің шығу тегін, салыстыру шарттарын, сандарды және қорытынды шектеуін көрсетіңіз. Қажетті файлдарды тіркеңіз. Сандық нәтиже бақылау нәтижесінен өзгеше болса, алдымен нұсқаларды, жиын идентификаторларын және орындау ретін салыстырыңыз.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Жұмыстар</th>
+<th>Тапсырмалар берілген бөлімдер</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ЗЖ 1–5</td>
+<td><a href="Оқулық/Тарау_01/index.html#heading_ch01_11">§ 1.11</a>, <a href="Оқулық/Тарау_02/index.html#heading_ch02_10">§ 2.10</a>, <a href="Оқулық/Тарау_03/index.html#heading_ch03_10">§ 3.10</a>, <a href="Оқулық/Тарау_04/index.html#heading_ch04_09">§ 4.9</a>, <a href="Оқулық/Тарау_05/index.html#heading_ch05_08">§ 5.8</a></td>
+</tr>
+<tr>
+<td>ЗЖ 6–10</td>
+<td><a href="Оқулық/Тарау_06/index.html#heading_ch06_08">§ 6.8</a>, <a href="Оқулық/Тарау_07/index.html#heading_ch07_08">§ 7.8</a>, <a href="Оқулық/Тарау_08/index.html#heading_ch08_08">§ 8.8</a>, <a href="Оқулық/Тарау_09/index.html#heading_ch09_08">§ 9.8</a>, <a href="Оқулық/Тарау_10/index.html#heading_ch10_08">§ 10.8</a></td>
+</tr>
+<tr>
+<td>ЗЖ 11–15</td>
+<td><a href="Оқулық/Тарау_11/index.html#heading_ch11_08">§ 11.8</a>, <a href="Оқулық/Тарау_12/index.html#heading_ch12_08">§ 12.8</a>, <a href="Оқулық/Тарау_13/index.html#heading_ch13_08">§ 13.8</a>, <a href="Оқулық/Тарау_14/index.html#heading_ch14_08">§ 14.8</a>, <a href="Оқулық/Тарау_15/index.html#heading_ch15_08">§ 15.8</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-9">Г қосымшасы. Деректер жиынтықтары</h2>
+<h3 id="section-10">Бақыланған деректер</h3>
+<table>
+<thead>
+<tr>
+<th>Жиынтық</th>
+<th>Құрамы және мақсаты</th>
+<th>Бөлім</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Iris</td>
+<td>150 өсімдік, төрт өлшем, үш түр. Жіктеуде түр — мақсатты белгі. Кластерлеуде белгілер сыртқы салыстыруға қалдырылады. Жекелеген мәндері түзетілген scikit-learn көшірмесі пайдаланылады.</td>
+<td><a href="Оқулық/Тарау_01/index.html#heading_ch01_10">§ 1.10</a>, <a href="Оқулық/Тарау_08/index.html#heading_ch08_07">§ 8.7</a></td>
+</tr>
+<tr>
+<td>Wine</td>
+<td>178 үлгі, 13 сандық өлшем және үш класс. <code>wine_sklearn.csv</code> және <code>wine_search.csv</code> көшірмелері әртүрлі оқу хаттамаларына қолданылады.</td>
+<td><a href="Оқулық/Тарау_03/index.html#heading_ch03_09">§ 3.9</a>, <a href="Оқулық/Тарау_07/index.html#heading_ch07_07">§ 7.7</a></td>
+</tr>
+<tr>
+<td>Optical Recognition of Handwritten Digits</td>
+<td><code>load_digits</code> бастапқы UCI тест ішкі жиынының көшірмесінен 1797 кескін береді. Әр кескіннің өлшемі 8 × 8. Он класс пайдаланылады.</td>
+<td><a href="Оқулық/Тарау_04/index.html#heading_ch04_08">§ 4.8</a>, <a href="Оқулық/Тарау_13/index.html#heading_ch13_07">§ 13.7</a></td>
+</tr>
+<tr>
+<td>Wisconsin Diagnostic Breast Cancer</td>
+<td>569 бақылау және 30 сандық өлшем. scikit-learn ішіне кірістірілген көшірме қолданылады. Нақты тәжірибеде белгілер реті мен оң класс кодын тексеріңіз.</td>
+<td><a href="Оқулық/Тарау_09/index.html#heading_ch09_07">§ 9.7</a>, <a href="Оқулық/Тарау_10/index.html#heading_ch10_07">§ 10.7</a></td>
+</tr>
+<tr>
+<td>Sentiment Labelled Sentences, Yelp</td>
+<td>1000 ағылшынша сөйлем және екілік белгілер, әр класта 500 жолдан. Нормалаудан кейін сәйкес келетін құжаттар топтық бөлуде ескеріледі.</td>
+<td><a href="Оқулық/Тарау_12/index.html#heading_ch12_07">§ 12.7</a></td>
+</tr>
+</tbody>
+</table>
+<p>Репозиторий сілтемелері мен DOI дереккөздер тізімінде берілген. CSV немесе мәтіндік файлды тасымалдағанда тиісті атрибуция файлын сақтаңыз. Алдын ала оқытылған SqueezeNet пен FLAN-T5-small — модель артефактілері. Салмақтардың шығу тегі мақсатты есеп деректерінің шығу тегінен бөлек тіркеледі.</p>
+<h3 id="section-11">Жасанды деректер</h3>
+<table>
+<thead>
+<tr>
+<th>Деректер</th>
+<th>Мақсаты</th>
+<th>Бөлім</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>synthetic_equipment_load.csv</code>, 500 жол</td>
+<td>Жабдық жүктемесі, аралас белгілер, жетіспейтін мәндер және конвейер</td>
+<td><a href="Оқулық/Тарау_02/index.html#heading_ch02_09">§ 2.9</a></td>
+</tr>
+<tr>
+<td><code>synthetic_quadratic_regression.csv</code>, 500 жол</td>
+<td>Сызықтық және полиномдық регрессияны салыстыру</td>
+<td><a href="Оқулық/Тарау_03/index.html#heading_ch03_09">§ 3.9</a></td>
+</tr>
+<tr>
+<td><code>synthetic_moons.csv</code>, 600 жол</td>
+<td>Екі сандық координата бойынша жіктеу</td>
+<td><a href="Оқулық/Тарау_04/index.html#heading_ch04_08">§ 4.8</a></td>
+</tr>
+<tr>
+<td><code>synthetic_classification_validation.csv</code>, 1000 жол</td>
+<td>Жіктеу ықтималдықтарын, шектерін және метрикаларын салыстыру</td>
+<td><a href="Оқулық/Тарау_05/index.html#heading_ch05_07">§ 5.7</a></td>
+</tr>
+<tr>
+<td><code>synthetic_regularization_regression.csv</code>, 240 жол, <code>synthetic_rare_events.csv</code>, 1200 жол</td>
+<td>Регрессияны регуляризациялау және сирек оқиға моделі. Оқыту қисығы бөлек <code>ch06_learning_regression.csv</code> кестесін пайдаланады</td>
+<td><a href="Оқулық/Тарау_06/index.html#heading_ch06_07">§ 6.7</a></td>
+</tr>
+<tr>
+<td>Жасанды нүктелер және <code>make_friedman1</code></td>
+<td>Ансамбльдердің геометриялық мысалдары мен регрессиялық салыстыруына арналған генераторлар</td>
+<td><a href="Оқулық/Тарау_08/index.html#heading_ch08_07">§ 8.7</a>, <a href="Оқулық/Тарау_09/index.html#heading_ch09_07">§ 9.7</a></td>
+</tr>
+<tr>
+<td><code>synthetic_daily_demand.csv</code>, 224 күн</td>
+<td>Сұранысты болжау, күнтізбе және промоакциялардың алдын ала белгілі сценарийі</td>
+<td><a href="Оқулық/Тарау_11/index.html#heading_ch11_07">§ 11.7</a></td>
+</tr>
+<tr>
+<td>Жабдықтың синтетикалық ағыны</td>
+<td>Келісімшарттар, кешіккен белгілер және ығысу. Сұлба <code>Synthetic_Equipment_Lifecycle.txt</code> ішінде сипатталған</td>
+<td><a href="Оқулық/Тарау_14/index.html#heading_ch14_07">§ 14.7</a></td>
+</tr>
+<tr>
+<td><code>synthetic_grounded_qa.json</code>, 16 жағдай</td>
+<td>Ағылшынша құжаттар мен сұрақтар, соның ішінде мәліметі жеткіліксіз, қайшылықтары және кірістірілген нұсқаулары бар жағдайлар</td>
+<td><a href="Оқулық/Тарау_15/index.html#heading_ch15_07">§ 15.7</a></td>
+</tr>
+</tbody>
+</table>
+<p><code>target</code>, <code>split</code>, <code>row_id</code> және осыған ұқсас бағандары бар файлдар нақты тәжірибе сұлбасы бойынша оқылады. Бөлініс өрісі хаттаманы қалпына келтіреді, идентификатор сәйкестіктерді тексеруге көмектеседі, мақсатты айнымалы оқыту жауабын береді. Осы тәжірибелерде аталған өрістерді кіріс матрицасынан шығарыңыз.</p>
+<h2 id="section-12">Д қосымшасы. Таңдалған есептердің шешімдері</h2>
+<h3 id="section-13">Белгілі оқыту жиыны бойынша стандарттау</h3>
+<p>2-тараудың 1-есебінде оқыту мәндері 2, 4 және 6. Орташа мәні 4-ке тең. Үшке бөлу арқылы алынған дисперсия (4 + 0 + 4)/3 = 8/3 болады. 8 мәні сол параметрлермен түрлендіріледі. Оның жаңа координатасы 4/√(8/3) = √6, шамамен 2,449 болады. Бір тексеру нысанында қайта сәйкестендіргенде орташа мән 8 болып, салыстыруға қажет ауытқу жоғалар еді. <a href="Оқулық/Тарау_02/index.html#heading_ch02_11">§ 2.11</a></p>
+<h3 id="section-14">MAE мәні бірдей екі болжам</h3>
+<p>5-тараудың 1-есебінде шынайы мәндер (0, 0, 6). A және B болжамдары (0, 0, 0) және (2, 2, 4). Екеуінің де орташа абсолют қатесі 2-ге тең. A қатесінің орташа квадраты 12, B үшін ол 4. Сондықтан RMSE мәндері √12 және 2 болады. Мақсаттың өз орташа мәнінен ауытқулары квадраттарының қосындысы 24-ке тең. Осыдан R² мәні A үшін 1 − 36/24 = −0,5, ал B үшін 1 − 12/24 = 0,5. Айырмашылық бір ірі қатеге салынатын квадраттық айыппұлмен түсіндіріледі. <a href="Оқулық/Тарау_05/index.html#heading_ch05_09">§ 5.9</a></p>
+<h3 id="section-15">Конвейер неше рет оқытылады</h3>
+<p>Он екі кандидат және үш ішкі фолд үшін іздеу 36 оқытуды орындайды. <code>refit=True</code> кезінде таңдалған кандидат осы іздеуге берілген барлық деректерде қосымша оқытылады. Барлығы 37. Үш сыртқы фолд болса, осындай үш іздеу орындалады, бұл 111 оқыту береді. Толық әзірлеу жиынындағы тағы бір қорытынды іздеу 37 оқыту қосады. Бір стратегия үшін барлығы 148 конвейер оқытуы шығады. Жеке алгоритмнің ішкі қадамдары бюджет бірлігінің басқа түрімен саналады. <a href="Оқулық/Тарау_07/index.html#heading_ch07_09">§ 7.9</a></p>
+<h3 id="section-16">Құн бойынша жауап таңдау</h3>
+<p>15-тараудың 3-есебінде A ережесі 8 сұраудың 6-сына жауап беріп, екі рет қателеседі. Қамту 0,75, таңдамалы тәуекел 1/3. Қате жауап құны 4, ал екі тапсырудың әрқайсысының құны 1 болса, жалпы құн 10-ға тең. B ережесі 4 сұрауға қатесіз жауап беріп, екеуін тапсырады және тағы екеуіне ақысыз жауаптан бас тартады. Қамту 0,50, жауаптар арасындағы тәуекел нөл, жалпы құн 2. Орташа шығындарды салыстыру үшін екі қосынды да 8-ге бөлінеді. B артықшылығы берілген құндарға және осы сұрауларға тәуелді. <a href="Оқулық/Тарау_15/index.html#heading_ch15_09">§ 15.9</a></p>
+<h1 id="section-17">Пәндік көрсеткіш</h1>
+<p>Нөмірлер анықтама, қолдану немесе жиі кездесетін қате қарастырылған бөлімдерге сілтейді.</p>
+<ul>
+<li><strong>Модель артефактілері</strong> — сақтау және жүктеу <a href="Оқулық/Тарау_14/index.html#heading_ch14_03">§ 14.3</a>, нұсқалар байланысы және қалпына келтіру <a href="Оқулық/Тарау_14/index.html#heading_ch14_06">§ 14.6</a>.</li>
+<li><strong>Базалық салыстыру</strong> — қарапайым шешім <a href="Оқулық/Тарау_01/index.html#heading_ch01_07">§ 1.7</a>, уақыт бойынша болжам <a href="Оқулық/Тарау_11/index.html#heading_ch11_04">§ 11.4</a>, тасымалдауды бақылау <a href="Оқулық/Тарау_13/index.html#heading_ch13_06">§ 13.6</a>.</li>
+<li><strong>Есептеу бюджеті</strong> — оқыту саны, уақыт және журналдар <a href="Оқулық/Тарау_07/index.html#heading_ch07_06">§ 7.6</a>.</li>
+<li><strong>Валидация</strong> — деректерді бөлу <a href="Оқулық/Тарау_05/index.html#heading_ch05_05">§ 5.5</a>, топтар мен уақыт <a href="Оқулық/Тарау_05/index.html#heading_ch05_06">§ 5.6</a>, кірістірілген тексеру <a href="Оқулық/Тарау_07/index.html#heading_ch07_05">§ 7.5</a>.</li>
+<li><strong>Ықтималдық</strong> — логит және сигмоида <a href="Оқулық/Тарау_03/index.html#heading_ch03_07">§ 3.7</a>, калибрлеу <a href="Оқулық/Тарау_05/index.html#heading_ch05_04">§ 5.4</a>, тізбек ықтималдығы <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a>.</li>
+<li><strong>Салмақтар</strong> — кластық көбейткіштер <a href="Оқулық/Тарау_06/index.html#heading_ch06_06">§ 6.6</a>, AdaBoost ішінде нысан салмақтарын жаңарту <a href="Оқулық/Тарау_09/index.html#heading_ch09_04">§ 9.4</a>, параметрлерді қатыру <a href="Оқулық/Тарау_13/index.html#heading_ch13_04">§ 13.4</a>.</li>
+<li><strong>Уақыт</strong> — бақыланған тарихтан алынатын белгілер <a href="Оқулық/Тарау_11/index.html#heading_ch11_03">§ 11.3</a>, болжам шығару сәті бойынша тексеру <a href="Оқулық/Тарау_11/index.html#heading_ch11_06">§ 11.6</a>, белгілердің келіп түсуі <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a>.</li>
+<li><strong>Гиперпараметрлерді таңдау</strong> — іздеу кеңістігі <a href="Оқулық/Тарау_07/index.html#heading_ch07_03">§ 7.3</a>, бейімделетін ұсыныстар <a href="Оқулық/Тарау_07/index.html#heading_ch07_04">§ 7.4</a>, таңдау оптимизмі <a href="Оқулық/Тарау_07/index.html#heading_ch07_05">§ 7.5</a>.</li>
+<li><strong>Аутлайерлер мен телнұсқалар</strong> — белгілер диагностикасы <a href="Оқулық/Тарау_02/index.html#heading_ch02_07">§ 2.7</a>, мәтін телнұсқалары <a href="Оқулық/Тарау_12/index.html#heading_ch12_02">§ 12.2</a>.</li>
+<li><strong>Белгілер геометриясы</strong> — масштаб <a href="Оқулық/Тарау_02/index.html#heading_ch02_06">§ 2.6</a>, SVM саңылауы <a href="Оқулық/Тарау_04/index.html#heading_ch04_04">§ 4.4</a>, тығыздық <a href="Оқулық/Тарау_08/index.html#heading_ch08_03">§ 8.3</a>.</li>
+<li><strong>Болжау көкжиегі</strong> — қойылым <a href="Оқулық/Тарау_11/index.html#heading_ch11_02">§ 11.2</a>, көпқадамды стратегия <a href="Оқулық/Тарау_11/index.html#heading_ch11_05">§ 11.5</a>, қателерді тексеру <a href="Оқулық/Тарау_11/index.html#heading_ch11_06">§ 11.6</a>.</li>
+<li><strong>Градиент</strong> — сызықтық мақсат <a href="Оқулық/Тарау_03/index.html#heading_ch03_04">§ 3.4</a>, логарифмдік шығын <a href="Оқулық/Тарау_03/index.html#heading_ch03_08">§ 3.8</a>, функционалдық түзету <a href="Оқулық/Тарау_09/index.html#heading_ch09_04">§ 9.4</a>.</li>
+<li><strong>Әзірлеу деректері</strong> — қайталама баптау және жабық тест <a href="Оқулық/Тарау_05/index.html#heading_ch05_05">§ 5.5</a>, генерацияға арналған жиын құру <a href="Оқулық/Тарау_15/index.html#heading_ch15_06">§ 15.6</a>.</li>
+<li><strong>Декодтау</strong> — ашкөз таңдау, температура және top-p <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a>.</li>
+<li><strong>Кластар теңгерімсіздігі</strong> — метрикалар мен шек <a href="Оқулық/Тарау_05/index.html#heading_ch05_04">§ 5.4</a>, салмақтар және қайта іріктеу <a href="Оқулық/Тарау_06/index.html#heading_ch06_06">§ 6.6</a>.</li>
+<li><strong>Дереккөзге сенім</strong> — артефактіні тексеру <a href="Оқулық/Тарау_14/index.html#heading_ch14_03">§ 14.3</a>, құжаттар мен нұсқаулар <a href="Оқулық/Тарау_15/index.html#heading_ch15_04">§ 15.4</a>, өкілеттік шекарасы <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a>.</li>
+<li><strong>Белгілерді түсіндіру</strong> — ағаштың кірістірілген маңыздылығы <a href="Оқулық/Тарау_10/index.html#heading_ch10_03">§ 10.3</a>, алмастыру маңыздылығы <a href="Оқулық/Тарау_10/index.html#heading_ch10_04">§ 10.4</a>, SHAP фоны мен шкаласы <a href="Оқулық/Тарау_10/index.html#heading_ch10_05">§ 10.5</a>.</li>
+<li><strong>Санаттар</strong> — one-hot және белгісіз мәндер <a href="Оқулық/Тарау_02/index.html#heading_ch02_05">§ 2.5</a>, аралас бағандар <a href="Оқулық/Тарау_02/index.html#heading_ch02_08">§ 2.8</a>.</li>
+<li><strong>Кластер</strong> — центроид <a href="Оқулық/Тарау_08/index.html#heading_ch08_02">§ 8.2</a>, тығыздық <a href="Оқулық/Тарау_08/index.html#heading_ch08_03">§ 8.3</a>, иерархия <a href="Оқулық/Тарау_08/index.html#heading_ch08_04">§ 8.4</a>, ықтималдық құрамдас <a href="Оқулық/Тарау_08/index.html#heading_ch08_05">§ 8.5</a>.</li>
+<li><strong>Сызықтылық</strong> — коэффициенттер <a href="Оқулық/Тарау_03/index.html#heading_ch03_02">§ 3.2</a>, полиномдық белгілер <a href="Оқулық/Тарау_03/index.html#heading_ch03_05">§ 3.5</a>, сызықтық сынама <a href="Оқулық/Тарау_13/index.html#heading_ch13_03">§ 13.3</a>.</li>
+<li><strong>Қателер матрицасы</strong> — анықтамалар <a href="Оқулық/Тарау_05/index.html#heading_ch05_02">§ 5.2</a>, топтар бойынша талдау <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a>.</li>
+<li><strong>Ранжирлеу метрикалары</strong> — ROC және Precision–Recall <a href="Оқулық/Тарау_05/index.html#heading_ch05_03">§ 5.3</a>.</li>
+<li><strong>Модель және жүйе</strong> — есеп шекарасы <a href="Оқулық/Тарау_01/index.html#heading_ch01_09">§ 1.9</a>, пайдалану <a href="Оқулық/Тарау_14/index.html#heading_ch14_02">§ 14.2</a>, құжаттар бойынша көмекші <a href="Оқулық/Тарау_15/index.html#heading_ch15_04">§ 15.4</a>.</li>
+<li><strong>Мультимодальдық</strong> — іргелі модельдердің кірістері <a href="Оқулық/Тарау_15/index.html#heading_ch15_02">§ 15.2</a>.</li>
+<li><strong>Белгісіздік</strong> — CV бағаларының өзгеруі <a href="Оқулық/Тарау_05/index.html#heading_ch05_06">§ 5.6</a>, конфигурация таңдау <a href="Оқулық/Тарау_07/index.html#heading_ch07_05">§ 7.5</a>, тұжырымдардың тұрақтылығы <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a>.</li>
+<li><strong>Жалпылау</strong> — алғышарттар <a href="Оқулық/Тарау_01/index.html#heading_ch01_06">§ 1.6</a>, оқыту қисықтары <a href="Оқулық/Тарау_06/index.html#heading_ch06_02">§ 6.2</a>.</li>
+<li><strong>Қалдық</strong> — регрессия диагностикасы <a href="Оқулық/Тарау_03/index.html#heading_ch03_06">§ 3.6</a>, бустингтегі квадраттық шығын <a href="Оқулық/Тарау_09/index.html#heading_ch09_04">§ 9.4</a>, уақыттық тәуелділік <a href="Оқулық/Тарау_11/index.html#heading_ch11_06">§ 11.6</a>.</li>
+<li><strong>Жауаптан бас тарту</strong> — дереккөз жеткіліктілігі <a href="Оқулық/Тарау_15/index.html#heading_ch15_04">§ 15.4</a>, қамту, құн және адамға тапсыру <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a>.</li>
+<li><strong>Жауаптың дереккөзбен расталуы</strong> — жеткіліктілік және қайшылық <a href="Оқулық/Тарау_15/index.html#heading_ch15_04">§ 15.4</a>, дәл сәйкестік пен мазмұндық тексеру <a href="Оқулық/Тарау_15/index.html#heading_ch15_06">§ 15.6</a>.</li>
+<li><strong>Шек</strong> — әрекет таңдау <a href="Оқулық/Тарау_05/index.html#heading_ch05_04">§ 5.4</a>, жүктегенде шешімді тексеру <a href="Оқулық/Тарау_14/index.html#heading_ch14_03">§ 14.3</a>, мониторинг сигналы <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a>.</li>
+<li><strong>Алдын ала оқыту</strong> — тасымалдау <a href="Оқулық/Тарау_13/index.html#heading_ch13_02">§ 13.2</a>, қосымша оқыту <a href="Оқулық/Тарау_13/index.html#heading_ch13_05">§ 13.5</a>, іргелі модельді бейімдеу <a href="Оқулық/Тарау_15/index.html#heading_ch15_02">§ 15.2</a>.</li>
+<li><strong>Мәтін белгілері</strong> — токендеу <a href="Оқулық/Тарау_12/index.html#heading_ch12_03">§ 12.3</a>, TF-IDF <a href="Оқулық/Тарау_12/index.html#heading_ch12_04">§ 12.4</a>, Word2Vec және ішкі сөздер <a href="Оқулық/Тарау_12/index.html#heading_ch12_05">§ 12.5</a>.</li>
+<li><strong>Жетіспейтін мәндер</strong> — бақылау механизмі <a href="Оқулық/Тарау_02/index.html#heading_ch02_03">§ 2.3</a>, толықтыру және индикатор <a href="Оқулық/Тарау_02/index.html#heading_ch02_04">§ 2.4</a>, жұмыс ағынындағы сигнал <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a>.</li>
+<li><strong>Регуляризация</strong> — Ridge <a href="Оқулық/Тарау_06/index.html#heading_ch06_03">§ 6.3</a>, Lasso және Elastic Net <a href="Оқулық/Тарау_06/index.html#heading_ch06_04">§ 6.4</a>, ерте тоқтату <a href="Оқулық/Тарау_06/index.html#heading_ch06_05">§ 6.5</a>.</li>
+<li><strong>Деректер ығысуы</strong> — ығысу түрлерін ажырату, тексерулер және әрекет <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a>, шығарылымды бақылау <a href="Оқулық/Тарау_14/index.html#heading_ch14_06">§ 14.6</a>.</li>
+<li><strong>Әділдік</strong> — топ, бөлім және TPR айырмасын таңдау <a href="Оқулық/Тарау_15/index.html#heading_ch15_05">§ 15.5</a>.</li>
+<li><strong>Деректердің ағып кетуі</strong> — белгілер және тест <a href="Оқулық/Тарау_01/index.html#heading_ch01_08">§ 1.8</a>, түрлендірулерді оқыту <a href="Оқулық/Тарау_02/index.html#heading_ch02_08">§ 2.8</a>, стекинг <a href="Оқулық/Тарау_09/index.html#heading_ch09_06">§ 9.6</a>, болашақ деректер <a href="Оқулық/Тарау_11/index.html#heading_ch11_06">§ 11.6</a>.</li>
+<li><strong>Мақсатты айнымалы</strong> — нысан және жауап <a href="Оқулық/Тарау_01/index.html#heading_ch01_02">§ 1.2</a>, белгінің қолжетімді болуы <a href="Оқулық/Тарау_11/index.html#heading_ch11_06">§ 11.6</a>, кешіккен нәтижелерді бақылау <a href="Оқулық/Тарау_14/index.html#heading_ch14_05">§ 14.5</a>.</li>
+<li><strong>Эксперимент</strong> — журнал және салыстыру шарттары <a href="Оқулық/Тарау_07/index.html#heading_ch07_06">§ 7.6</a>, файлдардың шығу тегі <a href="Оқулық/Тарау_14/index.html#heading_ch14_02">§ 14.2</a>, генерация параметрлері <a href="Оқулық/Тарау_15/index.html#heading_ch15_06">§ 15.6</a>.</li>
+<li><strong>Эмбеддингтер</strong> — мәтін және құжаттар <a href="Оқулық/Тарау_12/index.html#heading_ch12_05">§ 12.5</a>, алдын ала оқытылған белгілер және жаңа бас <a href="Оқулық/Тарау_13/index.html#heading_ch13_03">§ 13.3</a>.</li>
+</ul>
+<h1 id="section-18">Алгоритмдер көрсеткіші</h1>
+<p>Әр алгоритм үшін оның идеясы, есептелуі немесе практикалық бапталуы қарастырылған орын берілген.</p>
+<ul>
+<li><strong>Уорд әдісімен агломеративті кластерлеу</strong> (Ward linkage) — <a href="Оқулық/Тарау_08/index.html#heading_ch08_04">§ 8.4</a>.</li>
+<li><strong>Бейімделетін бустинг</strong> (AdaBoost) — <a href="Оқулық/Тарау_09/index.html#heading_ch09_04">§ 9.4</a>.</li>
+<li><strong>Бас құраушылар әдісі</strong> (PCA) — <a href="Оқулық/Тарау_08/index.html#heading_ch08_06">§ 8.6</a>.</li>
+<li><strong>Күтілетін жақсаруы бар Байестік оңтайландыру</strong> — <a href="Оқулық/Тарау_07/index.html#heading_ch07_04">§ 7.4</a>, <a href="Оқулық/Тарау_07/index.html#heading_ch07_07">§ 7.7</a>.</li>
+<li><strong>Ағаштар бустингі</strong> (Gradient Boosting) — <a href="Оқулық/Тарау_09/index.html#heading_ch09_04">§ 9.4</a>, <a href="Оқулық/Тарау_09/index.html#heading_ch09_05">§ 9.5</a>.</li>
+<li><strong>Бэггинг</strong> (Bagging) — <a href="Оқулық/Тарау_09/index.html#heading_ch09_02">§ 9.2</a>.</li>
+<li><strong>Градиенттік түсу және стохастикалық градиенттік түсу</strong> (GD, SGD) — <a href="Оқулық/Тарау_03/index.html#heading_ch03_04">§ 3.4</a>.</li>
+<li><strong>Екілік бөліністері бар шешім ағашы</strong> (CART) — <a href="Оқулық/Тарау_04/index.html#heading_ch04_03">§ 4.3</a>.</li>
+<li><strong>Диффузиялық ықтималдық модель</strong> (DDPM) — <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a>.</li>
+<li><strong>Генерация кезіндегі ашкөз және сәулелік іздеу</strong> (greedy decoding, beam search) — <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a>.</li>
+<li><strong>Статистика бойынша жетіспейтін мәндерді толықтыру</strong> (SimpleImputer) — <a href="Оқулық/Тарау_02/index.html#heading_ch02_04">§ 2.4</a>.</li>
+<li><strong>Құжат өрісі бойынша шығарып алу</strong> — <a href="Оқулық/Тарау_15/index.html#heading_ch15_07">§ 15.7</a>.</li>
+<li><strong>Тығыздық бойынша кластерлеу</strong> (DBSCAN) — <a href="Оқулық/Тарау_08/index.html#heading_ch08_03">§ 8.3</a>.</li>
+<li><strong>Орташа мәндер бойынша кластерлеу</strong> (k-means) — <a href="Оқулық/Тарау_08/index.html#heading_ch08_02">§ 8.2</a>.</li>
+<li><strong>Санаттарды жеке индикаторлармен кодтау</strong> (OneHotEncoder) — <a href="Оқулық/Тарау_02/index.html#heading_ch02_05">§ 2.5</a>.</li>
+<li><strong>Ең кіші квадраттар әдісімен сызықтық регрессия</strong> (LinearRegression) — <a href="Оқулық/Тарау_03/index.html#heading_ch03_02">§ 3.2</a>, <a href="Оқулық/Тарау_03/index.html#heading_ch03_03">§ 3.3</a>.</li>
+<li><strong>Логистикалық регрессия</strong> (LogisticRegression) — <a href="Оқулық/Тарау_03/index.html#heading_ch03_07">§ 3.7</a>, <a href="Оқулық/Тарау_03/index.html#heading_ch03_08">§ 3.8</a>.</li>
+<li><strong>Ең жақын k көрші әдісі</strong> (k-NN) — <a href="Оқулық/Тарау_04/index.html#heading_ch04_02">§ 4.2</a>.</li>
+<li><strong>Тірек векторлар әдісі</strong> (SVM, SVC) — <a href="Оқулық/Тарау_04/index.html#heading_ch04_04">§ 4.4</a>, <a href="Оқулық/Тарау_04/index.html#heading_ch04_05">§ 4.5</a>.</li>
+<li><strong>Қарапайым және маусымдық қарапайым болжамдар</strong> — <a href="Оқулық/Тарау_11/index.html#heading_ch11_04">§ 11.4</a>.</li>
+<li><strong>Төмен рангті бейімдеу</strong> (LoRA) — <a href="Оқулық/Тарау_13/index.html#heading_ch13_05">§ 13.5</a>.</li>
+<li><strong>Гаусс қоспасы үшін күту және максималдау</strong> (EM, GaussianMixture) — <a href="Оқулық/Тарау_08/index.html#heading_ch08_05">§ 8.5</a>.</li>
+<li><strong>Маңыздылықты алмастыру арқылы бағалау</strong> (PFI) — <a href="Оқулық/Тарау_10/index.html#heading_ch10_04">§ 10.4</a>.</li>
+<li><strong>Тор бойынша іздеу және кездейсоқ іздеу</strong> (GridSearchCV, RandomizedSearchCV) — <a href="Оқулық/Тарау_07/index.html#heading_ch07_03">§ 7.3</a>.</li>
+<li><strong>Белгілерді полиномдық түрлендіру</strong> (PolynomialFeatures) — <a href="Оқулық/Тарау_03/index.html#heading_ch03_05">§ 3.5</a>.</li>
+<li><strong>Тікелей және рекурсивті көпқадамды болжамдар</strong> — <a href="Оқулық/Тарау_11/index.html#heading_ch11_05">§ 11.5</a>.</li>
+<li><strong>Квадраттық айыппұлы бар регрессия</strong> (Ridge) — <a href="Оқулық/Тарау_06/index.html#heading_ch06_03">§ 6.3</a>.</li>
+<li><strong>L1 немесе аралас айыппұлы бар регрессия</strong> (Lasso, Elastic Net) — <a href="Оқулық/Тарау_06/index.html#heading_ch06_04">§ 6.4</a>.</li>
+<li><strong>Үлестірім ядросынан іріктеу</strong> (nucleus sampling, top-p) — <a href="Оқулық/Тарау_15/index.html#heading_ch15_03">§ 15.3</a>.</li>
+<li><strong>Азшылық жиынын синтетикалық ұлғайту</strong> (SMOTE) — <a href="Оқулық/Тарау_06/index.html#heading_ch06_06">§ 6.6</a>.</li>
+<li><strong>Кездейсоқ орман</strong> (Random Forest) — <a href="Оқулық/Тарау_04/index.html#heading_ch04_06">§ 4.6</a>, <a href="Оқулық/Тарау_09/index.html#heading_ch09_03">§ 9.3</a>.</li>
+<li><strong>Стандарттау</strong> (StandardScaler) — <a href="Оқулық/Тарау_02/index.html#heading_ch02_06">§ 2.6</a>.</li>
+<li><strong>Стекинг</strong> (Stacking) — <a href="Оқулық/Тарау_09/index.html#heading_ch09_06">§ 9.6</a>.</li>
+<li><strong>Термин жиілігі және құжаттың кері жиілігі</strong> (TF-IDF) — <a href="Оқулық/Тарау_12/index.html#heading_ch12_04">§ 12.4</a>.</li>
+<li><strong>Ағаштарға арналған Шепли</strong> (TreeSHAP) — <a href="Оқулық/Тарау_10/index.html#heading_ch10_05">§ 10.5</a>, <a href="Оқулық/Тарау_10/index.html#heading_ch10_07">§ 10.7</a>.</li>
+<li><strong>Word2Vec эмбеддингтері</strong> (CBOW, skip-gram, SGNS) — <a href="Оқулық/Тарау_12/index.html#heading_ch12_05">§ 12.5</a>.</li>
+</ul></article><section class="search-panel" aria-label="Мазмұннан іздеу">
+<label for="search-input">Оқулықтан іздеу</label>
+<div class="search-row"><input id="search-input" type="search" placeholder="Ұғымды немесе бөлім атауын енгізіңіз" autocomplete="off"></div>
+<p class="muted" id="search-status" aria-live="polite">Іздеу үшін кемінде екі таңба енгізіңіз.</p>
+<ul class="search-results" id="search-results"></ul></section><footer class="footer">Әл-Фараби атындағы ҚазҰУ · Оспан Әсел Ғалымжанқызы · 2026
+<p>Қазақша жұмыс басылымы. Оқу материалдары авторлық ғылыми редакцияға арналған.</p></footer></main></div>
+<div class="sr-only" id="action-status" aria-live="polite"></div>
+<script type="application/json" id="course-data">[{"id": "ch01", "questionIds": ["ch01_q01", "ch01_q02", "ch01_q03", "ch01_q04", "ch01_q05", "ch01_q06", "ch01_q07", "ch01_q08", "ch01_q09", "ch01_q10", "ch01_q11", "ch01_q12", "ch01_q13", "ch01_q14", "ch01_q15"]}, {"id": "ch02", "questionIds": ["ch02_q01", "ch02_q02", "ch02_q03", "ch02_q04", "ch02_q05", "ch02_q06", "ch02_q07", "ch02_q08", "ch02_q09", "ch02_q10", "ch02_q11", "ch02_q12", "ch02_q13", "ch02_q14", "ch02_q15"]}, {"id": "ch03", "questionIds": ["ch03_q01", "ch03_q02", "ch03_q03", "ch03_q04", "ch03_q05", "ch03_q06", "ch03_q07", "ch03_q08", "ch03_q09", "ch03_q10", "ch03_q11", "ch03_q12", "ch03_q13", "ch03_q14", "ch03_q15"]}, {"id": "ch04", "questionIds": ["ch04_q01", "ch04_q02", "ch04_q03", "ch04_q04", "ch04_q05", "ch04_q06", "ch04_q07", "ch04_q08", "ch04_q09", "ch04_q10", "ch04_q11", "ch04_q12", "ch04_q13", "ch04_q14", "ch04_q15"]}, {"id": "ch05", "questionIds": ["ch05_q01", "ch05_q02", "ch05_q03", "ch05_q04", "ch05_q05", "ch05_q06", "ch05_q07", "ch05_q08", "ch05_q09", "ch05_q10", "ch05_q11", "ch05_q12", "ch05_q13", "ch05_q14", "ch05_q15"]}, {"id": "ch06", "questionIds": ["ch06_q01", "ch06_q02", "ch06_q03", "ch06_q04", "ch06_q05", "ch06_q06", "ch06_q07", "ch06_q08", "ch06_q09", "ch06_q10", "ch06_q11", "ch06_q12", "ch06_q13", "ch06_q14", "ch06_q15"]}, {"id": "ch07", "questionIds": ["ch07_q01", "ch07_q02", "ch07_q03", "ch07_q04", "ch07_q05", "ch07_q06", "ch07_q07", "ch07_q08", "ch07_q09", "ch07_q10", "ch07_q11", "ch07_q12", "ch07_q13", "ch07_q14", "ch07_q15"]}, {"id": "ch08", "questionIds": ["ch08_q01", "ch08_q02", "ch08_q03", "ch08_q04", "ch08_q05", "ch08_q06", "ch08_q07", "ch08_q08", "ch08_q09", "ch08_q10", "ch08_q11", "ch08_q12", "ch08_q13", "ch08_q14", "ch08_q15"]}, {"id": "ch09", "questionIds": ["ch09_q01", "ch09_q02", "ch09_q03", "ch09_q04", "ch09_q05", "ch09_q06", "ch09_q07", "ch09_q08", "ch09_q09", "ch09_q10", "ch09_q11", "ch09_q12", "ch09_q13", "ch09_q14", "ch09_q15"]}, {"id": "ch10", "questionIds": ["ch10_q01", "ch10_q02", "ch10_q03", "ch10_q04", "ch10_q05", "ch10_q06", "ch10_q07", "ch10_q08", "ch10_q09", "ch10_q10", "ch10_q11", "ch10_q12", "ch10_q13", "ch10_q14", "ch10_q15"]}, {"id": "ch11", "questionIds": ["ch11_q01", "ch11_q02", "ch11_q03", "ch11_q04", "ch11_q05", "ch11_q06", "ch11_q07", "ch11_q08", "ch11_q09", "ch11_q10", "ch11_q11", "ch11_q12", "ch11_q13", "ch11_q14", "ch11_q15"]}, {"id": "ch12", "questionIds": ["ch12_q01", "ch12_q02", "ch12_q03", "ch12_q04", "ch12_q05", "ch12_q06", "ch12_q07", "ch12_q08", "ch12_q09", "ch12_q10", "ch12_q11", "ch12_q12", "ch12_q13", "ch12_q14", "ch12_q15"]}, {"id": "ch13", "questionIds": ["ch13_q01", "ch13_q02", "ch13_q03", "ch13_q04", "ch13_q05", "ch13_q06", "ch13_q07", "ch13_q08", "ch13_q09", "ch13_q10", "ch13_q11", "ch13_q12", "ch13_q13", "ch13_q14", "ch13_q15"]}, {"id": "ch14", "questionIds": ["ch14_q01", "ch14_q02", "ch14_q03", "ch14_q04", "ch14_q05", "ch14_q06", "ch14_q07", "ch14_q08", "ch14_q09", "ch14_q10", "ch14_q11", "ch14_q12", "ch14_q13", "ch14_q14", "ch14_q15"]}, {"id": "ch15", "questionIds": ["ch15_q01", "ch15_q02", "ch15_q03", "ch15_q04", "ch15_q05", "ch15_q06", "ch15_q07", "ch15_q08", "ch15_q09", "ch15_q10", "ch15_q11", "ch15_q12", "ch15_q13", "ch15_q14", "ch15_q15"]}]</script>
+<script src="Web/search-index.js"></script><script src="Web/quiz.js"></script><script src="Web/reader.js"></script><script src="Web/demos.js"></script>
+</body></html>

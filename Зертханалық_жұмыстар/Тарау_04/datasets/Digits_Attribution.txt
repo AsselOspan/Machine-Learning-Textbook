@@ -1,0 +1,8 @@
+Alpaydin, E. & Kaynak, C. (1998). Optical Recognition of Handwritten Digits [Dataset]. UCI.
+DOI: https://doi.org/10.24432/C50P49
+Source: https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits
+License: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Export: sklearn.datasets.load_digits, copy of original UCI test subset, 1797 rows; full UCI dataset has 5620 rows.
+Feature names follow scikit-learn; labels 0-9 unchanged; images reconstructed from the 64 features.
+The educational 1437/360 split is new and does not reproduce the original UCI train/test benchmark.
+Metadata checked 2026-11-04.

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Іздеу торынан гиперпараметрлерді таңдау</title><desc id="desc">Ішкі бағасы ең жоғары жұп — C=1 және γ=0,01. Үш фолдпен 36 оқыту, таңдалған модельді қайта оқытумен барлығы 37 оқыту орындалады.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><text x="132" y="66" text-anchor="middle" fill="#123656" font-size="21" font-weight="700">C</text>
+<text x="396" y="37" text-anchor="middle" fill="#123656" font-size="21" font-weight="700">γ</text>
+<text x="116" y="313" text-anchor="start" fill="#52667d" font-size="18">Орташа macro-F1</text>
+<text x="643" y="313" text-anchor="end" fill="#087f8c" font-size="18" font-weight="700">Таңдалған жұп</text>
+<text x="227" y="67" text-anchor="middle" fill="#123656" font-size="19">0,001</text>
+<text x="346" y="67" text-anchor="middle" fill="#123656" font-size="19">0,01</text>
+<text x="465" y="67" text-anchor="middle" fill="#123656" font-size="19">0,1</text>
+<text x="584" y="67" text-anchor="middle" fill="#123656" font-size="19">1</text>
+<text x="132" y="119" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">0,01</text>
+<rect x="172" y="86" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="227" y="117" text-anchor="middle" fill="#123656" font-size="20">0,191</text>
+<line x1="183" y1="129" x2="199.8048645660586" y2="129" stroke="#087f8c" stroke-width="3"/>
+<rect x="291" y="86" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="346" y="117" text-anchor="middle" fill="#123656" font-size="20">0,191</text>
+<line x1="302" y1="129" x2="318.8048645660586" y2="129" stroke="#087f8c" stroke-width="3"/>
+<rect x="410" y="86" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="465" y="117" text-anchor="middle" fill="#123656" font-size="20">0,191</text>
+<line x1="421" y1="129" x2="437.8048645660586" y2="129" stroke="#087f8c" stroke-width="3"/>
+<rect x="529" y="86" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="584" y="117" text-anchor="middle" fill="#123656" font-size="20">0,191</text>
+<line x1="540" y1="129" x2="556.8048645660585" y2="129" stroke="#087f8c" stroke-width="3"/>
+<text x="132" y="183" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">1</text>
+<rect x="172" y="150" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="227" y="181" text-anchor="middle" fill="#123656" font-size="20">0,402</text>
+<line x1="183" y1="193" x2="218.35345916391523" y2="193" stroke="#087f8c" stroke-width="3"/>
+<rect x="291" y="150" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="346" y="181" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">0,979</text>
+<line x1="302" y1="193" x2="388.159671266346" y2="193" stroke="#087f8c" stroke-width="3"/>
+<line x1="296" y1="158" x2="296" y2="196" stroke="#087f8c" stroke-width="3"/>
+<rect x="410" y="150" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="465" y="181" text-anchor="middle" fill="#123656" font-size="20">0,965</text>
+<line x1="421" y1="193" x2="505.89180510959096" y2="193" stroke="#087f8c" stroke-width="3"/>
+<rect x="529" y="150" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="584" y="181" text-anchor="middle" fill="#123656" font-size="20">0,411</text>
+<line x1="540" y1="193" x2="576.200020010476" y2="193" stroke="#087f8c" stroke-width="3"/>
+<text x="132" y="247" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">100</text>
+<rect x="172" y="214" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="227" y="245" text-anchor="middle" fill="#123656" font-size="20">0,971</text>
+<line x1="183" y1="257" x2="268.4514638074872" y2="257" stroke="#087f8c" stroke-width="3"/>
+<rect x="291" y="214" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="346" y="245" text-anchor="middle" fill="#123656" font-size="20">0,971</text>
+<line x1="302" y1="257" x2="387.4805980434233" y2="257" stroke="#087f8c" stroke-width="3"/>
+<rect x="410" y="214" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="465" y="245" text-anchor="middle" fill="#123656" font-size="20">0,965</text>
+<line x1="421" y1="257" x2="505.89180510959096" y2="257" stroke="#087f8c" stroke-width="3"/>
+<rect x="529" y="214" width="110" height="54" rx="7" fill="#e0f2f4" stroke="#d8e2ee" stroke-width="2"/>
+<text x="584" y="245" text-anchor="middle" fill="#123656" font-size="20">0,522</text>
+<line x1="540" y1="257" x2="585.9412961928216" y2="257" stroke="#087f8c" stroke-width="3"/></g></svg>

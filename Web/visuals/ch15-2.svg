@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Екі токендік тізбекті декодтау</title><desc id="desc">Ашкөз ереже A токенін таңдайды. Одан кейінгі ықтималдығы ең жоғары токендердің бірі C. Оның шартты ықтималдығы 0,5, ал AC жолының ықтималдығы 0,6 × 0,5 = 0,30.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><line x1="322" y1="77" x2="213" y2="134" stroke="#087f8c" stroke-width="3"/>
+<line x1="398" y1="77" x2="507" y2="134" stroke="#d8e2ee" stroke-width="3"/>
+<text x="237" y="98" text-anchor="middle" fill="#123656" font-size="18">0,6</text>
+<text x="483" y="98" text-anchor="middle" fill="#123656" font-size="18">0,4</text>
+<rect x="293" y="32" width="134" height="45" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="360" y="61" text-anchor="middle" fill="#123656" font-size="19" font-weight="700">Префикс</text>
+<rect x="183" y="134" width="60" height="38" rx="8" fill="#ffffff" stroke="#087f8c" stroke-width="2"/>
+<text x="213" y="159" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">A</text>
+<rect x="477" y="134" width="60" height="38" rx="8" fill="#ffffff" stroke="#d8e2ee" stroke-width="2"/>
+<text x="507" y="159" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">B</text>
+<line x1="213" y1="173" x2="213" y2="224" stroke="#087f8c" stroke-width="3"/>
+<text x="229" y="206" text-anchor="start" fill="#123656" font-size="16">P(C | A) = 0,5</text>
+<rect x="183" y="226" width="60" height="38" rx="8" fill="#ffffff" stroke="#087f8c" stroke-width="2"/>
+<text x="213" y="251" text-anchor="middle" fill="#123656" font-size="20" font-weight="700">C</text>
+<text x="213" y="296" text-anchor="middle" fill="#123656" font-size="18" font-weight="700">P(AC) = 0,6 × 0,5 = 0,30</text></g></svg>

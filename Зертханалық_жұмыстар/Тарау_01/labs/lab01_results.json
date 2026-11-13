@@ -1,0 +1,79 @@
+{
+  "iris": {
+    "train_size": 120,
+    "test_size": 30,
+    "metrics": [
+      {
+        "model": "Dummy",
+        "accuracy": 0.3333333333333333,
+        "F1macro": 0.16666666666666666
+      },
+      {
+        "model": "LogisticRegression",
+        "accuracy": 0.9333333333333333,
+        "F1macro": 0.9333333333333332
+      }
+    ],
+    "confusion_matrices": {
+      "Dummy": [
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ]
+      ],
+      "LogisticRegression": [
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          1
+        ],
+        [
+          0,
+          1,
+          9
+        ]
+      ]
+    }
+  },
+  "synthetic_load": {
+    "synthetic": true,
+    "seed": 2026,
+    "train_size": 400,
+    "test_size": 100,
+    "metrics": [
+      {
+        "model": "Dummy",
+        "MAE": 22.409558675442057,
+        "RMSE": 26.528473635709418,
+        "R2": -0.009478312754590767
+      },
+      {
+        "model": "LinearRegression",
+        "MAE": 4.785082878997855,
+        "RMSE": 5.647633009164406,
+        "R2": 0.9542484930344945
+      }
+    ],
+    "coefficients": [
+      -2.4383417452943643,
+      44.33226187767561
+    ],
+    "intercept": 119.02818906284129
+  }
+}

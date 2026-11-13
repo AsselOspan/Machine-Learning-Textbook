@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">DBSCAN маңайының кластерлерге әсері</title><desc id="desc">ε=0,85 болғанда 0,2 мен 1 арасындағы 0,8 аралығы маңайға кіреді. Екі үштік бір кластерге бірігеді. 3 нүктесі шу болып қалады.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><text x="74" y="44" text-anchor="start" fill="#123656" font-size="23" font-weight="700">ε = 0,85</text>
+<text x="650" y="44" text-anchor="end" fill="#52667d" font-size="19">min_samples = 3</text>
+<line x1="107.6" y1="125" x2="262" y2="125" stroke="#087f8c" stroke-width="4"/>
+<line x1="107.6" y1="118" x2="107.6" y2="164" stroke="#087f8c" stroke-width="2" stroke-dasharray="5 4"/>
+<line x1="262" y1="118" x2="262" y2="164" stroke="#087f8c" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="184.8" y="108" text-anchor="middle" fill="#087f8c" font-size="21" font-weight="700">0,8 ≤ ε</text>
+<text x="548" y="128" text-anchor="middle" fill="#123656" font-size="20">Бір кластер</text>
+<line x1="47" y1="176" x2="673" y2="176" stroke="#52667d" stroke-width="2"/>
+<circle cx="69" cy="176" r="8" fill="#087f8c" stroke="#ffffff" stroke-width="2"/>
+<circle cx="69" cy="176" r="2" fill="#ffffff"/>
+<line x1="69" y1="186" x2="69" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="69" y="216" text-anchor="middle" fill="#123656" font-size="18">0</text>
+<circle cx="88.3" cy="176" r="8" fill="#087f8c" stroke="#ffffff" stroke-width="2"/>
+<circle cx="88.3" cy="176" r="2" fill="#ffffff"/>
+<line x1="88.3" y1="186" x2="88.3" y2="220" stroke="#d8e2ee" stroke-width="1"/>
+<text x="88.3" y="240" text-anchor="middle" fill="#123656" font-size="18">0,1</text>
+<circle cx="107.6" cy="176" r="8" fill="#087f8c" stroke="#ffffff" stroke-width="2"/>
+<circle cx="107.6" cy="176" r="2" fill="#ffffff"/>
+<line x1="107.6" y1="186" x2="107.6" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="107.6" y="216" text-anchor="middle" fill="#123656" font-size="18">0,2</text>
+<circle cx="262" cy="176" r="8" fill="#087f8c" stroke="#ffffff" stroke-width="2"/>
+<circle cx="262" cy="176" r="2" fill="#ffffff"/>
+<line x1="262" y1="186" x2="262" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="262" y="216" text-anchor="middle" fill="#123656" font-size="18">1</text>
+<circle cx="281.3" cy="176" r="8" fill="#087f8c" stroke="#ffffff" stroke-width="2"/>
+<circle cx="281.3" cy="176" r="2" fill="#ffffff"/>
+<line x1="281.3" y1="186" x2="281.3" y2="220" stroke="#d8e2ee" stroke-width="1"/>
+<text x="281.3" y="240" text-anchor="middle" fill="#123656" font-size="18">1,1</text>
+<circle cx="300.6" cy="176" r="8" fill="#087f8c" stroke="#ffffff" stroke-width="2"/>
+<circle cx="300.6" cy="176" r="2" fill="#ffffff"/>
+<line x1="300.6" y1="186" x2="300.6" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="300.6" y="216" text-anchor="middle" fill="#123656" font-size="18">1,2</text>
+<line x1="643" y1="171" x2="653" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="653" y1="171" x2="643" y2="181" stroke="#a7442a" stroke-width="3"/>
+<line x1="648" y1="186" x2="648" y2="196" stroke="#d8e2ee" stroke-width="1"/>
+<text x="648" y="216" text-anchor="middle" fill="#123656" font-size="18">3</text>
+<text x="650" y="271" text-anchor="end" fill="#52667d" font-size="18">x</text>
+<circle cx="90" cy="299" r="8" fill="#087f8c" stroke="#ffffff" stroke-width="2"/>
+<circle cx="90" cy="299" r="2" fill="#ffffff"/>
+<text x="105" y="306" text-anchor="start" fill="#123656" font-size="18">Ядролық</text>
+<circle cx="269" cy="299" r="5" fill="#ffffff" stroke="#087f8c" stroke-width="2"/>
+<text x="284" y="306" text-anchor="start" fill="#123656" font-size="18">Шекаралық</text>
+<line x1="483" y1="294" x2="493" y2="304" stroke="#a7442a" stroke-width="3"/>
+<line x1="493" y1="294" x2="483" y2="304" stroke="#a7442a" stroke-width="3"/>
+<text x="503" y="306" text-anchor="start" fill="#123656" font-size="18">Шу</text></g></svg>

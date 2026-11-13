@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc"><title id="title">Токендер мен биграммалар</title><desc id="desc">Осы мысалда сөздерді бос орын бойынша бөлеміз. Бірінші пікірден [қызмет, жақсы], екіншісінен [қызмет, жақсы, емес] шығады.</desc><rect width="720" height="360" fill="#f7fafc"/><g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif" stroke-linejoin="round" stroke-linecap="round"><text x="54" y="134" text-anchor="start" fill="#52667d" font-size="17" font-weight="700">1-пікір</text>
+<text x="54" y="232" text-anchor="start" fill="#52667d" font-size="17" font-weight="700">2-пікір</text>
+<text x="150" y="60" text-anchor="start" fill="#123656" font-size="20" font-weight="700">Бос орын бойынша бөлу</text>
+<rect x="150" y="99" width="135" height="56" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="217.5" y="134" text-anchor="middle" fill="#123656" font-size="22">қызмет</text>
+<rect x="301" y="99" width="135" height="56" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="368.5" y="134" text-anchor="middle" fill="#123656" font-size="22">жақсы</text>
+<rect x="150" y="197" width="135" height="56" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="217.5" y="232" text-anchor="middle" fill="#123656" font-size="22">қызмет</text>
+<rect x="301" y="197" width="135" height="56" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="368.5" y="232" text-anchor="middle" fill="#123656" font-size="22">жақсы</text>
+<rect x="452" y="197" width="135" height="56" rx="8" fill="#e0f2f4" stroke="#087f8c" stroke-width="2"/>
+<text x="519.5" y="232" text-anchor="middle" fill="#123656" font-size="22">емес</text></g></svg>
