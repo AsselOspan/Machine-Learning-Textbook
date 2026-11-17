@@ -94,6 +94,24 @@
 .visual-home img { display: block; width: 100%; border-radius: 8px; }
 .visual-home p { margin-block: .55rem 1.1rem; }
 .visual-hero-links { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1rem; }
+.hero-with-video {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: clamp(1.25rem, 3vw, 3rem);
+}
+.hero .intro-video-panel {
+  min-width: 0;
+  margin: 0;
+}
+.intro-video-panel .visual-video {
+  height: auto;
+}
+.intro-video-panel .video-download {
+  display: inline-block;
+  margin-top: .65rem;
+}
+@media (max-width: 1100px) {
+  .hero-with-video { grid-template-columns: 1fr; }
+}
 @media (max-width: 660px) {
   .visual-home { grid-template-columns: 1fr; }
   .visual-stage { min-height: 0 !important; }
